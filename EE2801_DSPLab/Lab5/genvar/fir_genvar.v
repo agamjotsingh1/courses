@@ -1,0 +1,106 @@
+module fir_genvar #(
+    parameter NUM_TAPS = 100,
+    parameter INT_NBITS = 2,
+    parameter FRAC_NBITS = 14,
+    parameter DATA_WIDTH = INT_NBITS + FRAC_NBITS
+)(
+    input wire clk,
+    input wire rst,
+    input wire en,
+    input wire [DATA_WIDTH-1:0] data_in,
+    input wire [NUM_TAPS*DATA_WIDTH-1:0] coeff_in,
+    output wire [DATA_WIDTH-1:0] data_out,
+    output wire data_valid
+);
+    wire [DATA_WIDTH-1:0] accum [-1:NUM_TAPS-1];
+    wire [DATA_WIDTH-1:0] x [-1:NUM_TAPS-1];
+    wire sub_block_en [-1:NUM_TAPS-1];
+
+    assign accum[-1] = 0;
+    assign x[-1] = data_in;
+    assign sub_block_en[-1] = en;
+    assign data_valid = sub_block_en[NUM_TAPS-1];
+    assign data_out = accum[NUM_TAPS-1];
+
+    genvar g;
+    generate
+        for (g = 0; g < NUM_TAPS; g = g + 1) begin : conv_gen
+            conv_sub_block #(
+                .INT_NBITS(INT_NBITS),
+                .FRAC_NBITS(FRAC_NBITS)
+            ) conv_sub_block_instance (
+                .clk(clk),
+                .rst(rst),
+                .en_in(sub_block_en[g - 1]),
+                .x_in(x[g - 1]),
+                .h_in(coeff_in[g*DATA_WIDTH +: DATA_WIDTH]),
+                .accum_in(accum[g - 1]),
+                .en_out(sub_block_en[g]),
+                .x_out(x[g]),
+                .accum_out(accum[g])
+            );
+        end
+    endgenerate
+endmodule
+
+module conv_sub_block #(
+    parameter INT_NBITS = 2,
+    parameter FRAC_NBITS = 14,
+    parameter DATA_WIDTH = INT_NBITS + FRAC_NBITS
+) (
+    input wire clk,
+    input wire rst,
+    input wire en_in,
+    input wire [DATA_WIDTH-1:0] x_in,
+    input wire [DATA_WIDTH-1:0] h_in,
+    input wire [DATA_WIDTH-1:0] accum_in,
+    output reg en_out,
+    output reg [DATA_WIDTH-1:0] x_out,
+    output reg [DATA_WIDTH-1:0] accum_out 
+);
+    wire [DATA_WIDTH-1:0] accum_next;
+    reg  [DATA_WIDTH-1:0] x_delay;
+
+    always @(posedge clk or posedge rst) begin
+        if (rst) begin
+            x_delay   <= 0;
+            x_out     <= 0;
+            en_out    <= 0;
+            accum_out <= 0;
+        end
+        else if (!en_in) begin
+            x_delay   <= 0;
+            x_out     <= 0;
+            en_out    <= en_in;
+            accum_out <= 0;
+        end
+        else begin
+            x_delay   <= x_in;
+            x_out     <= x_delay; 
+            en_out    <= en_in;
+            accum_out <= accum_next;
+        end
+    end
+
+    wire [DATA_WIDTH-1:0] x_mul_h;
+
+    fp_mul #(
+        .INT_NBITS(INT_NBITS),
+        .FRAC_NBITS(FRAC_NBITS)
+    ) fp_mul_conv_instance (
+        .num1(x_in),
+        .num2(h_in),
+        .out(x_mul_h)
+    );
+
+    fp_add #(
+        .INT_NBITS1(INT_NBITS),
+        .FRAC_NBITS1(FRAC_NBITS),
+        .INT_NBITS2(INT_NBITS),
+        .FRAC_NBITS2(FRAC_NBITS)
+    ) fp_add_conv_instance (
+        .num1(x_mul_h),
+        .num2(accum_in),
+        .out(accum_next)
+    );
+endmodule

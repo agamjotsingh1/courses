@@ -1,0 +1,305 @@
+$date
+	Mon Apr 21 18:48:07 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module tb_conv $end
+$scope module dut $end
+$scope begin $ivl_for_loop0 $end
+$var integer 32 ! i [31:0] $end
+$upscope $end
+$scope begin $ivl_for_loop1 $end
+$var integer 32 " i [31:0] $end
+$scope begin $ivl_for_loop2 $end
+$var integer 32 # j [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin $ivl_for_loop3 $end
+$var integer 32 $ i [31:0] $end
+$upscope $end
+$scope begin $ivl_for_loop4 $end
+$var integer 32 % i [31:0] $end
+$upscope $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 & \x[0] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 ' \h[0] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 ( \x[1] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 ) \h[1] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 * \x[2] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 + \h[2] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 , \x[3] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 - \h[3] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 . \x[4] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 / \h[4] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 0 \x[5] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 1 \h[5] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 2 \x[6] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 3 \h[6] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 4 \x[7] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 5 \h[7] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 6 \y[0] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 7 \y[1] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 8 \y[2] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 9 \y[3] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 : \y[4] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 ; \y[5] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 < \y[6] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 = \y[7] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 > \y[8] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 ? \y[9] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 @ \y[10] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 A \y[11] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 B \y[12] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 C \y[13] [3:0] $end
+$upscope $end
+$scope module tb_conv $end
+$var reg 4 D \y[14] [3:0] $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 D
+b1 C
+b0 B
+b10 A
+b0 @
+b110 ?
+b11 >
+b1000 =
+b100 <
+b111 ;
+b100 :
+b110 9
+b100 8
+b10 7
+b1 6
+b0 5
+b1 4
+b1 3
+b0 2
+b0 1
+b1 0
+b1 /
+b0 .
+b0 -
+b100 ,
+b1 +
+b11 *
+b0 )
+b10 (
+b1 '
+b1 &
+b1111 %
+b1000 $
+b1000 #
+b1000 "
+b1111 !
+$end
+#10
+b1 D
+b11 B
+b101 @
+b1000 #
+b1000 "
+b10 C
+b100 A
+b110 ?
+b111 >
+b1000 =
+b111 <
+b110 ;
+b101 :
+b100 9
+b11 8
+b10 7
+b1 6
+b1111 !
+b1 5
+b1 3
+b1 1
+b1 /
+b1 -
+b1 +
+b1 )
+b1 '
+b1 4
+b1 2
+b1 0
+b1 .
+b1 ,
+b1 *
+b1 (
+b1 &
+#20
+b1000 #
+b1000 "
+b0 D
+b0 C
+b1 B
+b0 A
+b10 @
+b0 ?
+b11 >
+b0 =
+b100 <
+b0 ;
+b11 :
+b0 9
+b10 8
+b0 7
+b1 6
+b1111 !
+b0 5
+b1 3
+b0 1
+b1 /
+b0 -
+b1 +
+b0 )
+b1 '
+b0 4
+b1 2
+b0 0
+b1 .
+b0 ,
+b1 *
+b0 (
+b1 &
+#30
+b1000 D
+b1111 C
+b1010 A
+b1 ?
+b100 =
+b101 ;
+b1010 9
+b11 7
+b1000 #
+b1000 "
+b101 B
+b1110 @
+b11 >
+b1100 <
+b1111 :
+b110 8
+b1 6
+b1111 !
+b1 5
+b1 3
+b1 1
+b1 /
+b1 -
+b1 +
+b1 )
+b1 '
+b1000 4
+b111 2
+b110 0
+b101 .
+b100 ,
+b11 *
+b10 (
+b1 &
+#40
+b1000 #
+b1000 "
+b1000 D
+b1011 C
+b1001 B
+b10 A
+b110 @
+b101 ?
+b1111 >
+b100 =
+b1100 <
+b1001 ;
+b1011 :
+b10 9
+b1110 8
+b1111 7
+b101 6
+b1111 !
+b1000 5
+b111 3
+b110 1
+b101 /
+b100 -
+b11 +
+b10 )
+b1 '
+b101 4
+b101 2
+b101 0
+b101 .
+b101 ,
+b101 *
+b101 (
+b101 &
+#50

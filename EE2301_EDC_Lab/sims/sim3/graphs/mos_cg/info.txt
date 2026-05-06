@@ -1,0 +1,9 @@
+bandwidth = 219.4 KHz
+mid band gain (experimental) = 233.36 = gm*ro
+mid band gain (theory) = 241.13
+
+rin theory = 1/gm = 4.147
+rin exp = 4.241
+
+rout theory = 1k
+rout exp = 990.08

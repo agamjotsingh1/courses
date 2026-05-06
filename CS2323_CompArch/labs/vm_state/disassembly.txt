@@ -1,0 +1,91 @@
+0000000000000000 <start>:
+    0: 100001b7             lui x3, 65536
+    4: 10000237             lui x4, 65536
+    8: 20020213             addi x4, x4, 512
+    c: 00300793             addi x15, x0, 3
+   10: 00f1b023             sd x3, x15, 0
+   14: 03000793             addi x15, x0, 48
+   18: 00f1b423             sd x3, x15, 8
+   1c: 07c00793             addi x15, x0, 124
+   20: 00f1b823             sd x3, x15, 16
+   24: 000007b3             add x15, x0, x0
+   28: 0d8ce7b7             lui x15, 55502
+   2c: bbf78793             addi x15, x15, -1089
+   30: 00f1bc23             sd x3, x15, 24
+   34: 2f99f7b7             lui x15, 194975
+   38: 56778793             addi x15, x15, 1383
+   3c: 56778793             addi x15, x15, 1383
+   40: 02f1b023             sd x3, x15, 32
+   44: 00000793             addi x15, x0, 0
+   48: 02f1b423             sd x3, x15, 40
+   4c: 02000793             addi x15, x0, 32
+   50: 02f1b823             sd x3, x15, 48
+   54: 0001b783             ld x15, x3, 0
+   58: 00818193             addi x3, x3, 8
+   5c: 0002b2b7             lui x5, 43
+   60: 7a928293             addi x5, x5, 1961
+   64: 00041337             lui x6, 65
+   68: 35130313             addi x6, x6, 849
+   6c: 008000ef             jal x1, 8 <gcd>
+   70: 0940006f             jal x0, 148 <terminate>
+
+0000000000000074 <gcd>:
+   74: 08028463             beq x5, x0, 136 <trivial>
+   78: 08030263             beq x6, x0, 132 <trivial>
+   7c: 0062e433             or x8, x5, x6
+   80: 00147493             andi x9, x8, 1
+   84: 00000513             addi x10, x0, 0
+
+0000000000000088 <loop_ctz_a_or_b>:
+   88: 00049a63             bne x9, x0, 20 <exit_1>
+   8c: 00150513             addi x10, x10, 1
+   90: 00145413             srli x8, x8, 1
+   94: 00147493             andi x9, x8, 1
+   98: fe0008e3             beq x0, x0, -16 <loop_ctz_a_or_b>
+
+000000000000009c <exit_1>:
+   9c: 000005b3             add x11, x0, x0
+   a0: 00028433             add x8, x5, x0
+
+00000000000000a4 <loop_ctz_a>:
+   a4: 00147493             andi x9, x8, 1
+   a8: 00049863             bne x9, x0, 16 <exit_2>
+   ac: 00158593             addi x11, x11, 1
+   b0: 00145413             srli x8, x8, 1
+   b4: fe0008e3             beq x0, x0, -16 <loop_ctz_a>
+
+00000000000000b8 <exit_2>:
+   b8: 00b2d2b3             srl x5, x5, x11
+
+00000000000000bc <loop_1>:
+   bc: 00000633             add x12, x0, x0
+   c0: 00030433             add x8, x6, x0
+
+00000000000000c4 <loop_ctz_b>:
+   c4: 00147493             andi x9, x8, 1
+   c8: 00049863             bne x9, x0, 16 <exit_3>
+   cc: 00160613             addi x12, x12, 1
+   d0: 00145413             srli x8, x8, 1
+   d4: fe0008e3             beq x0, x0, -16 <loop_ctz_b>
+
+00000000000000d8 <exit_3>:
+   d8: 00c35333             srl x6, x6, x12
+   dc: 00535863             bge x6, x5, 16 <exit_4>
+   e0: 00030493             addi x9, x6, 0
+   e4: 00028313             addi x6, x5, 0
+   e8: 00048293             addi x5, x9, 0
+
+00000000000000ec <exit_4>:
+   ec: 40530333             sub x6, x6, x5
+   f0: fc0316e3             bne x6, x0, -52 <loop_1>
+
+00000000000000f4 <return>:
+   f4: 00a293b3             sll x7, x5, x10
+   f8: 00008067             jalr x0, x1, 0
+
+00000000000000fc <trivial>:
+   fc: 0062e3b3             or x7, x5, x6
+  100: 00008067             jalr x0, x1, 0
+
+0000000000000104 <terminate>:
+  104: 00000063             beq x0, x0, 0 <terminate>

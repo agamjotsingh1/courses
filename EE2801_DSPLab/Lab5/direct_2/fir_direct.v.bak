@@ -1,0 +1,71 @@
+module fir_direct #(
+    parameter NUM_TAPS = 100,
+    parameter INT_NBITS = 2,
+    parameter FRAC_NBITS = 14,
+    localparam DATA_WIDTH = INT_NBITS + FRAC_NBITS
+)(
+    input wire clk,
+    input wire rst,
+    input wire en,
+    input wire [DATA_WIDTH-1:0] data_in,
+    input wire signed [NUM_TAPS*DATA_WIDTH-1:0] coeff_in,
+    output wire [DATA_WIDTH-1:0] data_out,
+    output wire data_valid
+);
+    reg signed [DATA_WIDTH-1:0] x_delay [0:NUM_TAPS-1];
+    reg signed [DATA_WIDTH-1:0] x_out [0:NUM_TAPS-1];
+    reg signed [DATA_WIDTH-1:0] accum_out [0:NUM_TAPS-1];
+    reg en_pipe [0:NUM_TAPS-1];
+
+    reg signed [DATA_WIDTH-1:0] x_in [0:NUM_TAPS-1];
+    reg signed [DATA_WIDTH-1:0] accum_in [0:NUM_TAPS-1];
+    reg signed [DATA_WIDTH-1:0] mult_trunc [0:NUM_TAPS-1];
+    reg signed [DATA_WIDTH-1:0] accum_next [0:NUM_TAPS-1];
+    reg signed [DATA_WIDTH-1:0] coeff_tap [0:NUM_TAPS-1];
+    reg en_in_tap [0:NUM_TAPS-1];
+
+    reg signed [2*DATA_WIDTH-1:0] mult_full;
+    integer i;
+
+    assign data_out = accum_out[NUM_TAPS-1];
+    assign data_valid = en_pipe[NUM_TAPS-1];
+
+    always @(*) begin
+        for (i = 0; i < NUM_TAPS; i = i + 1) begin
+            coeff_tap[i] = coeff_in[i*DATA_WIDTH +: DATA_WIDTH];
+            x_in[i]      = (i == 0) ? data_in : x_out[i-1];
+            accum_in[i]  = (i == 0) ? {DATA_WIDTH{1'b0}} : accum_out[i-1];
+            en_in_tap[i] = (i == 0) ? en : en_pipe[i-1];
+
+            mult_full = x_in[i] * coeff_tap[i];
+            mult_trunc[i] = mult_full >>> FRAC_NBITS;
+            
+            accum_next[i] = accum_in[i] + mult_trunc[i];
+        end
+    end
+
+    always @(posedge clk or posedge rst) begin
+        if (rst) begin
+            for (i = 0; i < NUM_TAPS; i = i + 1) begin
+                x_delay[i] <= 0;
+                x_out[i] <= 0;
+                en_pipe[i] <= 0;
+                accum_out[i] <= 0;
+            end
+        end else begin
+            for (i = 0; i < NUM_TAPS; i = i + 1) begin
+                if (!en_in_tap[i]) begin
+                    x_delay[i] <= 0;
+                    x_out[i] <= 0;
+                    en_pipe[i] <= 0;
+                    accum_out[i] <= 0;
+                end else begin
+                    x_delay[i] <= x_in[i];
+                    x_out[i] <= x_delay[i];
+                    en_pipe[i] <= en_in_tap[i];
+                    accum_out[i] <= accum_next[i];
+                end
+            end
+        end
+    end
+endmodule

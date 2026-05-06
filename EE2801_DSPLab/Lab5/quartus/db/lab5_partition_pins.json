@@ -1,0 +1,189 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ast_source_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_source_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_source_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_source_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_source_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_source_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_source_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_source_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_source_data[8]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_source_data[9]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_source_data[10]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_source_data[11]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_source_data[12]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_source_data[13]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_source_data[14]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_source_data[15]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_source_data[16]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_source_data[17]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_source_data[18]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_source_data[19]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_source_data[20]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_source_data[21]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_source_data[22]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_source_valid",
+					"strict" : false
+				},
+				{
+					"name" : "ast_source_error[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset_n",
+					"strict" : false
+				},
+				{
+					"name" : "ast_sink_valid",
+					"strict" : false
+				},
+				{
+					"name" : "ast_sink_error[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_sink_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_sink_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_sink_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_sink_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_sink_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_sink_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_sink_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_sink_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_sink_data[8]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_sink_data[9]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_sink_data[10]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_sink_data[11]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_sink_data[12]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_sink_data[13]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_sink_data[14]",
+					"strict" : false
+				},
+				{
+					"name" : "ast_sink_data[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{geometry}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{tikz}
+\usepackage{longtable}
+\usepackage{circuitikz}
+\usepackage{comment}
+\usepackage{MnSymbol}
+\usepackage{physics}
+\usepackage{booktabs}
+\usepackage{subfig} % For \subfloat
+\usepackage[section]{placeins}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vspace*{1.5cm}
+    
+    {\Huge\bfseries Group Quiz 2}\\[0.5cm]
+    {\Large\bfseries Differential Equations and Transform Techniques (EE1060)}\\[1cm]
+    {\Large\bfseries Detailed Analysis of Convolution for Continous Time Kernel}\\[1.5cm]
+    
+    \rule{0.8\textwidth}{0.4pt}\\[0.5cm]
+    {\Large\bfseries Submitted By}\\[0.5cm]
+    \rule{0.8\textwidth}{0.4pt}\\[0.5cm]
+    
+    \large
+    Krishna Patil \hfill EE24BTECH11036\\[0.2cm]
+    Agamjot Singh \hfill EE24BTECH11002\\[0.2cm]
+    Kollaru Suraj \hfill EE24BTECH11033\\[0.2cm]
+    Dwanith M Doddahundi \hfill EE24BTECH11016\\[0.2cm]
+    Swaraj Sharma Durgi \hfill EE24BTECH11018\\[0.2cm]
+    Nevanath Vasu \hfill EE24BTECH11046\\[1.5cm]
+    
+\end{titlepage}
+
+
+\tableofcontents
+\newpage
+
+\section{Problem Statement}
+\begin{enumerate}
+\item Compute the convolution of a given signal $f(t)$ with a rectangular kernel $h(t)$, analytically. The rectangular kernel is defined as:
+
+\begin{equation}
+h(t) =
+\begin{cases}
+1, & \text{for } -T \leq t \leq T \\
+0, & \text{otherwise}
+\end{cases}
+\end{equation}
+
+Derive the convolution expression $y(t) = (f * h)(t)$ in terms of known functions, and analyze the system's behavior for various values of the kernel duration $T$ and the input signal $f(t)$. Additionally, investigate the following scenarios:
+
+\begin{enumerate}
+\item Modify the kernel to only consider the part of the kernel for $t > 0$. How does this affect the convolution result?
+
+\item Shift the kernel by a time $\tau_0$. Analyze how the shift impacts the convolution output and discuss the significance of this shift in the context of time-delayed systems.
+\end{enumerate}
+
+You are free to choose the form of the input signal $f(t)$, but make sure it is well-defined and appropriate for convolution. A step or sinusoidal signal would work well for this analysis.
+\end{enumerate}
+
+\input{step.tex}
+\input{exp.tex}
+\input{sin_1.tex}
+\input{sin_2.tex}
+\input{sin_3.tex}
+\input{smoothening.tex}
+
+\end{document}

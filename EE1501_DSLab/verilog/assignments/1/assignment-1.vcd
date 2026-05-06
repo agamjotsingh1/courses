@@ -1,0 +1,167 @@
+$date
+	Fri Apr 11 20:41:20 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module assignment_1_tb $end
+$var wire 1 ! valid $end
+$var wire 1 " parity $end
+$var wire 2 # out [1:0] $end
+$var wire 4 $ count [3:0] $end
+$var reg 1 % clk $end
+$var reg 8 & data [7:0] $end
+$var reg 1 ' enable $end
+$var reg 4 ( in [3:0] $end
+$var reg 1 ) reset $end
+$scope module epg $end
+$var wire 8 * data [7:0] $end
+$var wire 1 " parity $end
+$upscope $end
+$scope module pe $end
+$var wire 4 + in [3:0] $end
+$var reg 2 , out [1:0] $end
+$var reg 1 ! valid $end
+$upscope $end
+$scope module uc $end
+$var wire 1 % clk $end
+$var wire 1 ' enable $end
+$var wire 1 ) reset $end
+$var reg 4 - count [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 -
+b0 ,
+b0 +
+b0 *
+1)
+b0 (
+0'
+b0 &
+0%
+b0 $
+b0 #
+0"
+0!
+$end
+#5000
+1%
+#10000
+0%
+1'
+0)
+#15000
+b1 $
+b1 -
+1%
+#20000
+1!
+0%
+b1 (
+b1 +
+#25000
+b10 $
+b10 -
+1%
+#30000
+b1 #
+b1 ,
+0%
+b10 (
+b10 +
+#35000
+b11 $
+b11 -
+1%
+#40000
+b10 #
+b10 ,
+0%
+b100 (
+b100 +
+#45000
+b100 $
+b100 -
+1%
+#50000
+b11 #
+b11 ,
+0%
+b1000 (
+b1000 +
+#55000
+b101 $
+b101 -
+1%
+#60000
+0%
+b10101010 &
+b10101010 *
+#65000
+b110 $
+b110 -
+1%
+#70000
+0%
+b11110000 &
+b11110000 *
+#75000
+b111 $
+b111 -
+1%
+#80000
+0%
+#85000
+b1000 $
+b1000 -
+1%
+#90000
+0%
+#95000
+b1001 $
+b1001 -
+1%
+#100000
+0%
+#105000
+b1010 $
+b1010 -
+1%
+#110000
+0%
+#115000
+b1011 $
+b1011 -
+1%
+#120000
+0%
+0'
+#125000
+1%
+#130000
+0%
+#135000
+1%
+#140000
+0%
+#145000
+1%
+#150000
+0%
+#155000
+1%
+#160000
+0%
+#165000
+1%
+#170000
+0%

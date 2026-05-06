@@ -1,0 +1,103 @@
+LTspice 24.1.7 for Windows
+Circuit: Z:\home\agam\Github\EE2301\sims\sim3\mosfet_param.net
+Start Time: Sat Aug 30 12:58:36 2025
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-05
+Gmin = 1.6455e-06
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+vernier = 0.00195312
+vernier = 0.000976562
+Gmin = 2.05688e-06
+vernier = 0.000488281
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 51.5152%
+vernier = 0.0625
+Source Step = 51.7519%
+Source Step = 51.8584%
+Source Step = 51.9768%
+Source Step = 52.0952%
+Source Step = 52.2135%
+Source Step = 52.3319%
+vernier = 0.00585938
+Source Step = 52.4976%
+Source Step = 52.6752%
+Source Step = 52.8527%
+Source Step = 53.0303%
+Source Step = 53.2079%
+vernier = 0.00878906
+Source Step = 53.4476%
+Source Step = 53.7139%
+Source Step = 53.9802%
+Source Step = 54.2466%
+Source Step = 54.5129%
+vernier = 0.0131836
+Source Step = 54.8591%
+Source Step = 55.2586%
+Source Step = 55.6581%
+Source Step = 56.0576%
+Source Step = 56.4571%
+vernier = 0.0197754
+Source Step = 56.9565%
+Source Step = 57.5558%
+Source Step = 58.155%
+Source Step = 58.7543%
+Source Step = 59.3535%
+vernier = 0.0296631
+Source Step = 60.0727%
+Source Step = 60.9715%
+Source Step = 61.8704%
+Source Step = 62.7693%
+Source Step = 63.6682%
+vernier = 0.0444946
+Source Step = 64.7019%
+Source Step = 66.0502%
+Source Step = 67.3985%
+Source Step = 68.7469%
+Source Step = 70.0952%
+vernier = 0.0667419
+Source Step = 71.5783%
+Source Step = 73.6008%
+Source Step = 75.6233%
+Source Step = 77.6458%
+Source Step = 79.6683%
+vernier = 0.100113
+Source Step = 81.7919%
+Source Step = 84.8256%
+Source Step = 87.8593%
+Source Step = 90.893%
+Source Step = 93.9268%
+Source Step = 96.9605%
+vernier = 0.150169
+Source stepping succeeded in finding the operating point.
+
+Total elapsed time: 0.118 seconds.
+
+Files loaded:
+Z:\home\agam\Github\EE2301\sims\sim3\mosfet_param.net
+C:\users\agam\AppData\Local\LTspice\lib\cmp\standard.mos
+C:\users\agam\AppData\Local\LTspice\lib\sub\ADI1.lib
+

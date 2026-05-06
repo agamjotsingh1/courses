@@ -1,0 +1,20 @@
+Fitter Status : Successful - Mon Apr 27 13:44:59 2026
+Quartus Prime Version : 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+Revision Name : fir_single_mac
+Top-level Entity Name : de10_nano_top
+Family : Cyclone V
+Device : 5CSEBA6U23I7
+Timing Models : Final
+Logic utilization (in ALMs) : 1,606 / 41,910 ( 4 % )
+Total registers : 3043
+Total pins : 3 / 314 ( < 1 % )
+Total virtual pins : 0
+Total block memory bits : 438,528 / 5,662,720 ( 8 % )
+Total RAM Blocks : 54 / 553 ( 10 % )
+Total DSP Blocks : 1 / 112 ( < 1 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0 / 6 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )

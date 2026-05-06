@@ -1,0 +1,742 @@
+# 
+# 	source ip_core_msim.tcl
+# ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
+# ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 16:36:39 on Apr 06,2026
+# vlog -work lpm /home/agam/altera_lite/25.1std/quartus/eda/sim_lib/220model.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module LPM_MEMORY_INITIALIZATION
+# -- Compiling module LPM_HINT_EVALUATION
+# -- Compiling module LPM_DEVICE_FAMILIES
+# -- Compiling module lpm_constant
+# -- Compiling module lpm_inv
+# -- Compiling module lpm_and
+# -- Compiling module lpm_or
+# -- Compiling module lpm_xor
+# -- Compiling module lpm_bustri
+# -- Compiling module lpm_mux
+# -- Compiling module lpm_decode
+# -- Compiling module lpm_clshift
+# -- Compiling module lpm_add_sub
+# -- Compiling module lpm_compare
+# -- Compiling module lpm_mult
+# -- Compiling module lpm_divide
+# -- Compiling module lpm_abs
+# -- Compiling module lpm_counter
+# -- Compiling module lpm_latch
+# -- Compiling module lpm_ff
+# -- Compiling module lpm_shiftreg
+# -- Compiling module lpm_ram_dq
+# -- Compiling module lpm_ram_dp
+# -- Compiling module lpm_ram_io
+# -- Compiling module lpm_rom
+# -- Compiling module lpm_fifo
+# -- Compiling module lpm_fifo_dc_dffpipe
+# -- Compiling module lpm_fifo_dc_fefifo
+# -- Compiling module lpm_fifo_dc_async
+# -- Compiling module lpm_fifo_dc
+# -- Compiling module lpm_inpad
+# -- Compiling module lpm_outpad
+# -- Compiling module lpm_bipad
+# 
+# Top level modules:
+# 	lpm_constant
+# 	lpm_inv
+# 	lpm_and
+# 	lpm_or
+# 	lpm_xor
+# 	lpm_bustri
+# 	lpm_mux
+# 	lpm_decode
+# 	lpm_clshift
+# 	lpm_add_sub
+# 	lpm_compare
+# 	lpm_mult
+# 	lpm_divide
+# 	lpm_abs
+# 	lpm_counter
+# 	lpm_latch
+# 	lpm_ff
+# 	lpm_shiftreg
+# 	lpm_ram_dq
+# 	lpm_ram_dp
+# 	lpm_ram_io
+# 	lpm_rom
+# 	lpm_fifo
+# 	lpm_fifo_dc
+# 	lpm_inpad
+# 	lpm_outpad
+# 	lpm_bipad
+# End time: 16:36:39 on Apr 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
+# ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 16:36:40 on Apr 06,2026
+# vlog -work sgate /home/agam/altera_lite/25.1std/quartus/eda/sim_lib/sgate.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module oper_add
+# -- Compiling module oper_addsub
+# -- Compiling module mux21
+# -- Compiling module io_buf_tri
+# -- Compiling module io_buf_opdrn
+# -- Compiling module oper_mult
+# -- Compiling module tri_bus
+# -- Compiling module oper_div
+# -- Compiling module oper_mod
+# -- Compiling module oper_left_shift
+# -- Compiling module oper_right_shift
+# -- Compiling module oper_rotate_left
+# -- Compiling module oper_rotate_right
+# -- Compiling module oper_less_than
+# -- Compiling module oper_mux
+# -- Compiling module oper_selector
+# -- Compiling module oper_decoder
+# -- Compiling module oper_bus_mux
+# -- Compiling module oper_latch
+# 
+# Top level modules:
+# 	oper_add
+# 	oper_addsub
+# 	mux21
+# 	io_buf_tri
+# 	io_buf_opdrn
+# 	oper_mult
+# 	tri_bus
+# 	oper_div
+# 	oper_mod
+# 	oper_left_shift
+# 	oper_right_shift
+# 	oper_rotate_left
+# 	oper_rotate_right
+# 	oper_less_than
+# 	oper_mux
+# 	oper_selector
+# 	oper_decoder
+# 	oper_bus_mux
+# 	oper_latch
+# End time: 16:36:40 on Apr 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
+# ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 16:36:40 on Apr 06,2026
+# vlog -work altera_lnsim /home/agam/altera_lite/25.1std/quartus/eda/sim_lib/mentor/altera_lnsim_for_vhdl.sv 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# 
+# Top level modules:
+# End time: 16:36:41 on Apr 06,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
+# Questa Altera Starter FPGA Edition-64 vcom 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 16:36:41 on Apr 06,2026
+# vcom -93 -work altera /home/agam/altera_lite/25.1std/quartus/eda/sim_lib/altera_primitives_components.vhd 
+# ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Compiling package dffeas_pack
+# -- Loading package dffeas_pack
+# -- Compiling package altera_primitives_components
+# End time: 16:36:41 on Apr 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vcom 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 16:36:41 on Apr 06,2026
+# vcom -93 -work altera /home/agam/altera_lite/25.1std/quartus/eda/sim_lib/altera_primitives.vhd 
+# ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity GLOBAL
+# -- Compiling architecture BEHAVIOR of GLOBAL
+# -- Compiling entity CARRY
+# -- Compiling architecture BEHAVIOR of CARRY
+# -- Compiling entity CASCADE
+# -- Compiling architecture BEHAVIOR of CASCADE
+# -- Compiling entity CARRY_SUM
+# -- Compiling architecture BEHAVIOR of CARRY_SUM
+# -- Compiling entity EXP
+# -- Compiling architecture BEHAVIOR of EXP
+# -- Compiling entity SOFT
+# -- Compiling architecture BEHAVIOR of SOFT
+# -- Compiling entity OPNDRN
+# -- Compiling architecture BEHAVIOR of OPNDRN
+# -- Compiling entity ROW_GLOBAL
+# -- Compiling architecture BEHAVIOR of ROW_GLOBAL
+# -- Compiling entity TRI
+# -- Compiling architecture BEHAVIOR of TRI
+# -- Compiling entity LUT_INPUT
+# -- Compiling architecture BEHAVIOR of LUT_INPUT
+# -- Compiling entity LUT_OUTPUT
+# -- Compiling architecture BEHAVIOR of LUT_OUTPUT
+# -- Compiling entity latch
+# -- Compiling architecture BEHAVIOR of latch
+# -- Compiling entity dlatch
+# -- Compiling architecture BEHAVIOR of dlatch
+# -- Compiling entity PRIM_GDFF
+# -- Compiling architecture BEHAVIOR of PRIM_GDFF
+# -- Loading entity PRIM_GDFF
+# -- Compiling entity DFF
+# -- Compiling architecture BEHAVIOR of DFF
+# -- Compiling entity DFFE
+# -- Compiling architecture BEHAVIOR of DFFE
+# -- Compiling entity DFFEA
+# -- Compiling architecture BEHAVIOR of DFFEA
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Compiling entity DFFEAS
+# -- Compiling architecture vital_dffeas of dffeas
+# -- Compiling entity PRIM_GTFF
+# -- Compiling architecture BEHAVIOR of PRIM_GTFF
+# -- Loading entity PRIM_GTFF
+# -- Compiling entity TFF
+# -- Compiling architecture BEHAVIOR of TFF
+# -- Compiling entity TFFE
+# -- Compiling architecture BEHAVIOR of TFFE
+# -- Compiling entity PRIM_GJKFF
+# -- Compiling architecture BEHAVIOR of PRIM_GJKFF
+# -- Loading entity PRIM_GJKFF
+# -- Compiling entity JKFF
+# -- Compiling architecture BEHAVIOR of JKFF
+# -- Compiling entity JKFFE
+# -- Compiling architecture BEHAVIOR of JKFFE
+# -- Compiling entity PRIM_GSRFF
+# -- Compiling architecture BEHAVIOR of PRIM_GSRFF
+# -- Loading entity PRIM_GSRFF
+# -- Compiling entity SRFF
+# -- Compiling architecture BEHAVIOR of SRFF
+# -- Compiling entity SRFFE
+# -- Compiling architecture BEHAVIOR of SRFFE
+# -- Compiling entity clklock
+# -- Compiling architecture behavior of clklock
+# -- Compiling entity alt_inbuf
+# -- Compiling architecture BEHAVIOR of alt_inbuf
+# -- Compiling entity alt_outbuf
+# -- Compiling architecture BEHAVIOR of alt_outbuf
+# -- Compiling entity alt_outbuf_tri
+# -- Compiling architecture BEHAVIOR of alt_outbuf_tri
+# -- Compiling entity alt_iobuf
+# -- Compiling architecture BEHAVIOR of alt_iobuf
+# -- Compiling entity alt_inbuf_diff
+# -- Compiling architecture BEHAVIOR of alt_inbuf_diff
+# -- Compiling entity alt_outbuf_diff
+# -- Compiling architecture BEHAVIOR of alt_outbuf_diff
+# -- Compiling entity alt_outbuf_tri_diff
+# -- Compiling architecture BEHAVIOR of alt_outbuf_tri_diff
+# -- Compiling entity alt_iobuf_diff
+# -- Compiling architecture BEHAVIOR of alt_iobuf_diff
+# -- Compiling entity alt_bidir_diff
+# -- Compiling architecture BEHAVIOR of alt_bidir_diff
+# -- Compiling entity alt_bidir_buf
+# -- Compiling architecture BEHAVIOR of alt_bidir_buf
+# End time: 16:36:42 on Apr 06,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 16:36:42 on Apr 06,2026
+# vlog -work work altera_avalon_sc_fifo.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module altera_avalon_sc_fifo
+# 
+# Top level modules:
+# 	altera_avalon_sc_fifo
+# End time: 16:36:42 on Apr 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vcom 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 16:36:42 on Apr 06,2026
+# vcom -work work dspba_library_package.vhd 
+# ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package dspba_library_package
+# End time: 16:36:42 on Apr 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vcom 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 16:36:42 on Apr 06,2026
+# vcom -work work dspba_library.vhd 
+# ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package dspba_library_package
+# -- Compiling entity dspba_delay
+# -- Compiling architecture delay of dspba_delay
+# -- Loading package NUMERIC_STD
+# -- Compiling entity dspba_sync_reg
+# -- Compiling architecture sync_reg of dspba_sync_reg
+# -- Compiling entity dspba_pipe
+# -- Compiling architecture rtl of dspba_pipe
+# End time: 16:36:42 on Apr 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vcom 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 16:36:42 on Apr 06,2026
+# vcom -work work auk_dspip_roundsat_hpfir.vhd 
+# ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity auk_dspip_roundsat_hpfir
+# -- Compiling architecture beh of auk_dspip_roundsat_hpfir
+# End time: 16:36:42 on Apr 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vcom 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 16:36:42 on Apr 06,2026
+# vcom -work work auk_dspip_math_pkg_hpfir.vhd 
+# ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package auk_dspip_math_pkg_hpfir
+# -- Compiling package body auk_dspip_math_pkg_hpfir
+# -- Loading package auk_dspip_math_pkg_hpfir
+# End time: 16:36:42 on Apr 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vcom 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 16:36:42 on Apr 06,2026
+# vcom -work work auk_dspip_lib_pkg_hpfir.vhd 
+# ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package auk_dspip_math_pkg_hpfir
+# -- Compiling package auk_dspip_lib_pkg_hpfir
+# End time: 16:36:42 on Apr 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vcom 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 16:36:42 on Apr 06,2026
+# vcom -work work auk_dspip_avalon_streaming_controller_hpfir.vhd 
+# ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity auk_dspip_avalon_streaming_controller_hpfir
+# -- Compiling architecture struct of auk_dspip_avalon_streaming_controller_hpfir
+# End time: 16:36:42 on Apr 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vcom 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 16:36:42 on Apr 06,2026
+# vcom -work work auk_dspip_avalon_streaming_sink_hpfir.vhd 
+# ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package auk_dspip_math_pkg_hpfir
+# -- Loading package auk_dspip_lib_pkg_hpfir
+# -- Loading package altera_mf_components
+# -- Compiling entity auk_dspip_avalon_streaming_sink_hpfir
+# -- Compiling architecture rtl of auk_dspip_avalon_streaming_sink_hpfir
+# ** Warning: auk_dspip_avalon_streaming_sink_hpfir.vhd(113): (vcom-14439) Nonresolved signal 'sink_next_state' may have multiple sources.
+#   Drivers:
+#     auk_dspip_avalon_streaming_sink_hpfir.vhd(270):Process sink_comb_update_2
+#        Driven at:
+#           auk_dspip_avalon_streaming_sink_hpfir.vhd(279)
+#     auk_dspip_avalon_streaming_sink_hpfir.vhd(177):Process sink_comb_update_1
+#        Driven at:
+#           auk_dspip_avalon_streaming_sink_hpfir.vhd(183)
+# End time: 16:36:42 on Apr 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Questa Altera Starter FPGA Edition-64 vcom 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 16:36:42 on Apr 06,2026
+# vcom -work work auk_dspip_avalon_streaming_source_hpfir.vhd 
+# ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package altera_mf_components
+# -- Loading package auk_dspip_math_pkg_hpfir
+# -- Compiling entity auk_dspip_avalon_streaming_source_hpfir
+# -- Compiling architecture rtl of auk_dspip_avalon_streaming_source_hpfir
+# ** Warning: auk_dspip_avalon_streaming_source_hpfir.vhd(122): (vcom-14439) Nonresolved signal 'count_finished' may have multiple sources.
+#   Drivers:
+#     auk_dspip_avalon_streaming_source_hpfir.vhd(217):Conditional signal assignment line__216
+#     auk_dspip_avalon_streaming_source_hpfir.vhd(206):Conditional signal assignment line__205
+# ** Warning: auk_dspip_avalon_streaming_source_hpfir.vhd(123): (vcom-14439) Nonresolved signal 'count_started' may have multiple sources.
+#   Drivers:
+#     auk_dspip_avalon_streaming_source_hpfir.vhd(219):Conditional signal assignment line__218
+#     auk_dspip_avalon_streaming_source_hpfir.vhd(210):Conditional signal assignment line__209
+# End time: 16:36:42 on Apr 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# Questa Altera Starter FPGA Edition-64 vcom 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 16:36:42 on Apr 06,2026
+# vcom -work work ip_core_rtl_core.vhd 
+# ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package dspba_library_package
+# -- Loading package altera_mf_components
+# -- Loading package altera_lnsim_components
+# -- Loading package LPM_COMPONENTS
+# -- Compiling entity ip_core_rtl_core
+# -- Compiling architecture normal of ip_core_rtl_core
+# End time: 16:36:43 on Apr 06,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vcom 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 16:36:43 on Apr 06,2026
+# vcom -work work ip_core_ast.vhd 
+# ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package auk_dspip_math_pkg_hpfir
+# -- Loading package auk_dspip_lib_pkg_hpfir
+# -- Compiling entity ip_core_ast
+# -- Compiling architecture struct of ip_core_ast
+# End time: 16:36:43 on Apr 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vcom 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 16:36:43 on Apr 06,2026
+# vcom -work work ip_core.vhd 
+# ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package auk_dspip_math_pkg_hpfir
+# -- Loading package auk_dspip_lib_pkg_hpfir
+# -- Compiling entity ip_core
+# -- Compiling architecture syn of ip_core
+# End time: 16:36:43 on Apr 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Altera Starter FPGA Edition-64 vcom 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 16:36:43 on Apr 06,2026
+# vcom -93 -work work ip_core_tb.vhd 
+# ** Note: (vcom-220) 'modelsim.ini' is used as the ini file.
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ip_core_tb
+# -- Compiling architecture rtl of ip_core_tb
+# -- Loading package auk_dspip_math_pkg_hpfir
+# -- Loading package auk_dspip_lib_pkg_hpfir
+# -- Loading entity ip_core
+# End time: 16:36:43 on Apr 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -L cyclonev -L altera_mf -L lpm -L sgate -L altera -L altera_lnsim -L work work.ip_core_tb -t 1ps 
+# Start time: 16:36:43 on Apr 06,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-220) 'modelsim.ini' is used as the ini file.
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 linux_x86_64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.auk_dspip_math_pkg_hpfir(body)
+# Loading work.auk_dspip_lib_pkg_hpfir
+# Loading work.ip_core_tb(rtl)#1
+# Loading work.ip_core(syn)#1
+# Loading altera_mf.altera_mf_components
+# Loading ieee.std_logic_arith(body)
+# Loading work.ip_core_ast(struct)#1
+# Loading ieee.math_real(body)
+# Loading work.dspba_library_package
+# Loading altera_lnsim.altera_lnsim_components
+# Loading lpm.lpm_components
+# Loading work.ip_core_rtl_core(normal)#1
+# Loading sv_std.std
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Region: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/gen_outp_blk(0)/outp_blk/remove_msb/sat_msb
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Region: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/gen_outp_blk(0)/outp_blk/remove_msb/sat_msb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Region: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/gen_outp_blk(0)/outp_blk/remove_msb/sat_msb
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Region: /ip_core_tb/DUT/ip_core_ast_inst/real_passthrough/gen_outp_blk(0)/outp_blk/remove_msb/sat_msb
+# ** Note: NOTE: Stimuli ended
+#    Time: 64100 ns  Iteration: 0  Instance: /ip_core_tb
+#  
+# 	design_com
+# invalid command name "design_com"
+#  
+# 	vlog -sv ip_core_tb.v
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 16:36:45 on Apr 06,2026
+# vlog -sv ip_core_tb.v 
+# ** Note: (vlog-220) 'modelsim.ini' is used as the ini file.
+# -- Compiling module ip_core_tb
+# ** Warning: ip_core_tb.v(3): (vlog-13233) Design unit "ip_core_tb" already exists and will be overwritten. Overwriting a VHDL entity with a Verilog module.
+# 
+# Top level modules:
+# 	ip_core_tb
+# End time: 16:36:45 on Apr 06,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+#  
+# 	vsim -L cyclonev -L altera_mf -L lpm -L sgate -L altera -L altera_lnsim work.ip_core_tb
+# End time: 16:36:45 on Apr 06,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 54
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# vsim -L cyclonev -L altera_mf -L lpm -L sgate -L altera -L altera_lnsim work.ip_core_tb 
+# Start time: 16:36:45 on Apr 06,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-220) 'modelsim.ini' is used as the ini file.
+# Loading sv_std.std
+# Loading work.ip_core_tb(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.auk_dspip_math_pkg_hpfir(body)
+# Loading work.auk_dspip_lib_pkg_hpfir
+# Loading work.ip_core(syn)#1
+# Loading altera_mf.altera_mf_components
+# Loading ieee.std_logic_arith(body)
+# Loading work.ip_core_ast(struct)#1
+# Loading ieee.math_real(body)
+# Loading work.dspba_library_package
+# Loading altera_lnsim.altera_lnsim_components
+# Loading lpm.lpm_components
+# Loading work.ip_core_rtl_core(normal)#1
+#  
+# 	run -all
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Region: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/gen_outp_blk(0)/outp_blk/remove_msb/sat_msb
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Region: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/gen_outp_blk(0)/outp_blk/remove_msb/sat_msb
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/hpfircore_core
+# INFO: Starting test for sig1.txt
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Region: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/gen_outp_blk(0)/outp_blk/remove_msb/sat_msb
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Region: /ip_core_tb/uut/ip_core_ast_inst/real_passthrough/gen_outp_blk(0)/outp_blk/remove_msb/sat_msb
+# INFO: Completed sig1.txt.
+# INFO: Starting test for sig2.txt
+# INFO: Completed sig2.txt.
+# INFO: Starting test for sig3.txt
+# INFO: Completed sig3.txt.
+# INFO: All frequency simulations complete.
+# ** Note: $stop    : ip_core_tb.v(86)
+#    Time: 38370 ns  Iteration: 1  Instance: /ip_core_tb
+# Break at ip_core_tb.v line 86
+# Stopped at ip_core_tb.v line 86
+#  
+# 	quit
+#  
+# End time: 16:36:47 on Apr 06,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 54

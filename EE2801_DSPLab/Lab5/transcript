@@ -1,0 +1,30 @@
+#                                                                                          
+#     source ip_core_msim.tcl
+# couldn't read file "ip_core_msim.tcl": no such file or directory
+#  
+#     design_com
+# invalid command name "design_com"
+#  
+#     vlog -sv ip_core_tb.v
+# Questa Altera Starter FPGA Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 16:18:36 on Apr 06,2026
+# vlog -sv ip_core_tb.v 
+# ** Note: (vlog-220) '/home/agam/altera_lite/25.1std/questa_fse/linux_x86_64/../modelsim.ini' is used as the ini file.
+# ** Error: (vlog-7) Failed to open design unit file "ip_core_tb.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 16:18:36 on Apr 06,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /home/agam/altera_lite/25.1std/questa_fse/linux_x86_64/vlog failed.
+#  
+#     vsim -L cyclonev -L altera_mf -L lpm -L sgate -L altera -L altera_lnsim work.ip_core_tb
+# ** Note: (vsim-220) '/home/agam/altera_lite/25.1std/questa_fse/linux_x86_64/../modelsim.ini' is used as the ini file.
+# vsim -L cyclonev -L altera_mf -L lpm -L sgate -L altera -L altera_lnsim work.ip_core_tb 
+# Start time: 16:18:36 on Apr 06,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-220) '/home/agam/altera_lite/25.1std/questa_fse/linux_x86_64/../modelsim.ini' is used as the ini file.
+# ** Error: (vopt-11) Could not find work.ip_core_tb.
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 16:18:36 on Apr 06,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0

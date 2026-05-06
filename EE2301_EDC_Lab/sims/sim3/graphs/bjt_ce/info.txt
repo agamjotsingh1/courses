@@ -1,0 +1,18 @@
+bandwidth = 15.3 MHz
+
+gm = Ic/(eta * Vt)
+ro = rd
+
+mid band gain (theory) = gm*ro = 143.112
+mid band gain (experimental) = 141.06
+
+transient gain = 144.14
+
+rin thoery = 992.62
+    Rin_base = beta*Vt/Ie
+    Rin = 1/(1/R1 + 1/R2 + 1/Rin_base)
+
+rin exp = 967.47
+
+rout theory = 80
+rout exp = 79.93

@@ -1,0 +1,9 @@
+bandwidth = 3 MHz
+mid band gain (experimental) = 80.36 = gm*ro
+mid band gain (theory) = 79.12
+transient gain = 77.62
+rin thoery = 53k
+rin exp = varying
+
+rout theory = 80
+rout exp = 79.93

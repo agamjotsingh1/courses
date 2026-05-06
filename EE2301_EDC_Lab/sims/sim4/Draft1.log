@@ -1,0 +1,15 @@
+LTspice 24.1.7 for Windows
+Circuit: Z:\home\agam\Github\EE2301\sims\sim4\Draft1.net
+Start Time: Sat Nov  1 18:58:24 2025
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 0.140 seconds.
+
+Files loaded:
+Z:\home\agam\Github\EE2301\sims\sim4\Draft1.net
+C:\users\agam\AppData\Local\LTspice\lib\cmp\standard.bjt
+

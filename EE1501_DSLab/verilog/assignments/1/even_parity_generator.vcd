@@ -1,0 +1,46 @@
+$date
+	Wed Apr  9 10:17:50 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_even_parity_generator $end
+$var wire 1 ! parity $end
+$var reg 8 " data [7:0] $end
+$scope module dut $end
+$var wire 8 # data [7:0] $end
+$var wire 1 ! parity $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 #
+b0 "
+0!
+$end
+#10000
+1!
+b1 "
+b1 #
+#20000
+0!
+b11 "
+b11 #
+#30000
+b11111111 "
+b11111111 #
+#40000
+b10101010 "
+b10101010 #
+#50000
+1!
+b11100000 "
+b11100000 #
+#60000

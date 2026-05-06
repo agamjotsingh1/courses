@@ -1,0 +1,14 @@
+{
+    "program_counter": "0x00000074",
+    "current_line": 64,
+    "current_instruction": "0x06805263",
+    "disassembly_line_number": 49,
+    "cycle_count": 2878,
+    "instructions_retired": 2878,
+    "cpi": 0,
+    "ipc": 0,
+    "stall_cycles": 0,
+    "branch_mispredictions": 0,
+    "breakpoints": [64],
+    "output_status": "VM_BREAKPOINT_HIT"
+}

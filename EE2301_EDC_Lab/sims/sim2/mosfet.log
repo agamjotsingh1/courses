@@ -1,0 +1,15 @@
+LTspice 24.1.7 for Windows
+Circuit: Z:\home\agam\Github\EE2301\sims\sim2\mosfet.net
+Start Time: Thu Aug 21 18:56:12 2025
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+.step 
+Total elapsed time: 0.166 seconds.
+
+Files loaded:
+Z:\home\agam\Github\EE2301\sims\sim2\mosfet.net
+C:\users\agam\AppData\Local\LTspice\lib\cmp\standard.mos
+

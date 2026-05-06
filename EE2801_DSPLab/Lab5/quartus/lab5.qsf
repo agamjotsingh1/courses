@@ -1,0 +1,183 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2025  Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus Prime License Agreement,
+# the Altera IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Altera and sold by Altera or its authorized distributors.  Please
+# refer to the Altera Software License Subscription Agreements 
+# on the Quartus Prime software download page.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+# Date created = 20:33:53  March 25, 2026
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		lab5_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Intel recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CGXFC7C7F23C8
+set_global_assignment -name TOP_LEVEL_ENTITY ip
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 25.1STD.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:33:53  MARCH 25, 2026"
+set_global_assignment -name LAST_QUARTUS_VERSION "25.1std.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "Questa Altera FPGA (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VERILOG_FILE ../../Lab4/genvar/fir_genvar.v
+set_global_assignment -name VERILOG_FILE ../util/add.v
+set_global_assignment -name VERILOG_FILE ../util/fp_add.v
+set_global_assignment -name VERILOG_FILE ../util/fp_mul.v
+set_global_assignment -name VERILOG_FILE ../util/fp_sub.v
+set_global_assignment -name VERILOG_FILE ../util/mul_signed.v
+set_global_assignment -name SDC_FILE output_files/SDC1.sdc
+set_global_assignment -name QIP_FILE ip.qip
+set_global_assignment -name SIP_FILE ip.sip
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name VIRTUAL_PIN ON -to clk
+set_instance_assignment -name VIRTUAL_PIN ON -to data_valid
+set_instance_assignment -name VIRTUAL_PIN ON -to en
+set_instance_assignment -name VIRTUAL_PIN ON -to rst
+set_instance_assignment -name VIRTUAL_PIN ON -to "sub_block_en[-1]"
+set_instance_assignment -name VIRTUAL_PIN ON -to accum
+set_instance_assignment -name VIRTUAL_PIN ON -to coeff_in
+set_instance_assignment -name VIRTUAL_PIN ON -to data_in
+set_instance_assignment -name VIRTUAL_PIN ON -to data_out
+set_instance_assignment -name VIRTUAL_PIN ON -to sub_block_en
+set_instance_assignment -name VIRTUAL_PIN ON -to "x[-1]"
+set_instance_assignment -name VIRTUAL_PIN ON -to x
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[0].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[1].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[2].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[3].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[4].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[5].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[6].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[7].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[8].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[9].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[10].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[11].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[12].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[13].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[14].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[15].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[16].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[17].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[18].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[19].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[20].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[21].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[22].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[23].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[24].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[25].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[26].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[27].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[28].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[29].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[30].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[31].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[32].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[33].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[34].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[35].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[36].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[37].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[38].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[39].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[40].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[41].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[42].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[43].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[44].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[45].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[46].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[47].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[48].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[49].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[50].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[51].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[52].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[53].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[54].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[55].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[56].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[57].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[58].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[59].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[60].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[61].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[62].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[63].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[64].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[65].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[66].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[67].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[68].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[69].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[70].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[71].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[72].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[73].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[74].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[75].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[76].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[77].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[78].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[79].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[80].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[81].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[82].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[83].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[84].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[85].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[86].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[87].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[88].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[89].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[90].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[91].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[92].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[93].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[94].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[95].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[96].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[97].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[98].conv_sub_block_instance"
+set_instance_assignment -name VIRTUAL_PIN ON -to "conv_sub_block:conv_gen[99].conv_sub_block_instance"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

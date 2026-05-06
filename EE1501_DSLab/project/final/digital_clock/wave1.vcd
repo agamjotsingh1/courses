@@ -1,0 +1,1141 @@
+$date
+	Thu May  8 00:12:16 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ms
+$end
+$scope module digital_clock_tb $end
+$var wire 8 ! timer_sec [7:0] $end
+$var wire 1 " timer_running $end
+$var wire 8 # timer_min [7:0] $end
+$var wire 1 $ timer_buzzer $end
+$var wire 1 % is_pm $end
+$var wire 8 & display_sec [7:0] $end
+$var wire 8 ' display_min [7:0] $end
+$var wire 8 ( display_hour [7:0] $end
+$var wire 16 ) current_year [15:0] $end
+$var wire 8 * current_month [7:0] $end
+$var wire 8 + current_day [7:0] $end
+$var wire 8 , current_24_sec [7:0] $end
+$var wire 8 - current_24_min [7:0] $end
+$var wire 8 . current_24_hour [7:0] $end
+$var wire 1 / alarm_buzzer $end
+$var reg 8 0 alarm_input_hour [7:0] $end
+$var reg 8 1 alarm_input_min [7:0] $end
+$var reg 8 2 alarm_input_sec [7:0] $end
+$var reg 16 3 am_pm_indicator [15:0] $end
+$var reg 1 4 clk $end
+$var reg 1 5 hour_format $end
+$var reg 8 6 input_day [7:0] $end
+$var reg 8 7 input_hour [7:0] $end
+$var reg 8 8 input_min [7:0] $end
+$var reg 8 9 input_month [7:0] $end
+$var reg 8 : input_sec [7:0] $end
+$var reg 16 ; input_year [15:0] $end
+$var reg 1 < reset $end
+$var reg 1 = set_alarm $end
+$var reg 1 > set_date $end
+$var reg 1 ? set_time $end
+$var reg 1 @ set_timer $end
+$var reg 1 A snooze_alarm $end
+$var reg 1 B start_timer $end
+$var reg 1 C stop_alarm $end
+$var reg 1 D stop_timer $end
+$var reg 8 E timer_input_min [7:0] $end
+$var reg 8 F timer_input_sec [7:0] $end
+$scope module dut $end
+$var wire 8 G alarm_input_hour [7:0] $end
+$var wire 8 H alarm_input_min [7:0] $end
+$var wire 8 I alarm_input_sec [7:0] $end
+$var wire 1 4 clk $end
+$var wire 1 5 hour_format $end
+$var wire 8 J input_day [7:0] $end
+$var wire 8 K input_hour [7:0] $end
+$var wire 8 L input_min [7:0] $end
+$var wire 8 M input_month [7:0] $end
+$var wire 8 N input_sec [7:0] $end
+$var wire 16 O input_year [15:0] $end
+$var wire 1 < reset $end
+$var wire 1 = set_alarm $end
+$var wire 1 > set_date $end
+$var wire 1 ? set_time $end
+$var wire 1 @ set_timer $end
+$var wire 1 A snooze_alarm $end
+$var wire 1 B start_timer $end
+$var wire 1 C stop_alarm $end
+$var wire 1 D stop_timer $end
+$var wire 8 P timer_input_min [7:0] $end
+$var wire 8 Q timer_input_sec [7:0] $end
+$var wire 8 R timer_sec [7:0] $end
+$var wire 1 " timer_running $end
+$var wire 8 S timer_min [7:0] $end
+$var wire 1 $ timer_buzzer $end
+$var wire 1 % is_pm $end
+$var wire 8 T display_sec [7:0] $end
+$var wire 8 U display_min [7:0] $end
+$var wire 8 V display_hour [7:0] $end
+$var wire 16 W current_year [15:0] $end
+$var wire 8 X current_month [7:0] $end
+$var wire 8 Y current_day [7:0] $end
+$var wire 8 Z current_24_sec [7:0] $end
+$var wire 8 [ current_24_min [7:0] $end
+$var wire 8 \ current_24_hour [7:0] $end
+$var wire 1 / alarm_buzzer $end
+$scope module alarm_module $end
+$var wire 8 ] alarm_input_hour [7:0] $end
+$var wire 8 ^ alarm_input_min [7:0] $end
+$var wire 8 _ alarm_input_sec [7:0] $end
+$var wire 1 4 clk $end
+$var wire 1 = set_alarm $end
+$var wire 1 A snooze_alarm $end
+$var wire 1 C stop_alarm $end
+$var wire 8 ` current_24_sec [7:0] $end
+$var wire 8 a current_24_min [7:0] $end
+$var wire 8 b current_24_hour [7:0] $end
+$var reg 1 / alarm_buzzer $end
+$var reg 10 c counter [9:0] $end
+$var reg 8 d input_hour_internal [7:0] $end
+$var reg 8 e input_min_internal [7:0] $end
+$var reg 8 f input_sec_internal [7:0] $end
+$var reg 1 g is_buzzing $end
+$var reg 1 h is_snoozed $end
+$upscope $end
+$scope module clock_module $end
+$var wire 1 4 clk $end
+$var wire 8 i input_hour [7:0] $end
+$var wire 8 j input_min [7:0] $end
+$var wire 8 k input_sec [7:0] $end
+$var wire 1 < reset $end
+$var wire 1 ? set_time $end
+$var reg 8 l current_24_hour [7:0] $end
+$var reg 8 m current_24_min [7:0] $end
+$var reg 8 n current_24_sec [7:0] $end
+$upscope $end
+$scope module date_module $end
+$var wire 1 4 clk $end
+$var wire 8 o current_24_hour [7:0] $end
+$var wire 8 p current_24_min [7:0] $end
+$var wire 8 q current_24_sec [7:0] $end
+$var wire 8 r input_day [7:0] $end
+$var wire 8 s input_month [7:0] $end
+$var wire 16 t input_year [15:0] $end
+$var wire 1 < reset $end
+$var wire 1 > set_date $end
+$var reg 8 u current_day [7:0] $end
+$var reg 8 v current_month [7:0] $end
+$var reg 16 w current_year [15:0] $end
+$var reg 8 x days_in_current_month [7:0] $end
+$upscope $end
+$scope module display_module $end
+$var wire 1 4 clk $end
+$var wire 8 y current_24_hour [7:0] $end
+$var wire 8 z current_24_min [7:0] $end
+$var wire 8 { current_24_sec [7:0] $end
+$var wire 1 5 hour_format $end
+$var wire 8 | timer_sec [7:0] $end
+$var wire 1 " timer_running $end
+$var wire 8 } timer_min [7:0] $end
+$var reg 8 ~ display_hour [7:0] $end
+$var reg 8 !" display_min [7:0] $end
+$var reg 8 "" display_sec [7:0] $end
+$var reg 1 % is_pm $end
+$upscope $end
+$scope module timer_module $end
+$var wire 1 4 clk $end
+$var wire 8 #" input_min [7:0] $end
+$var wire 8 $" input_sec [7:0] $end
+$var wire 1 < reset $end
+$var wire 1 @ set_timer $end
+$var wire 1 B start_timer $end
+$var wire 1 D stop_timer $end
+$var reg 8 %" max_min [7:0] $end
+$var reg 1 $ timer_buzzer $end
+$var reg 8 &" timer_min [7:0] $end
+$var reg 1 " timer_running $end
+$var reg 8 '" timer_sec [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 '"
+b0 &"
+b1010 %"
+b0 $"
+b0 #"
+bx ""
+bx !"
+bx ~
+b0 }
+b0 |
+b0 {
+b0 z
+b0 y
+bx x
+b11111100100 w
+b1 v
+b1 u
+b11111100100 t
+b1 s
+b1 r
+b0 q
+b0 p
+b0 o
+b0 n
+b0 m
+b0 l
+b0 k
+b0 j
+b0 i
+xh
+xg
+bx f
+bx e
+bx d
+bx c
+b0 b
+b0 a
+b0 `
+b0 _
+b0 ^
+b0 ]
+b0 \
+b0 [
+b0 Z
+b1 Y
+b1 X
+b11111100100 W
+bx V
+bx U
+bx T
+b0 S
+b0 R
+b0 Q
+b0 P
+b11111100100 O
+b0 N
+b1 M
+b0 L
+b0 K
+b1 J
+b0 I
+b0 H
+b0 G
+b0 F
+b0 E
+0D
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+1<
+b11111100100 ;
+b0 :
+b1 9
+b0 8
+b0 7
+b1 6
+05
+04
+b10000000100000 3
+b0 2
+b0 1
+b0 0
+x/
+b0 .
+b0 -
+b0 ,
+b1 +
+b1 *
+b11111100100 )
+bx (
+bx '
+bx &
+x%
+0$
+b0 #
+0"
+b0 !
+$end
+#500
+0%
+b0 (
+b0 V
+b0 ~
+b0 '
+b0 U
+b0 !"
+b0 &
+b0 T
+b0 ""
+0/
+14
+#1000
+04
+0<
+#1500
+b1 ,
+b1 Z
+b1 `
+b1 n
+b1 q
+b1 {
+14
+#2000
+04
+#2500
+b1 &
+b1 T
+b1 ""
+b10 ,
+b10 Z
+b10 `
+b10 n
+b10 q
+b10 {
+14
+#3000
+04
+#3500
+b10 &
+b10 T
+b10 ""
+b11 ,
+b11 Z
+b11 `
+b11 n
+b11 q
+b11 {
+14
+#4000
+04
+#4500
+b11 &
+b11 T
+b11 ""
+b100 ,
+b100 Z
+b100 `
+b100 n
+b100 q
+b100 {
+14
+#5000
+04
+#5500
+b100 &
+b100 T
+b100 ""
+b101 ,
+b101 Z
+b101 `
+b101 n
+b101 q
+b101 {
+14
+#6000
+04
+#6500
+b101 &
+b101 T
+b101 ""
+b110 ,
+b110 Z
+b110 `
+b110 n
+b110 q
+b110 {
+14
+#7000
+04
+#7500
+b110 &
+b110 T
+b110 ""
+b111 ,
+b111 Z
+b111 `
+b111 n
+b111 q
+b111 {
+14
+#8000
+04
+#8500
+b111 &
+b111 T
+b111 ""
+b1000 ,
+b1000 Z
+b1000 `
+b1000 n
+b1000 q
+b1000 {
+14
+#9000
+04
+#9500
+b1000 &
+b1000 T
+b1000 ""
+b1001 ,
+b1001 Z
+b1001 `
+b1001 n
+b1001 q
+b1001 {
+14
+#10000
+04
+#10500
+b1001 &
+b1001 T
+b1001 ""
+b1010 ,
+b1010 Z
+b1010 `
+b1010 n
+b1010 q
+b1010 {
+14
+#11000
+04
+#11500
+b1010 &
+b1010 T
+b1010 ""
+b1011 ,
+b1011 Z
+b1011 `
+b1011 n
+b1011 q
+b1011 {
+14
+#12000
+04
+b10111 7
+b10111 K
+b10111 i
+b111011 8
+b111011 L
+b111011 j
+b111001 :
+b111001 N
+b111001 k
+1?
+#12500
+b1011 &
+b1011 T
+b1011 ""
+b10111 .
+b10111 \
+b10111 b
+b10111 l
+b10111 o
+b10111 y
+b111011 -
+b111011 [
+b111011 a
+b111011 m
+b111011 p
+b111011 z
+b111001 ,
+b111001 Z
+b111001 `
+b111001 n
+b111001 q
+b111001 {
+14
+#13000
+04
+0?
+#13500
+b10111 (
+b10111 V
+b10111 ~
+b111011 '
+b111011 U
+b111011 !"
+b111001 &
+b111001 T
+b111001 ""
+b111010 ,
+b111010 Z
+b111010 `
+b111010 n
+b111010 q
+b111010 {
+14
+#14000
+04
+b10 9
+b10 M
+b10 s
+b11100 6
+b11100 J
+b11100 r
+1>
+#14500
+b111010 &
+b111010 T
+b111010 ""
+b10 *
+b10 X
+b10 v
+b11100 +
+b11100 Y
+b11100 u
+b111011 ,
+b111011 Z
+b111011 `
+b111011 n
+b111011 q
+b111011 {
+14
+#15000
+04
+1=
+0>
+#15500
+b0 c
+0g
+0h
+b0 d
+b0 e
+b0 f
+b111011 &
+b111011 T
+b111011 ""
+b0 .
+b0 \
+b0 b
+b0 l
+b0 o
+b0 y
+b0 -
+b0 [
+b0 a
+b0 m
+b0 p
+b0 z
+b0 ,
+b0 Z
+b0 `
+b0 n
+b0 q
+b0 {
+b11101 +
+b11101 Y
+b11101 u
+b11101 x
+14
+#16000
+04
+b100 2
+b100 I
+b100 _
+#16500
+b0 (
+b0 V
+b0 ~
+b0 '
+b0 U
+b0 !"
+b0 &
+b0 T
+b0 ""
+b100 f
+b1 ,
+b1 Z
+b1 `
+b1 n
+b1 q
+b1 {
+14
+#17000
+04
+0=
+#17500
+b1 &
+b1 T
+b1 ""
+b10 ,
+b10 Z
+b10 `
+b10 n
+b10 q
+b10 {
+14
+#18000
+04
+#18500
+b10 &
+b10 T
+b10 ""
+b11 ,
+b11 Z
+b11 `
+b11 n
+b11 q
+b11 {
+14
+#19000
+04
+#19500
+b11 &
+b11 T
+b11 ""
+b100 ,
+b100 Z
+b100 `
+b100 n
+b100 q
+b100 {
+14
+#20000
+04
+#20500
+b100 &
+b100 T
+b100 ""
+1/
+1g
+b101 ,
+b101 Z
+b101 `
+b101 n
+b101 q
+b101 {
+14
+#21000
+04
+#21500
+b101 &
+b101 T
+b101 ""
+b110 ,
+b110 Z
+b110 `
+b110 n
+b110 q
+b110 {
+14
+#22000
+04
+1A
+#22500
+b110 &
+b110 T
+b110 ""
+0g
+0/
+1h
+b111 ,
+b111 Z
+b111 `
+b111 n
+b111 q
+b111 {
+14
+#23000
+04
+0A
+#23500
+b1 c
+b111 &
+b111 T
+b111 ""
+b1000 ,
+b1000 Z
+b1000 `
+b1000 n
+b1000 q
+b1000 {
+14
+#24000
+04
+#24500
+b1000 &
+b1000 T
+b1000 ""
+b10 c
+b1001 ,
+b1001 Z
+b1001 `
+b1001 n
+b1001 q
+b1001 {
+14
+#25000
+04
+#25500
+b11 c
+b1001 &
+b1001 T
+b1001 ""
+b1010 ,
+b1010 Z
+b1010 `
+b1010 n
+b1010 q
+b1010 {
+14
+#26000
+04
+#26500
+b1010 &
+b1010 T
+b1010 ""
+b100 c
+b1011 ,
+b1011 Z
+b1011 `
+b1011 n
+b1011 q
+b1011 {
+14
+#27000
+04
+1C
+#27500
+b0 c
+b1011 &
+b1011 T
+b1011 ""
+b1100 ,
+b1100 Z
+b1100 `
+b1100 n
+b1100 q
+b1100 {
+14
+#28000
+04
+0C
+#28500
+b1100 &
+b1100 T
+b1100 ""
+b1 c
+b1101 ,
+b1101 Z
+b1101 `
+b1101 n
+b1101 q
+b1101 {
+14
+#29000
+04
+b1010 F
+b1010 Q
+b1010 $"
+1@
+#29500
+b10 c
+b1101 &
+b1101 T
+b1101 ""
+b1110 ,
+b1110 Z
+b1110 `
+b1110 n
+b1110 q
+b1110 {
+b1010 !
+b1010 R
+b1010 |
+b1010 '"
+14
+#30000
+04
+0@
+#30500
+b1110 &
+b1110 T
+b1110 ""
+b11 c
+b1111 ,
+b1111 Z
+b1111 `
+b1111 n
+b1111 q
+b1111 {
+14
+#31000
+04
+1B
+#31500
+b100 c
+b1111 &
+b1111 T
+b1111 ""
+b10000 ,
+b10000 Z
+b10000 `
+b10000 n
+b10000 q
+b10000 {
+1"
+14
+#32000
+04
+#32500
+b1010 &
+b1010 T
+b1010 ""
+b101 c
+b1001 !
+b1001 R
+b1001 |
+b1001 '"
+b10001 ,
+b10001 Z
+b10001 `
+b10001 n
+b10001 q
+b10001 {
+14
+#33000
+04
+#33500
+1g
+1/
+0h
+b0 c
+b1001 &
+b1001 T
+b1001 ""
+b10010 ,
+b10010 Z
+b10010 `
+b10010 n
+b10010 q
+b10010 {
+b1000 !
+b1000 R
+b1000 |
+b1000 '"
+14
+#34000
+04
+#34500
+b1000 &
+b1000 T
+b1000 ""
+b111 !
+b111 R
+b111 |
+b111 '"
+b10011 ,
+b10011 Z
+b10011 `
+b10011 n
+b10011 q
+b10011 {
+14
+#35000
+04
+#35500
+b111 &
+b111 T
+b111 ""
+b10100 ,
+b10100 Z
+b10100 `
+b10100 n
+b10100 q
+b10100 {
+b110 !
+b110 R
+b110 |
+b110 '"
+14
+#36000
+04
+#36500
+b110 &
+b110 T
+b110 ""
+b101 !
+b101 R
+b101 |
+b101 '"
+b10101 ,
+b10101 Z
+b10101 `
+b10101 n
+b10101 q
+b10101 {
+14
+#37000
+04
+#37500
+b101 &
+b101 T
+b101 ""
+b10110 ,
+b10110 Z
+b10110 `
+b10110 n
+b10110 q
+b10110 {
+b100 !
+b100 R
+b100 |
+b100 '"
+14
+#38000
+04
+#38500
+b100 &
+b100 T
+b100 ""
+b11 !
+b11 R
+b11 |
+b11 '"
+b10111 ,
+b10111 Z
+b10111 `
+b10111 n
+b10111 q
+b10111 {
+14
+#39000
+04
+#39500
+b11 &
+b11 T
+b11 ""
+b11000 ,
+b11000 Z
+b11000 `
+b11000 n
+b11000 q
+b11000 {
+b10 !
+b10 R
+b10 |
+b10 '"
+14
+#40000
+04
+#40500
+b10 &
+b10 T
+b10 ""
+b1 !
+b1 R
+b1 |
+b1 '"
+b11001 ,
+b11001 Z
+b11001 `
+b11001 n
+b11001 q
+b11001 {
+14
+#41000
+04
+#41500
+b1 &
+b1 T
+b1 ""
+b11010 ,
+b11010 Z
+b11010 `
+b11010 n
+b11010 q
+b11010 {
+b0 !
+b0 R
+b0 |
+b0 '"
+14
+#42000
+04
+0B
+#42500
+b0 &
+b0 T
+b0 ""
+1$
+0"
+b11011 ,
+b11011 Z
+b11011 `
+b11011 n
+b11011 q
+b11011 {
+14
+#43000
+04
+1D
+#43500
+b11011 &
+b11011 T
+b11011 ""
+b11100 ,
+b11100 Z
+b11100 `
+b11100 n
+b11100 q
+b11100 {
+0$
+14
+#44000
+04
+0D
+#44500
+b11100 &
+b11100 T
+b11100 ""
+b11101 ,
+b11101 Z
+b11101 `
+b11101 n
+b11101 q
+b11101 {
+14
+#45000
+04
+b111010 :
+b111010 N
+b111010 k
+1?
+#45500
+b11101 &
+b11101 T
+b11101 ""
+b10111 .
+b10111 \
+b10111 b
+b10111 l
+b10111 o
+b10111 y
+b111011 -
+b111011 [
+b111011 a
+b111011 m
+b111011 p
+b111011 z
+b111010 ,
+b111010 Z
+b111010 `
+b111010 n
+b111010 q
+b111010 {
+14
+#46000
+04
+0?
+#46500
+b10111 (
+b10111 V
+b10111 ~
+b111011 '
+b111011 U
+b111011 !"
+b111010 &
+b111010 T
+b111010 ""
+b111011 ,
+b111011 Z
+b111011 `
+b111011 n
+b111011 q
+b111011 {
+14
+#47000
+04
+#47500
+b111011 &
+b111011 T
+b111011 ""
+b0 .
+b0 \
+b0 b
+b0 l
+b0 o
+b0 y
+b0 -
+b0 [
+b0 a
+b0 m
+b0 p
+b0 z
+b0 ,
+b0 Z
+b0 `
+b0 n
+b0 q
+b0 {
+b11 *
+b11 X
+b11 v
+b1 +
+b1 Y
+b1 u
+14
+#48000
+04
+#48500
+b0 (
+b0 V
+b0 ~
+b0 '
+b0 U
+b0 !"
+b0 &
+b0 T
+b0 ""
+b1 ,
+b1 Z
+b1 `
+b1 n
+b1 q
+b1 {
+14
+#49000
+04
+#49500
+b1 &
+b1 T
+b1 ""
+b10 ,
+b10 Z
+b10 `
+b10 n
+b10 q
+b10 {
+14
+#50000
+b100000101001101 3
+04
+15
+#50500
+b1100 (
+b1100 V
+b1100 ~
+b10 &
+b10 T
+b10 ""
+b11 ,
+b11 Z
+b11 `
+b11 n
+b11 q
+b11 {
+14
+#51000
+04

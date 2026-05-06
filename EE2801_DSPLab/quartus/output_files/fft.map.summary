@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Sun Apr 12 22:01:01 2026
+Quartus Prime Version : 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+Revision Name : fft
+Top-level Entity Name : fft_ip_core
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 1180
+Total pins : 55
+Total virtual pins : 0
+Total block memory bits : 776
+Total DSP Blocks : 2
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0

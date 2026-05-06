@@ -1,0 +1,102 @@
+VCD info: dumpfile wave2.vcd opened for output.
+Time: 0s, Date: x/x/x, Time: x:x:x   , Alarm: x, Timer: x
+Time: 1s, Date: x/x/x, Time: x:x:x   , Alarm: 0, Timer: x
+Time: 1s, Date: 1/1/2020, Time: x:x:x   , Alarm: 0, Timer: 0
+Time: 2s, Date: 1/1/2020, Time: 0:0:0   , Alarm: 0, Timer: 0
+Reset done at 3s
+Time: 5s, Date: 31/12/2022, Time: 0:0:1   , Alarm: 0, Timer: 0
+Time: 6s, Date: 31/12/2022, Time: 0:0:2   , Alarm: 0, Timer: 0
+Set date to Dec 31 2022, time to 23:59:58 at 6s
+Time: 7s, Date: 31/12/2022, Time: 0:0:3   , Alarm: 0, Timer: 0
+Waiting for next day to start...
+Time: 8s, Date: 31/12/2022, Time: 23:59:58   , Alarm: 0, Timer: 0
+Time: 9s, Date: 1/1/2023, Time: 23:59:59   , Alarm: 0, Timer: 0
+Next day started at 9s
+Time: 10s, Date: 1/1/2023, Time: 0:0:0   , Alarm: 0, Timer: 0
+Changed to AM-PM mode at 10s
+Time: 10s, Date: 1/1/2023, Time: 0:0:0 AM, Alarm: 0, Timer: 0
+Time: 11s, Date: 1/1/2023, Time: 12:0:1 AM, Alarm: 0, Timer: 0
+Time: 12s, Date: 1/1/2023, Time: 12:0:2 AM, Alarm: 0, Timer: 0
+Time: 13s, Date: 1/1/2023, Time: 12:0:3 AM, Alarm: 0, Timer: 0
+Time: 14s, Date: 1/1/2023, Time: 12:0:4 AM, Alarm: 0, Timer: 0
+Time: 15s, Date: 1/1/2023, Time: 12:0:5 AM, Alarm: 0, Timer: 0
+Time: 16s, Date: 1/1/2023, Time: 12:0:6 AM, Alarm: 0, Timer: 0
+Time: 17s, Date: 1/1/2023, Time: 12:0:7 AM, Alarm: 0, Timer: 0
+Time: 18s, Date: 1/1/2023, Time: 12:0:8 AM, Alarm: 0, Timer: 0
+Time: 19s, Date: 1/1/2023, Time: 12:0:9 AM, Alarm: 0, Timer: 0
+Time: 20s, Date: 1/1/2023, Time: 12:0:10 AM, Alarm: 0, Timer: 0
+Time: 21s, Date: 1/1/2023, Time: 12:0:11 AM, Alarm: 0, Timer: 0
+Time: 22s, Date: 28/2/2020, Time: 12:0:12 AM, Alarm: 0, Timer: 0
+Time: 23s, Date: 28/2/2020, Time: 12:0:13 AM, Alarm: 0, Timer: 0
+Set date to Feb 28 2020, time to 23:59:57 at 23s
+Time: 24s, Date: 28/2/2020, Time: 12:0:14 PM, Alarm: 0, Timer: 0
+Waiting for next day to start...
+Time: 25s, Date: 28/2/2020, Time: 11:59:57 PM, Alarm: 0, Timer: 0
+Time: 26s, Date: 28/2/2020, Time: 11:59:58 PM, Alarm: 0, Timer: 0
+Time: 27s, Date: 29/2/2020, Time: 11:59:59 AM, Alarm: 0, Timer: 0
+Time: 28s, Date: 29/2/2020, Time: 12:0:0 AM, Alarm: 0, Timer: 0
+Next day started at 28s
+Change to 24-Hour format
+Time: 28s, Date: 29/2/2020, Time: 12:0:0   , Alarm: 0, Timer: 0
+Time: 29s, Date: 29/2/2020, Time: 0:0:1   , Alarm: 0, Timer: 0
+Time: 30s, Date: 29/2/2020, Time: 0:0:2   , Alarm: 0, Timer: 0
+Time: 31s, Date: 29/2/2020, Time: 0:0:3   , Alarm: 0, Timer: 0
+Time: 32s, Date: 29/2/2020, Time: 0:0:4   , Alarm: 0, Timer: 0
+Time: 33s, Date: 29/2/2020, Time: 0:0:5   , Alarm: 0, Timer: 0
+Time: 34s, Date: 29/2/2020, Time: 0:0:6   , Alarm: 0, Timer: 0
+Time: 35s, Date: 29/2/2020, Time: 0:0:7   , Alarm: 0, Timer: 0
+Time: 36s, Date: 29/2/2020, Time: 0:0:8   , Alarm: 0, Timer: 0
+Time: 37s, Date: 29/2/2020, Time: 0:0:9   , Alarm: 0, Timer: 0
+Time: 38s, Date: 29/2/2020, Time: 0:0:10   , Alarm: 0, Timer: 0
+Set alarm for 00:00:30 at 38s
+Time: 39s, Date: 29/2/2020, Time: 0:0:11   , Alarm: 0, Timer: 0
+Time: 40s, Date: 29/2/2020, Time: 0:0:12   , Alarm: 0, Timer: 0
+Time: 41s, Date: 29/2/2020, Time: 0:0:13   , Alarm: 0, Timer: 0
+Time: 42s, Date: 29/2/2020, Time: 0:0:14   , Alarm: 0, Timer: 0
+Time: 43s, Date: 29/2/2020, Time: 0:0:15   , Alarm: 0, Timer: 0
+Time: 44s, Date: 29/2/2020, Time: 0:0:16   , Alarm: 0, Timer: 0
+Time: 45s, Date: 29/2/2020, Time: 0:0:17   , Alarm: 0, Timer: 0
+Time: 46s, Date: 29/2/2020, Time: 0:0:18   , Alarm: 0, Timer: 0
+Time: 47s, Date: 29/2/2020, Time: 0:0:19   , Alarm: 0, Timer: 0
+Time: 48s, Date: 29/2/2020, Time: 0:0:20   , Alarm: 0, Timer: 0
+Time: 49s, Date: 29/2/2020, Time: 0:0:21   , Alarm: 0, Timer: 0
+Time: 50s, Date: 29/2/2020, Time: 0:0:22   , Alarm: 0, Timer: 0
+Time: 51s, Date: 29/2/2020, Time: 0:0:23   , Alarm: 0, Timer: 0
+Time: 52s, Date: 29/2/2020, Time: 0:0:24   , Alarm: 0, Timer: 0
+Time: 53s, Date: 29/2/2020, Time: 0:0:25   , Alarm: 0, Timer: 0
+Time: 54s, Date: 29/2/2020, Time: 0:0:26   , Alarm: 0, Timer: 0
+Time: 55s, Date: 29/2/2020, Time: 0:0:27   , Alarm: 0, Timer: 0
+Time: 56s, Date: 29/2/2020, Time: 0:0:28   , Alarm: 0, Timer: 0
+Time: 57s, Date: 29/2/2020, Time: 0:0:29   , Alarm: 0, Timer: 0
+Alarm triggered at 58s
+Time: 58s, Date: 29/2/2020, Time: 0:0:30   , Alarm: 1, Timer: 0
+Time: 59s, Date: 29/2/2020, Time: 0:0:31   , Alarm: 1, Timer: 0
+Time: 60s, Date: 29/2/2020, Time: 0:0:32   , Alarm: 1, Timer: 0
+Time: 61s, Date: 29/2/2020, Time: 0:0:33   , Alarm: 1, Timer: 0
+Time: 62s, Date: 29/2/2020, Time: 0:0:34   , Alarm: 1, Timer: 0
+Time: 63s, Date: 29/2/2020, Time: 0:0:35   , Alarm: 0, Timer: 0
+Time: 64s, Date: 29/2/2020, Time: 0:0:36   , Alarm: 0, Timer: 0
+Alarm snoozed at 65s
+Time: 65s, Date: 29/2/2020, Time: 0:0:37   , Alarm: 0, Timer: 0
+Time: 66s, Date: 29/2/2020, Time: 0:0:38   , Alarm: 0, Timer: 0
+Time: 67s, Date: 29/2/2020, Time: 0:0:39   , Alarm: 0, Timer: 0
+Time: 68s, Date: 29/2/2020, Time: 0:0:40   , Alarm: 0, Timer: 0
+Time: 69s, Date: 29/2/2020, Time: 0:0:41   , Alarm: 0, Timer: 0
+Time: 70s, Date: 29/2/2020, Time: 0:0:42   , Alarm: 1, Timer: 0
+Time: 71s, Date: 29/2/2020, Time: 0:0:43   , Alarm: 1, Timer: 0
+Alarm stopped at 72s
+Time: 72s, Date: 29/2/2020, Time: 0:0:44   , Alarm: 0, Timer: 0
+Time: 73s, Date: 29/2/2020, Time: 0:0:45   , Alarm: 0, Timer: 0
+Time: 74s, Date: 29/2/2020, Time: 0:0:46   , Alarm: 0, Timer: 0
+Time: 75s, Date: 29/2/2020, Time: 0:0:47   , Alarm: 0, Timer: 0
+Time: 76s, Date: 29/2/2020, Time: 0:0:48   , Alarm: 0, Timer: 0
+Time: 77s, Date: 29/2/2020, Time: 0:0:49   , Alarm: 0, Timer: 0
+Set timer for 2 seconds at 78s
+Time: 78s, Date: 29/2/2020, Time: 0:0:2   , Alarm: 0, Timer: 0
+Time: 79s, Date: 29/2/2020, Time: 0:0:1   , Alarm: 0, Timer: 0
+Time: 80s, Date: 29/2/2020, Time: 0:0:0   , Alarm: 0, Timer: 1
+Time: 81s, Date: 29/2/2020, Time: 0:0:53   , Alarm: 0, Timer: 1
+Time: 82s, Date: 29/2/2020, Time: 0:0:54   , Alarm: 0, Timer: 1
+Time: 83s, Date: 29/2/2020, Time: 0:0:55   , Alarm: 0, Timer: 0
+main_tb2.v:221: $finish called at 83500 (1ms)
+Time: 84s, Date: 29/2/2020, Time: 0:0:56   , Alarm: 0, Timer: 0

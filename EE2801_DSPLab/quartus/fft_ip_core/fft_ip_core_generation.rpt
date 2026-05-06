@@ -1,0 +1,32 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/agam/Github/DSPLab/Lab6/quartus/fft_ip_core.qsys --block-symbol-file --output-directory=/home/agam/Github/DSPLab/Lab6/quartus/fft_ip_core --family="Cyclone V" --part=5CGXFC7C7F23C8
+Progress: Loading quartus/fft_ip_core.qsys
+Progress: Reading input file
+Progress: Adding fft_ii_0 [altera_fft_ii 25.1]
+Progress: Parameterizing module fft_ii_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: fft_ip_core.fft_ii_0: Radix-2 digit reverse implied
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/agam/Github/DSPLab/Lab6/quartus/fft_ip_core.qsys --synthesis=VERILOG --output-directory=/home/agam/Github/DSPLab/Lab6/quartus/fft_ip_core/synthesis --family="Cyclone V" --part=5CGXFC7C7F23C8
+Progress: Loading quartus/fft_ip_core.qsys
+Progress: Reading input file
+Progress: Adding fft_ii_0 [altera_fft_ii 25.1]
+Progress: Parameterizing module fft_ii_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: fft_ip_core.fft_ii_0: Radix-2 digit reverse implied
+Info: fft_ip_core: Generating "fft_ip_core" for QUARTUS_SYNTH
+Info: fft_ii_0: --- add file: fft_ip_core_fft_ii_0_opt_twi1.hex
+Info: fft_ii_0: --- add file: fft_ip_core_fft_ii_0_opt_twr1.hex
+Info: fft_ii_0: "fft_ip_core" instantiated altera_fft_ii "fft_ii_0"
+Info: fft_ip_core: Done "fft_ip_core" with 2 modules, 44 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

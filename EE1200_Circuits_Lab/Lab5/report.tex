@@ -1,0 +1,153 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{geometry}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{tikz}
+\usepackage{longtable}
+\usepackage{circuitikz}
+\usepackage{comment}
+\usepackage{MnSymbol}
+\usepackage{physics}
+\usepackage[section]{placeins}
+
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\geometry{a4paper, margin=1in}
+
+\title{\textbf{Experiment 5: Op-Amp Applications}}
+\author{Abhimanyu Koushik \brak{\text{EE24BTECH11024}},\\Agamjot Singh \brak{\text{EE24BTECH11002}}\\IIT Hyderabad}
+\date{March 3, 2025}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This experiment explores three key applications of operational amplifiers (op-amps): custom weighted summing and difference amplifiers, op-amp integrators, and precision rectifiers. The mathematical principles, circuit designs, and working mechanisms are analyzed. Experimental results validate the theoretical predictions and demonstrate the versatility of op-amps in signal processing.
+\end{abstract}
+
+\section{  Introduction}
+Operational amplifiers (op-amps) are versatile components widely used in analog signal processing. This experiment focuses on three applications:
+1. Custom weighted summing and difference amplifier.
+2. Op-amp integrator.
+3. Precision rectifier (super diode).
+
+Each application is implemented using appropriate circuit designs to perform mathematical operations or signal conditioning tasks.
+
+\section{ Custom Weighted Summing \& Difference Amplifier}
+
+\textbf{Objective}
+To implement mathematical functions such as:
+\[
+V_{\text{out}} = 2V_1 + V_2 - V_3
+\]
+\[
+V_{\text{out}} = 2V_1 - V_3
+\]
+
+ \textbf{Circuit Design}
+The circuit uses an inverting summing amplifier with carefully chosen resistors to achieve desired weighting coefficients. If a non-inverting input is required, a combination of inverting and summing amplifiers can be used.
+
+ \textbf{Components Required}
+- Op-amp (e.g., LM741, TL081)
+- Resistors (precisely selected for weighting)
+- DC power supply
+- Function generator (for input signals)
+- Oscilloscope
+
+ \textbf{Equation Derivation}
+For an inverting summing amplifier:
+\[
+V_{\text{out}} = -\left(\frac{R_f}{R_1} V_1 + \frac{R_f}{R_2} V_2 + \frac{R_f}{R_3} V_3 \right)
+\]
+By selecting appropriate resistor values (\(R_f, R_1, R_2, R_3\)), the desired coefficients for \(V_1, V_2, V_3\) can be achieved.
+
+---
+
+\section{  Op-Amp Integrator}
+
+ \textbf{Objective}
+To design a circuit that performs mathematical integration:
+\[
+V_{\text{out}} = -\frac{1}{RC} \int V_{\text{in}} \, dt
+\]
+
+ \textbf{Circuit Design}
+The circuit uses an operational amplifier with a capacitor in the feedback path instead of a resistor. This configuration enables the op-amp to act as a continuous-time integrator.
+
+ \textbf{Components Required}
+- Op-amp (e.g., LM741, TL081)
+- Resistor (\(R\))
+- Capacitor (\(C\))
+- DC power supply
+- Function generator
+- Oscilloscope
+
+ \textbf{Working Principle}
+The op-amp integrator converts a square wave input into a triangular wave output. It acts as a continuous-time integrator in signal processing applications.
+
+---
+
+\section{  Precision Rectifier (Super Diode)}
+
+ \textbf{Objective}
+To design a precision rectifier capable of rectifying small AC signals without the voltage drop issue of standard diodes.
+
+ \textbf{Circuit Design}
+The circuit uses an op-amp to control a diode for full-wave or half-wave rectification. The op-amp eliminates the \(0.7\,V\) threshold voltage of conventional diodes.
+
+ \textbf{Components Required}
+- Op-amp (e.g., LM358, TL081)
+- Diode (e.g., 1N4148)
+- Resistors
+- AC signal generator
+- Oscilloscope
+
+ \textbf{Equation Derivation}
+For a half-wave rectifier:
+\[
+V_{\text{out}} = 
+    \begin{cases} 
+      0 & V_{\text{in}} < 0 \\ 
+      V_{\text{in}} & V_{\text{in}} > 0 
+    \end{cases}
+\]
+
+For a full-wave rectifier, an additional summing stage is used to combine the positive portion with the inverted negative portion of the input signal.
+
+---
+
+\section{  Results and Observations}
+
+ **Custom Weighted Summing Amplifier**
+The experimental results confirmed that the circuit accurately implemented the mathematical functions:
+1. \(V_{\text{out}} = 2V_1 + V_2 - V_3\)
+2. \(V_{\text{out}} = 2V_1 - V_3\)
+
+The output voltages measured on the oscilloscope matched theoretical predictions.
+
+ **Op-Amp Integrator**
+The integrator successfully converted square wave inputs into triangular wave outputs. The observed waveforms were consistent with theoretical expectations.
+
+ **Precision Rectifier**
+The precision rectifier effectively rectified small AC signals without any noticeable voltage drop. Both half-wave and full-wave configurations were tested and verified.
+
+---
+
+\section{  Conclusion}
+This experiment demonstrated three key applications of operational amplifiers:
+1. Weighted summing and difference amplifiers were implemented using resistor networks.
+2. The op-amp integrator performed real-time integration of input signals.
+3. The precision rectifier eliminated voltage drop issues associated with conventional diodes.
+
+These applications highlight the versatility of op-amps in performing mathematical operations and signal conditioning tasks in electronic circuits.
+
+---
+
+\end{document}

@@ -1,0 +1,6 @@
+
+State Machine - |de10_nano_top|fir_symmetric_pipelined:u_fir|state
+Name state.IDLE state.DONE state.DOING 
+state.IDLE 0 0 0 
+state.DOING 1 0 1 
+state.DONE 1 1 0 

@@ -1,0 +1,87 @@
+VCD info: dumpfile wave.vcd opened for output.
+
+=== T-Junction Traffic Light Controller Simulation Started ===
+
+Time: 0 | T1: GREEN  | T2: RED    | T1_WALK = 0 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+=== Reset at t=1 ===
+
+=== Normal Operation - Full Cycle ===
+Time: 2 | T1: GREEN  | T2: RED    | T1_WALK = 0 | T2_WALK = 1 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+Time: 32 | T1: YELLOW | T2: RED    | T1_WALK = 0 | T2_WALK = 1 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+Time: 37 | T1: RED    | T2: RED    | T1_WALK = 1 | T2_WALK = 1 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+Time: 57 | T1: RED    | T2: RED    | T1_WALK = 1 | T2_WALK = 1 | Buzzer1 = 0 | Buzzer2 = 1 | E_Left = 0 | E_Right = 0
+Time: 62 | T1: RED    | T2: GREEN  | T1_WALK = 1 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+Time: 92 | T1: RED    | T2: YELLOW | T1_WALK = 1 | T2_WALK = 0 | Buzzer1 = 1 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+Time: 97 | T1: GREEN  | T2: RED    | T1_WALK = 0 | T2_WALK = 1 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+
+=== Test Case 1: Short Emergency Left (<T_EM) ===
+Time: 101 | T1: GREEN  | T2: RED    | T1_WALK = 0 | T2_WALK = 1 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 1 | E_Right = 0
+Time: 102 | T1: RED    | T2: GREEN  | T1_WALK = 0 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 1 | E_Right = 0
+Time: 103 | T1: RED    | T2: GREEN  | T1_WALK = 0 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+Time: 112 | T1: GREEN  | T2: RED    | T1_WALK = 0 | T2_WALK = 1 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+
+=== Test Case 2: Long Emergency Left (>T_EM) ===
+Time: 118 | T1: GREEN  | T2: RED    | T1_WALK = 0 | T2_WALK = 1 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 1 | E_Right = 0
+Time: 119 | T1: RED    | T2: GREEN  | T1_WALK = 0 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 1 | E_Right = 0
+Time: 133 | T1: RED    | T2: GREEN  | T1_WALK = 0 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+Time: 139 | T1: GREEN  | T2: RED    | T1_WALK = 0 | T2_WALK = 1 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+
+=== Test Case 3: Short Emergency Right (<T_EM) ===
+Time: 148 | T1: GREEN  | T2: RED    | T1_WALK = 0 | T2_WALK = 1 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 1
+Time: 149 | T1: RED    | T2: RED    | T1_WALK = 0 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 1
+Time: 150 | T1: RED    | T2: RED    | T1_WALK = 0 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+Time: 159 | T1: GREEN  | T2: RED    | T1_WALK = 0 | T2_WALK = 1 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+
+=== Test Case 4: Long Emergency Right (>T_EM) ===
+Time: 165 | T1: GREEN  | T2: RED    | T1_WALK = 0 | T2_WALK = 1 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 1
+Time: 166 | T1: RED    | T2: RED    | T1_WALK = 0 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 1
+Time: 180 | T1: RED    | T2: RED    | T1_WALK = 0 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+Time: 186 | T1: GREEN  | T2: RED    | T1_WALK = 0 | T2_WALK = 1 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+Time: 187 | T1: YELLOW | T2: RED    | T1_WALK = 0 | T2_WALK = 1 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+Time: 192 | T1: RED    | T2: RED    | T1_WALK = 1 | T2_WALK = 1 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+
+=== Test Case 5: Priority Test - Both Emergencies Active ===
+Time: 195 | T1: RED    | T2: RED    | T1_WALK = 1 | T2_WALK = 1 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 1 | E_Right = 1
+Time: 196 | T1: RED    | T2: RED    | T1_WALK = 0 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 1 | E_Right = 1
+Time: 210 | T1: RED    | T2: RED    | T1_WALK = 0 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 1 | E_Right = 0
+Time: 215 | T1: RED    | T2: RED    | T1_WALK = 0 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+Time: 216 | T1: RED    | T2: RED    | T1_WALK = 1 | T2_WALK = 1 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+
+=== Test Case 6: Overlapping Emergencies - Left then Right ===
+Time: 230 | T1: RED    | T2: RED    | T1_WALK = 1 | T2_WALK = 1 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 1 | E_Right = 0
+Time: 231 | T1: RED    | T2: GREEN  | T1_WALK = 0 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 1 | E_Right = 0
+Time: 235 | T1: RED    | T2: GREEN  | T1_WALK = 0 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 1 | E_Right = 1
+Time: 236 | T1: RED    | T2: RED    | T1_WALK = 0 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 1 | E_Right = 1
+Time: 240 | T1: RED    | T2: RED    | T1_WALK = 0 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 1
+Time: 245 | T1: RED    | T2: RED    | T1_WALK = 0 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+Time: 251 | T1: RED    | T2: GREEN  | T1_WALK = 0 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+
+=== Test Case 7: Overlapping Emergencies - Right then Left ===
+Time: 260 | T1: RED    | T2: GREEN  | T1_WALK = 0 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 1
+Time: 261 | T1: RED    | T2: RED    | T1_WALK = 0 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 1
+Time: 265 | T1: RED    | T2: RED    | T1_WALK = 0 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 1 | E_Right = 1
+Time: 270 | T1: RED    | T2: RED    | T1_WALK = 0 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 1 | E_Right = 0
+Time: 275 | T1: RED    | T2: RED    | T1_WALK = 0 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+Time: 281 | T1: RED    | T2: RED    | T1_WALK = 1 | T2_WALK = 1 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+Time: 282 | T1: RED    | T2: RED    | T1_WALK = 1 | T2_WALK = 1 | Buzzer1 = 0 | Buzzer2 = 1 | E_Left = 0 | E_Right = 0
+Time: 287 | T1: RED    | T2: GREEN  | T1_WALK = 1 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+
+=== Test Case 8: Back-to-back Emergencies ===
+Time: 290 | T1: RED    | T2: GREEN  | T1_WALK = 1 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 1
+Time: 291 | T1: RED    | T2: RED    | T1_WALK = 0 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 1
+Time: 295 | T1: RED    | T2: RED    | T1_WALK = 0 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+Time: 301 | T1: RED    | T2: GREEN  | T1_WALK = 1 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+Time: 307 | T1: RED    | T2: GREEN  | T1_WALK = 1 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 1 | E_Right = 0
+Time: 308 | T1: RED    | T2: GREEN  | T1_WALK = 0 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 1 | E_Right = 0
+Time: 312 | T1: RED    | T2: GREEN  | T1_WALK = 0 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+Time: 318 | T1: RED    | T2: GREEN  | T1_WALK = 1 | T2_WALK = 0 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+
+=== Final Normal Operation ===
+Time: 337 | T1: RED    | T2: YELLOW | T1_WALK = 1 | T2_WALK = 0 | Buzzer1 = 1 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+Time: 342 | T1: GREEN  | T2: RED    | T1_WALK = 0 | T2_WALK = 1 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+Time: 372 | T1: YELLOW | T2: RED    | T1_WALK = 0 | T2_WALK = 1 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+Time: 377 | T1: RED    | T2: RED    | T1_WALK = 1 | T2_WALK = 1 | Buzzer1 = 0 | Buzzer2 = 0 | E_Left = 0 | E_Right = 0
+
+=== Simulation Complete ===
+
+main_tb.v:159: $finish called at 377000 (1ms)

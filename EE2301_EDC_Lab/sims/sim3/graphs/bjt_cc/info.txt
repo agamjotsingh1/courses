@@ -1,0 +1,14 @@
+bandwidth = 3.28 G
+
+mid band gain (theory) = 1
+mid band gain (experimental) = 989.56m
+
+transient gain = 987m
+
+rout exp = 235
+rout theory = 235
+
+rin exp = 10167.2
+rin theory =  10356.2
+    Re = RE*RL/(RE + RL)
+    Rin = 1/(1/R1 + 1/R2 + 1/(beta*Re))

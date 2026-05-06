@@ -1,0 +1,1 @@
+/home/agam/altera_lite/25.1std/questa_fse/linux_x86_64/VisualizerRls/bin/viscom -nolock -quiet -jmem_size 33178032 work.ip_core_tb -quiet -auto_acc_if_foreign -work work -L cyclonev -L altera_mf -L lpm -L sgate -L altera -L altera_lnsim -allow_unnamed -o _opt1 -id 1-78465cade987-69d393c5-ea683-1b7a5

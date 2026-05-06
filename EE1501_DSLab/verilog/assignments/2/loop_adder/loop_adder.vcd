@@ -1,0 +1,81 @@
+$date
+	Mon Apr 21 17:59:38 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module tb_loop_adder $end
+$var wire 8 ! sum [7:0] $end
+$var wire 1 " cout $end
+$var reg 8 # a [7:0] $end
+$var reg 8 $ b [7:0] $end
+$var reg 1 % cin $end
+$scope module dut $end
+$var wire 8 & a [7:0] $end
+$var wire 8 ' b [7:0] $end
+$var wire 1 % cin $end
+$var reg 1 " cout $end
+$var reg 8 ( sum [7:0] $end
+$scope begin $ivl_for_loop0 $end
+$var integer 32 ) i [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1000 )
+b0 (
+b0 '
+b0 &
+0%
+b0 $
+b0 #
+0"
+b0 !
+$end
+#50
+b11110 !
+b11110 (
+0"
+b1000 )
+b1111 $
+b1111 '
+b1111 #
+b1111 &
+#100
+b10000 !
+b10000 (
+b1000 )
+0"
+1%
+b101 $
+b101 '
+b1010 #
+b1010 &
+#150
+b0 !
+b0 (
+1"
+b1000 )
+0%
+b1 $
+b1 '
+b11111111 #
+b11111111 &
+#200
+b11111111 !
+b11111111 (
+b1000 )
+0"
+b1011010 $
+b1011010 '
+b10100101 #
+b10100101 &
+#250

@@ -1,0 +1,12 @@
+bandwidth = 14.36 M
+
+mid band gain (theory) =
+mid band gain (experimental) = 92.11
+
+transient gain = 91.79
+
+rout exp = 1.803k
+rout theory = 1.818k
+
+rin exp = 18.98
+rin theory = 18.75
