@@ -1,0 +1,214 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{JEE Main 2023 April 15 Shift 1}
+\author{EE24BTECH11002 - Agamjot Singh}
+\maketitle
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\begin{enumerate}
+    %Question1
+    \item Let $S$ be the set of all values of $\lambda$, for which the shortest distance between the lines $\frac{x - \lambda}{0} = \frac{y - 3}{4} = \frac{z + 6}{1}$ and $\frac{x + \lambda}{3} = \frac{y}{-4} = \frac{z - 6}{0}$ is $13$. Then $8\abs{\sum_{\lambda \in S} \lambda}$ is equal to
+
+	\begin{enumerate}
+		\item $302$ 
+		\item $306$
+		\item $304$
+		\item $308$
+	\end{enumerate}
+
+    %Question2
+    \item Let $S$ be the set of all $\brak{\lambda, \mu}$ for which the vectors $\lambda\vec{i} - \vec{j} + \vec{k}, \vec{i} + 2\vec{j} + \mu\vec{k}$ and $3\vec{i} -4\vec{j} + 5\vec{k}$, where $\lambda - \mu  = 5$, are coplanar, then $\sum_{\brak{\lambda, \mu} \in S} 80\brak{\lambda^2 + \mu^2}$ is equal to
+
+	\begin{enumerate}
+		\item $2130$ 
+		\item $2210$
+		\item $2290$
+		\item $2370$
+	\end{enumerate}
+
+    %Question3
+    \item Let the foot of perpendicular of the point $P\myvec{3\\-2\\-9}$ on the plane passing through the points $\myvec{-1\\-2\\-3}, \myvec{9\\3\\4}, \myvec{9\\-2\\1}$ be $Q\myvec{\alpha\\\beta\\\gamma}$. Then the distance of $Q$ from the origin is
+
+	\begin{enumerate}
+		\item $\sqrt{29}$ 
+		\item $\sqrt{38}$ 
+		\item $\sqrt{42}$ 
+		\item $\sqrt{35}$ 
+	\end{enumerate}
+
+    %Question4
+    \item If the set $\sbrak{Re\brak{\frac{z - \bar{z} + z\bar{z}}{2 - 3z + 5\bar{z}}} \colon z \in \mathbb{C}, Re\brak{z} = 3}$ is equal to the interval $\lbrak{\alpha}, \rsbrak{\beta}$, then $24\brak{\beta - \alpha}$ is equal to 
+
+	\begin{enumerate}
+		\item $36$ 
+		\item $27$
+		\item $30$
+		\item $42$
+	\end{enumerate}
+
+    %Question5
+    \item Let $x = x\brak{y}$ be the solution of the differential equation $2\brak{y + 2}\log_{e}\brak{y + 2} dx + \brak{x + 4 - 2log_{e}\brak{y + 2}} dy = 0, y > -1$ with $x\brak{e^4 - 2} = 1$. Then $x\brak{e^9 - 2}$ is equal to
+
+	\begin{enumerate}
+		\item $\frac{4}{9}$
+		\item $\frac{32}{9}$
+		\item $\frac{10}{3}$
+		\item $3$
+	\end{enumerate}
+
+    %Question6
+    \item If $\int_{0}^{1} \frac{1}{\brak{5 + 2x - 2x^2}\brak{1 + e^{\brak{2 - 4x}}}} \, dx = \frac{1}{\alpha}\log_{e}\brak{\frac{\alpha + 1}{\beta}}, \alpha, \beta > 0$, then $\alpha^4 - \beta^4$ is equal to
+
+	\begin{enumerate}
+		\item $19$ 
+		\item $-21$
+		\item $21$
+		\item $0$
+	\end{enumerate}
+
+
+    %Question7
+    \item The number of common tangents, to the circles $x^2 + y^2 - 18x - 15y + 131 = 0$ and $x^2 + y^2  - 6x - 6y - 7 = 0$, is
+
+	\begin{enumerate}
+		\item $4$ 
+		\item $1$
+		\item $3$
+		\item $2$
+	\end{enumerate}
+
+    %Question8
+    \item Let $ABCD$ be a quadrilateral. If $E$ and $F$ are the mid points of the diagonals $AC$ and $BD$ respectively and $\brak{\vec{AB} - \vec{BC}} + \brak{\vec{AD} - \vec{DC}} = k\vec{FE}$, then $k$ is equal to 
+
+	\begin{enumerate}
+		\item $4$
+		\item $2$
+		\item $-2$
+		\item $-4$
+	\end{enumerate}
+
+    %Question9
+    \item Let $\brak{a + bx + cx^2}^{10} = \sum_{i = 0}^{20} p_{i} x^{i}, a, b, c \in \mathbb{N}$. If $p_1 = 20$ and $p_2 = 210$, then $2\brak{a + b + c}$ is equal to
+
+	\begin{enumerate}
+		\item $8$
+		\item $12$
+		\item $6$
+		\item $15$
+	\end{enumerate}
+
+    %Question10
+    \item Let $\sbrak{x}$ denote the greatest integer function and $f\brak{x} = \max\cbrak{1 + x + \sbrak{x}, 2 + x, x + 2\sbrak{x}}, 0 \leq x \leq 2$. Let $m$ be the number of poitns in $\sbrak{0, 2}$, where $f$ is not continuous and $n$ be the number of points in $\brak{0, 2}$, where $f$ is not differentiable. Then $\brak{m + n}^2 + 2$ is equal to
+
+	\begin{enumerate}
+		\item $6$ 
+		\item $3$ 
+		\item $2$ 
+		\item $11$ 
+	\end{enumerate}
+
+    %Question11
+    \item A bag contains $6$ white and $4$ black balls. A die is rolled once and the number of ball equal to the number obtained on the die are drawn from the bag at random. The probability that all the balls drawn are white is
+
+	\begin{enumerate}
+		\item $\frac{1}{4}$
+		\item $\frac{9}{50}$
+		\item $\frac{11}{50}$
+		\item $\frac{1}{5}$
+	\end{enumerate}
+
+    %Question12
+    \item If the domain of the function $f\brak{x} = \log_{e}\brak{4x^2 + 11x + 6} + \sin^{-1}\brak{4x + 3} + \cos^{-1}\frac{10x + 6}{3}$ is $\lbrak{\alpha}, \rsbrak{\beta}$, then $36\abs{\alpha + \beta}$ is equal to 
+
+	\begin{enumerate}
+		\item $72$ 
+		\item $63$
+		\item $45$
+		\item $54$
+	\end{enumerate}
+
+    %Question13
+    \item Let the determinant of a square matrix $\vec{A}$ of order $m$ be $m - n$, where $m$ and $n$ satisfy $4m + n = 22$ and $17m + 4n = 93$. If $det\brak{n\; adj\brak{adj\brak{m\vec{A}}}} = 3^{a}5^{b}6^{c}$, then $a + b + c$ is equal to
+
+	\begin{enumerate}
+		\item $101$ 
+		\item $84$
+		\item $109$
+		\item $96$
+	\end{enumerate}
+
+
+    %Question14
+    \item The mean and standard deviation for $10$ observations are $20$ and $8$ respectively. Later on, it was observed that one observation was recorded as $50$ instead of $40$. Then the correct variance is
+
+	\begin{enumerate}
+		\item $14$ 
+		\item $11$
+		\item $12$
+		\item $13$
+	\end{enumerate}
+
+    %Question15
+    \item If $\brak{\alpha, \beta}$ is the orthocenter of the triangle $ABC$ with vertices $A\myvec{3\\-7}, B\myvec{-1\\2}$ and $C\myvec{4\\5}$, then $9\alpha - 6\beta + 60$ is equal to
+
+	\begin{enumerate}
+		\item $30$ 
+		\item $35$
+		\item $40$
+		\item $25$
+	\end{enumerate}
+
+\end{enumerate}
+\end{document}

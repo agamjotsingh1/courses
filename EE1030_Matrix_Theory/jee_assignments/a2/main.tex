@@ -1,0 +1,215 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{JEE Main 2022 June 27 Shift 1}
+\author{EE24BTECH11002 - Agamjot Singh}
+\maketitle
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\begin{enumerate}
+    %Question1
+    \item The area of the polygon, whose vertices are the non-real roots of the equation $\bar{z} = iz^2$ is
+
+	\begin{enumerate}
+		\item $\frac{3\sqrt{3}}{4}$
+		\item $\frac{3\sqrt{3}}{2}$
+		\item $\frac{3}{2}$
+		\item $\frac{3}{4}$
+	\end{enumerate}
+
+    %Question2
+    \item Let the system of linear equations $x + 2y + z = 2$, $\alpha x + 3y - z = \alpha$ and $-\alpha x + y + 2z = -\alpha$ be inconsistent. Then $\alpha$ is equal to
+
+	\begin{enumerate}
+		\item $\frac{5}{2}$
+		\item $\frac{-5}{2}$
+		\item $\frac{7}{2}$
+		\item $\frac{-7}{2}$
+	\end{enumerate}
+
+    %Question3
+    \item If $x = \sum^{\infty}_{n = 0} a^n,  y = \sum^{\infty}_{n = 0} b^n,  z = \sum^{\infty}_{n = 0} c^n$ where $a$, $b$, $c$ are in A.P. and $\abs{a} < 1, \abs{b} < 1, \abs{c} < 1, abc \neq 0$, then  
+
+	\begin{enumerate}
+		\item $x, y, z$ are in A.P. 
+		\item $x, y, z$ are in G.P. 
+		\item $\frac{1}{x}, \frac{1}{y}, \frac{1}{z}$ are in A.P. 
+		\item $\frac{1}{x} + \frac{1}{y} + \frac{1}{z} = 1 - \brak{a + b+ c}$ 
+	\end{enumerate}
+
+
+    %Question4
+    \item Let $\frac{dy}{dx} = \frac{ax - by + a}{bx + cy + a}$, where $a, b, c$ are constants, represent a circle passing through the point $\myvec{2\\5}$. Then the shortest distance of the point $\myvec{11\\6}$ from this circle is 
+
+	\begin{enumerate}
+		\item $10$ 
+		\item $8$
+		\item $7$
+		\item $5$
+	\end{enumerate}
+
+    %Question5
+    \item Let $a$ be an integer such thtat $\lim_{x \to 7} \frac{18 - \sbrak{1 - x}}{\sbrak{x - 3a}}$ exists, where $\sbrak{t}$ is greatest integer $\leq t$. Then $a$ is equal to
+
+	\begin{enumerate}
+		\item $-6$ 
+		\item $-2$
+		\item $2$
+		\item $6$
+	\end{enumerate}
+
+    %Question6
+    \item The number of distinct real roots of $x^4 - 4x + 1 = 0$ is
+
+	\begin{enumerate}
+		\item $4$ 
+		\item $2$
+		\item $1$
+		\item $0$
+	\end{enumerate}
+
+
+    %Question7
+    \item The lengths of the sides of a triangle are $10 + x^2$, $10 + x^2$ and $20 - 2x^2$. If for $x = k$, the area of the triangle is maximum, then $3k^2$ is equal to
+
+	\begin{enumerate}
+		\item $5$ 
+		\item $8$
+		\item $10$
+		\item $12$
+	\end{enumerate}
+
+    %Question8
+    \item If $\cos^{-1}{\brak{\frac{y}{2}}} = \log_{e}{\brak{\frac{x}{5}}}^{5}, \abs{y} < 2$, then
+
+	\begin{enumerate}
+		\item $x^2y^{\prime\prime} + xy^{\prime} - 25y = 0$ 
+		\item $x^2y^{\prime\prime} - xy^{\prime} - 25y = 0$ 
+		\item $x^2y^{\prime\prime} - xy^{\prime} + 25y = 0$ 
+		\item $x^2y^{\prime\prime} + xy^{\prime} + 25y = 0$ 
+	\end{enumerate}
+
+    %Question9
+    \item $\int \frac{\brak{x^2 + 1}e^x}{\brak{x+1}^2} \, dx = f\brak{x}e^x + C$, where $C$ is a constant, then $\frac{d^3f}{dx^3}$ at $x = 1$ is equal to
+
+	\begin{enumerate}
+		\item $\frac{-3}{4}$
+		\item $\frac{3}{4}$
+		\item $\frac{-3}{2}$
+		\item $\frac{3}{2}$
+	\end{enumerate}
+
+    %Question10
+    \item The value of the integral $\int_{-2}^{2} \frac{\abs{x^3 + x}}{\brak{e^{x\abs{x}} + 1}} \, dx$ is equal to
+
+	\begin{enumerate}
+		\item $5e^2$ 
+		\item $3e^{-2}$
+		\item $4$
+		\item $6$
+	\end{enumerate}
+
+    %Question11
+    \item If $\frac{dy}{dx} + \frac{2^{x - y}\brak{2^y - 1}}{2^x - 1} = 0, x,y > 0, y\brak{1} = 1$, then $y\brak{2}$ is equal to
+
+	\begin{enumerate}
+		\item $2 + \log_{2} 3$ 
+		\item $2 + \log_{2} 2$ 
+		\item $2 - \log_{2} 3$ 
+		\item $2 - \log_{2} 3$ 
+	\end{enumerate}
+
+    %Question12
+    \item In an isosceles triangle $ABC$, the vertex $A$ is $\myvec{6\\1}$ and the equation of the base $BC$ is $2x + y = 4$. Let the point $B$ lie on the line $x + 3y = 7$. If $\myvec{\alpha\\\beta}$ is the centroid of $\triangle ABC$, then $15\brak{\alpha + \beta}$ is equal to
+
+	\begin{enumerate}
+		\item $39$ 
+		\item $41$
+		\item $51$
+		\item $63$
+	\end{enumerate}
+
+    %Question13
+    \item Let the eccentricity of an ellipse $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1, a > b$, be $\frac{1}{4}$. If this ellipse passes through the point $\myvec{{-4\brak{\sqrt{\frac{2}{5}}}}\\3}$, then $a^2 + b^2$ is equal to
+
+	\begin{enumerate}
+		\item $29$ 
+		\item $31$
+		\item $32$
+		\item $34$
+	\end{enumerate}
+
+
+    %Question14
+    \item If two straight lines whose direction cosines are given by the relations $1 + m - n = 0, 3l^2 + m^2 + cnl = 0$ are parallel, then the positive value of c is
+
+	\begin{enumerate}
+		\item $6$ 
+		\item $4$
+		\item $3$
+		\item $2$
+	\end{enumerate}
+
+    %Question15
+    \item Let $\vec{a} = \vec{i} + \vec{j} - \vec{k}$ and $\vec{c} = 2\vec{i} - 3\vec{j} + 2\vec{k}$. Then the number of vectors $\vec{b}$ such that $\vec{b} \times \vec{c} = \vec{a}$ and $\abs{\vec{b}} \in \cbrak{1, 2, \dots, 10}$ is
+
+	\begin{enumerate}
+		\item $0$ 
+		\item $1$
+		\item $2$
+		\item $3$
+	\end{enumerate}
+
+\end{enumerate}
+\end{document}

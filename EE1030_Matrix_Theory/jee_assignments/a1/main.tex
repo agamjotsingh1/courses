@@ -1,0 +1,182 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{JEE Main 2021 March 16 Shift 2}
+\author{EE24BTECH11002 - Agamjot Singh}
+\maketitle
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\begin{enumerate}
+    \setcounter{enumi}{15}
+
+    %Question16
+    \item Let $C_1$ be the curve obtained by the solution of the differential equation $2xy\frac{dy}{dx} = y^2 - x^2, x > 0$. Let curve $C_2$ be the solution of $\frac{2xy}{x^2 - y^2} = \frac{dy}{dx}$. If both the curves pass through $\brak{1, 1}$, then the area enclosed by the curves $C_1$ and $C_2$ is equal to
+
+	\begin{enumerate}
+		\item $\frac{\pi}{2} - 1$
+		\item $\frac{\pi}{4} + 1$
+		\item $\pi - 1$
+		\item $\pi + 1$
+	\end{enumerate}
+
+    %Question17
+    \item Let $\vec{a} = \vec{i} + 2\vec{j} - 3\vec{k}$ and $\vec{b} = 2\vec{i} - 3\vec{j} + 5\vec{k}$. If $\vec{r} \times \vec{a} = \vec{b} \times \vec{r}$, $\vec{r} \cdot \brak{\alpha\vec{i} + 2\vec{j} + \vec{k}} = 3$ and $\vec{r} \cdot \brak{2\vec{i} + 5\vec{j} - \alpha\vec{k}} = -1, \alpha \in \mathbb{R}$, then the value of $\alpha + \abs{r}^2 = $
+
+	\begin{enumerate}
+		\item $11$ 
+		\item $15$
+		\item $9$
+		\item $13$
+	\end{enumerate}
+
+    %Question18
+    \item Let $P\brak{x} = x^2 + bx + c$ be a quadratic polynomial with real coefficients such that $\int_{0}^{1} P\brak{x} \, dx$ and $P\brak{x}$ leaves remainder 5 when divided by $\brak{x - 2}$. Then the value of $9\brak{b+c}$ is equal to
+
+	\begin{enumerate}
+		\item $7$ 
+		\item $11$
+		\item $15$
+		\item $9$
+	\end{enumerate}
+
+
+    %Question19
+    \item If the points of intersections of the ellipse $\frac{x^2}{16} + \frac{y^2}{b^2} = 1$ and the circle $x^2 + y^2 = 4b, b > 4$ lie on the curve $y^2 = 3x^2$, then b is equal to
+
+	\begin{enumerate}
+		\item $5$ 
+		\item $6$
+		\item $12$
+		\item $10$
+	\end{enumerate}
+
+    %Question20
+    \item Let $A = \cbrak{2, 3, 4, 5, \dots, 30}$ and '$\tilde{=}$' be an equivalence relation on $A \times A$, defined by $\brak{a, b} \tilde{=} \brak{c, d}$, if and only if $ad = bc$. Then the number of ordered pairs which satisfy this equivalence relation with ordered pair $\brak{4, 3}$ is equal to
+
+	\begin{enumerate}
+		\item $7$ 
+		\item $5$
+		\item $6$
+		\item $8$
+	\end{enumerate}
+
+    %Question21
+    \item Let $\vec{c}$ be a vector perpendicular to the vectors $\vec{a} = \vec{i} + \vec{j} - \vec{k}$ and $\vec{b} = \vec{i} + 2\vec{j} + \vec{k}$. If $\vec{c} \cdot \brak{\vec{i} + \vec{j} + 3\vec{k}} = 8$, then the value of $\vec{c} \cdot \brak{\vec{a}\times\vec{b}}$ is equal to
+
+    %Question22
+    \item In $\triangle ABC$, the lengths of the sides $AC$ and $AB$ are $12$ cm and $5$ cm, respectively. If the area of $\triangle ABC$ is $30$ $\text{cm}^2$ and $R$ and $r$ are respectively the radii of the cirumcircle and incircle of $\triangle ABC$, then the value of $2R + r$ $\brak{\text{in cm}}$ is equal to
+
+    %Question23
+    \item Consider the statistics of two sets of observations as follows
+
+	\begin{table}[h!]
+		\centering
+		\input{tables/q23.tex}
+		\label{taba1.q23}
+	\end{table}
+
+	If the variance of the combined set of these two observations is $\frac{17}{9}$, then the value of $n$ is equal to
+
+    %Question24
+    \item Let $S_n\brak{x} = \log_{a^{\frac{1}{2}}} x + \log_{a^{\frac{1}{3}}} x + \log_{a^{\frac{1}{6}}} x + \log_{a^{\frac{1}{11}}} x + \log_{a^{\frac{1}{18}}} x + \log_{a^{\frac{1}{27}}} x + \dots$ upto $n$-terms, where $a>1$. If $S_{24}\brak{x} = 1093$ and $S_{12}\brak{2x} = 265$, then the value of $a$ is equal to
+
+    %Question25
+    \item Let $n$ be a positive integer. Let $A = \sum^{n}_{k = 0}\brak{-1}^k {}^{n}C_k\sbrak{\brak{\frac{1}{2}}^k + \brak{\frac{3}{4}}^k + \brak{\frac{7}{8}}^k + \brak{\frac{15}{16}}^k + \brak{\frac{31}{32}}^k}$. If $63A = 1 - \frac{1}{2^{30}}$, then $n$ is equal to
+
+    %Question26
+    \item Let $f \colon \mathbb{R} \to \mathbb{R}$ and $g \colon \mathbb{R} \to \mathbb{R}$ be defined as
+	\begin{align*}
+		f\brak{x} = 
+		\begin{cases}
+			x + a & x < 0\\
+			\abs{x - 1} & x \geq 0\\
+		\end{cases}
+	\end{align*} and
+	\begin{align*}
+		g\brak{x} = 
+		\begin{cases}
+			x + 1 & x < 0\\
+			\brak{x - 1}^2 + b & x \geq 0\\
+		\end{cases}
+	\end{align*}
+	where $a, b$ are non-negative real numbers. If $\brak{g \circ f}\brak{x}$ is continuous for all $x \in \mathbb{R}$, then $a + b$ is equal to
+
+    %Question27
+    \item If the distance of the point $\myvec{1\\-2\\3}$ from the plane $x + 2y - 3z + 10 = 0$ measured parallel to the line, $\frac{x - 1}{3} = \frac{2 - y}{m} = \frac{z + 3}{1}$ is $\frac{\sqrt{7}}{2}$, then the value of $\abs{m}$ is equal to
+
+    %Question28
+    \item Let $\frac{1}{16}$, $a$ and $b$ be in G.P. and $\frac{1}{a}$, $\frac{1}{b}$, $6$ be in A.P., where $a, b >0$. Then $72\brak{a+b}$ is equal to
+
+    %Question29
+    \item Let 
+	\begin{align*}
+		\vec{A} = \myvec{a_1\\a_2}
+	\end{align*} and
+	\begin{align*}
+		\vec{B} = \myvec{b_1\\b_2}
+	\end{align*}
+	be two $2\times 1$ matrices with real entries such that $\vec{A} = \vec{XB}$, where
+	\begin{align*}
+		\vec{X} = \frac{1}{\sqrt{3}}\myvec{1 & -1\\1 & k}
+	\end{align*}
+	and $k \in \mathbb{R}$. If $\brak{a_1^2 + a_2^2} = \frac{2}{3} \brak{b_1^2 + b_2^2}$ and $\brak{k^2 + 1} b_2^2 \neq -2b_1b_2$, then the value of $k$ is
+
+    %Question30
+    \item For any real numbers $\alpha, \beta, \gamma \text{ and } \delta$, if
+	\begin{align*}
+		\int \frac{\brak{x^2 - 1} + \tan^{-1}{\brak{\frac{x^2+1}{x}}}}{\brak{x^4 + 3x^2 + 1}\tan^{-1}{\brak{\frac{x^2+1}{x}}}} \, dx = \alpha\log_{e}\brak{\tan^{-1}{\brak{\frac{x^2+1}{x}}}} + \beta\tan^{-1}{\brak{\frac{\gamma\brak{x^2-1}}{x}}} + \delta\tan^{-1}{\brak{\frac{x^2+1}{x}}} + C
+	\end{align*}
+	where $C$ is an arbitary constant, then the value of $10\brak{\alpha + \beta\gamma + \delta}$ is equal to
+\end{enumerate}
+\end{document}

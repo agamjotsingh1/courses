@@ -1,0 +1,65 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{matplotlib}\PYG{n+nn}{.}\PYG{n+nn}{pyplot} \PYG{k}{as} \PYG{n+nn}{plt}
+\PYG{k+kn}{import} \PYG{n+nn}{numpy} \PYG{k}{as} \PYG{n+nn}{np}
+
+\PYG{n}{epsilon\PYGZus{}not} \PYG{o}{=} \PYG{l+m+mf}{8.85418e\PYGZhy{}12}  \PYG{c+c1}{\PYGZsh{} Permittivity of free space (F/m)}
+\PYG{n}{k} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{o}{/}\PYG{p}{(}\PYG{l+m+mi}{4}\PYG{o}{*}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}\PYG{o}{*}\PYG{n}{epsilon\PYGZus{}not}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} Coulomb constant}
+
+\PYG{k}{def} \PYG{n+nf}{E\PYGZus{}Q}\PYG{p}{(}\PYG{n}{X}\PYG{p}{,} \PYG{n}{Y}\PYG{p}{,} \PYG{n}{q}\PYG{p}{,} \PYG{n}{pos}\PYG{p}{)}\PYG{p}{:}
+\PYG{+w}{    }\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+sd}{    Calculate the electric field at points (X,Y) due to a charge q at position pos.}
+
+\PYG{l+s+sd}{    Parameters:}
+\PYG{l+s+sd}{    X, Y: Grid of coordinates where the field is evaluated}
+\PYG{l+s+sd}{    q: Charge value}
+\PYG{l+s+sd}{    pos: (x,y) position of the charge}
+
+\PYG{l+s+sd}{    Returns:}
+\PYG{l+s+sd}{    Ex, Ey: Components of the electric field}
+\PYG{l+s+sd}{    \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    \PYG{n}{Rx} \PYG{o}{=} \PYG{n}{X} \PYG{o}{\PYGZhy{}} \PYG{n}{pos}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}
+    \PYG{n}{Ry} \PYG{o}{=} \PYG{n}{Y} \PYG{o}{\PYGZhy{}} \PYG{n}{pos}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}
+    \PYG{n}{norm} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{sqrt}\PYG{p}{(}\PYG{n}{Rx}\PYG{o}{*}\PYG{o}{*}\PYG{l+m+mi}{2} \PYG{o}{+} \PYG{n}{Ry}\PYG{o}{*}\PYG{o}{*}\PYG{l+m+mi}{2}\PYG{p}{)}
+    \PYG{c+c1}{\PYGZsh{} Return the x and y components of the electric field using Coulomb\PYGZsq{}s law}
+    \PYG{k}{return} \PYG{n}{k}\PYG{o}{*}\PYG{n}{q}\PYG{o}{*}\PYG{p}{(}\PYG{n}{X} \PYG{o}{\PYGZhy{}} \PYG{n}{pos}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{)}\PYG{o}{/}\PYG{n}{norm}\PYG{o}{*}\PYG{o}{*}\PYG{l+m+mi}{3}\PYG{p}{,} \PYG{n}{k}\PYG{o}{*}\PYG{n}{q}\PYG{o}{*}\PYG{p}{(}\PYG{n}{Y} \PYG{o}{\PYGZhy{}} \PYG{n}{pos}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{p}{)}\PYG{o}{/}\PYG{n}{norm}\PYG{o}{*}\PYG{o}{*}\PYG{l+m+mi}{3}
+
+\PYG{k}{def} \PYG{n+nf}{E}\PYG{p}{(}\PYG{n}{X}\PYG{p}{,} \PYG{n}{Y}\PYG{p}{)}\PYG{p}{:}
+\PYG{+w}{    }\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}}
+\PYG{l+s+sd}{    Calculate the total electric field at points (X,Y) due to four charges.}
+
+\PYG{l+s+sd}{    The charges are arranged in a quadrupole configuration:}
+\PYG{l+s+sd}{    \PYGZhy{} Positive charges at (0,1) and (0,\PYGZhy{}1)}
+\PYG{l+s+sd}{    \PYGZhy{} Negative charges at (1,0) and (\PYGZhy{}1,0)}
+
+\PYG{l+s+sd}{    Returns:}
+\PYG{l+s+sd}{    Ex, Ey: Components of the total electric field}
+\PYG{l+s+sd}{    \PYGZdq{}\PYGZdq{}\PYGZdq{}}
+    \PYG{n}{E1} \PYG{o}{=} \PYG{n}{E\PYGZus{}Q}\PYG{p}{(}\PYG{n}{X}\PYG{p}{,} \PYG{n}{Y}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{)}\PYG{p}{)}
+    \PYG{n}{E2} \PYG{o}{=} \PYG{n}{E\PYGZus{}Q}\PYG{p}{(}\PYG{n}{X}\PYG{p}{,} \PYG{n}{Y}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{p}{)}
+    \PYG{n}{E3} \PYG{o}{=} \PYG{n}{E\PYGZus{}Q}\PYG{p}{(}\PYG{n}{X}\PYG{p}{,} \PYG{n}{Y}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{)}
+    \PYG{n}{E4} \PYG{o}{=} \PYG{n}{E\PYGZus{}Q}\PYG{p}{(}\PYG{n}{X}\PYG{p}{,} \PYG{n}{Y}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{} Return the sum of all field components}
+    \PYG{k}{return} \PYG{n}{E1}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]} \PYG{o}{+} \PYG{n}{E2}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]} \PYG{o}{+} \PYG{n}{E3}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]} \PYG{o}{+} \PYG{n}{E4}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{,} \PYG{n}{E1}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{+} \PYG{n}{E2}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{+} \PYG{n}{E3}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]} \PYG{o}{+} \PYG{n}{E4}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}
+
+\PYG{n}{x} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{linspace}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{20}\PYG{p}{)}
+\PYG{n}{y} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{linspace}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{20}\PYG{p}{)}
+\PYG{n}{X}\PYG{p}{,} \PYG{n}{Y} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{meshgrid}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{y}\PYG{p}{)}
+
+\PYG{n}{U}\PYG{p}{,} \PYG{n}{V} \PYG{o}{=} \PYG{n}{E}\PYG{p}{(}\PYG{n}{X}\PYG{p}{,} \PYG{n}{Y}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} U = Ex, V = Ey}
+\PYG{n}{magnitude} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{sqrt}\PYG{p}{(}\PYG{n}{U}\PYG{o}{*}\PYG{o}{*}\PYG{l+m+mi}{2} \PYG{o}{+} \PYG{n}{V}\PYG{o}{*}\PYG{o}{*}\PYG{l+m+mi}{2}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Normalize the field components for the quiver plot}
+\PYG{n}{U\PYGZus{}norm} \PYG{o}{=} \PYG{n}{U} \PYG{o}{/} \PYG{n}{magnitude}
+\PYG{n}{V\PYGZus{}norm} \PYG{o}{=} \PYG{n}{V} \PYG{o}{/} \PYG{n}{magnitude}
+
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{figure}\PYG{p}{(}\PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{6}\PYG{p}{,} \PYG{l+m+mi}{6}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Create a quiver plot (vector field visualization)}
+\PYG{c+c1}{\PYGZsh{} The color of the arrows represents the magnitude of the electric field}
+\PYG{n}{quiver\PYGZus{}plot} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{quiver}\PYG{p}{(}\PYG{n}{X}\PYG{p}{,} \PYG{n}{Y}\PYG{p}{,} \PYG{n}{U\PYGZus{}norm}\PYG{p}{,} \PYG{n}{V\PYGZus{}norm}\PYG{p}{,} \PYG{n}{magnitude}\PYG{p}{,} \PYG{n}{cmap}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{gnuplot}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Add a colorbar to show the mapping between colors and field magnitudes}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{colorbar}\PYG{p}{(}\PYG{n}{quiver\PYGZus{}plot}\PYG{p}{,} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Electric Field Magnitude}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{(}\PYG{p}{)}
+\end{MintedVerbatim}

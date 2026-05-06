@@ -1,0 +1,309 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                         
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{multicol}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+\begin{document}
+\bibliographystyle{IEEEtran}
+\title{Assignment 1}
+\author{EE24BTECH11002 - Agamjot Singh$^{*}$% <-this % stops a space
+}
+\maketitle
+\newpage
+\bigskip
+
+\begin{enumerate}
+\section*{ C. MCQs with One Correct Answer}
+    \setcounter{enumi}{4}
+       
+    %Question7
+    \item The general solution of 
+	\begin{multline*}
+		    \sin{x}-3\sin{2x} + \sin{3x} = \\\cos{x}-3\cos{2x} + \cos{3x}
+	\end{multline*}
+        
+        \hfill{\brak{1989 - 2 Marks}}
+        \begin{enumerate}
+            \begin{multicols}{2}
+                \item $n\pi+\frac{\pi}{8}$
+                \columnbreak
+                \item $\frac{n\pi}{2}+\frac{\pi}{8}$
+            \end{multicols}
+            \begin{multicols}{2}
+                \item $\brak{-1}^n\frac{n\pi}{2}+\frac{\pi}{8}$
+                \columnbreak
+                \item $2n\pi+\cos^{-1}{\frac{3}{2}}$
+            \end{multicols}
+        \end{enumerate}
+
+
+    %Question8
+    \item The equation $\brak{\cos{p}-1}x^2+\brak{\cos{p}}x+\sin{p}=0$ in the variable $x$, has real roots. Then $p$ can take any value in the interval
+        
+        \hfill{\brak{1990 - 2 Marks}}
+        \begin{enumerate}
+            \begin{multicols}{2}
+                \item $\brak{0,2\pi}$
+                \columnbreak
+                \item $\brak{-\pi,0}$
+            \end{multicols}
+
+            \begin{multicols}{2}
+                \item $\brak{-\frac{\pi}{2},\frac{\pi}{2}}$  
+                \columnbreak
+                \item $\brak{0,\pi}$
+            \end{multicols}
+        \end{enumerate}
+
+    %Question9
+    \item Number of solutions of the equation $\tan{x}+\sec{x} = 2\cos{x}$ lying in the interval $\brak{0, 2\pi}$ is
+        
+        \hfill{\brak{1993 - 1 Marks}}
+        \begin{enumerate}
+            \begin{multicols}{4}
+                \item $0$
+                \columnbreak
+                \item $1$
+                \columnbreak
+                \item $2$
+                \columnbreak
+                \item $3$
+            \end{multicols}
+        \end{enumerate}
+
+    %Question10
+    \item Let $0<x<\frac{\pi}{4}$ then $\brak{\sec{2x} - \tan{2x}}$ equals
+        
+        \hfill{\brak{1994}}
+        \begin{enumerate}
+            \begin{multicols}{2}
+                \item $\tan{\brak{x-\frac{\pi}{4}}}$
+                \columnbreak
+                \item $\tan{\brak{\frac{\pi}{4}-x}}$
+                
+            \end{multicols}
+
+            \begin{multicols}{2}
+                \item $\tan{\brak{x+\frac{\pi}{4}}}$ 
+                \columnbreak
+                \item $\tan^{2}{\brak{x+\frac{\pi}{4}}}$
+            \end{multicols}
+        \end{enumerate}
+
+    %Question11
+    \item Let n be a positive integer such that $\sin{\frac{\pi}{2n}} + \cos{\frac{\pi}{2n}} = \frac{\sqrt{n}}{2}$. Then
+        
+        \hfill{\brak{1994}}
+        \begin{enumerate}
+            \begin{multicols}{2}
+                \item $6\le n\le8$
+                \columnbreak
+                \item $4<n\le8$
+                
+            \end{multicols}
+
+            \begin{multicols}{2}
+                \item $4\le n\le8$  
+                \columnbreak
+                \item $4<n<8$
+            \end{multicols}
+        \end{enumerate}
+
+    %Question12
+    \item If $\omega$ is an imaginary cube root of unity then the value of $\sin{\brak{\brak{\omega^{10} + \omega^{23}}\pi - \frac{\pi}{4}}}$ is
+    
+        \hfill{\brak{1994}}
+        \begin{enumerate}
+            \begin{multicols}{4}
+                \item $-\frac{\sqrt{3}}{2}$
+                \columnbreak
+                \item $-\frac{1}{\sqrt{2}}$
+                \columnbreak
+                \item $-\frac{1}{\sqrt{2}}$
+                \columnbreak
+                \item $\frac{\sqrt{3}}{2}$
+            \end{multicols}
+        \end{enumerate}
+
+    %Question13
+	\item \begin{multline*}
+		3\brak{\sin{x} - \cos{x}}^4 + 6\brak{\sin{x} + \cos{x}}^4 + \\ 4\brak{\sin^6{x}+\cos^6{x}} =
+	\end{multline*}
+        
+        \hfill{\brak{1995S}}
+        \begin{enumerate}
+            \begin{multicols}{4}
+                \item $11$
+                \columnbreak
+                \item $12$
+                \columnbreak
+                \item $13$
+                \columnbreak
+                \item $14$
+            \end{multicols}
+        \end{enumerate}   
+
+    %Question14
+    \item The general values of $\theta$ satisfying the equation $2\sin^2{\theta}-3\sin{\theta}-2=0$ is
+        
+        \hfill{\brak{1995S}}
+        \begin{enumerate}
+            \begin{multicols}{2}
+                \item $n\pi + \brak{-1}^n\frac{\pi}{6}$
+                \columnbreak
+                \item $n\pi + \brak{-1}^n\frac{\pi}{2}$
+                
+            \end{multicols}
+
+            \begin{multicols}{2}
+                \item $n\pi + \brak{-1}^n\frac{5\pi}{6}$ 
+                \columnbreak
+                \item $n\pi + \brak{-1}^n\frac{7\pi}{6}$
+            \end{multicols}
+        \end{enumerate}
+
+    %Question15
+    \item $\sec^2{\theta} = \frac{4xy}{\brak{x+y}^2}$ is true if and only if
+        
+        \hfill{\brak{1996 - 1 Mark}}
+        \begin{enumerate}
+            \begin{multicols}{2}
+                \item $x+y=0$
+                \columnbreak
+                \item $x=y,x\neq0$
+                
+            \end{multicols}
+
+            \begin{multicols}{2}
+                \item $x=y$ 
+                \columnbreak
+                \item $x\neq0,y\neq0$
+            \end{multicols}
+        \end{enumerate}
+        
+    %Question16
+\item In a triangle $PQR$, $\angle R = \frac{\pi}{2}$. If $\tan{\frac{P}{2}}$ and $\tan{\frac{Q}{2}}$ are the roots of the equation $ax^2+bx+c=0 \;\brak{a\neq0}$ then
+        
+        \hfill{\brak{1999 - 2 Marks}}
+        \begin{enumerate}
+            \begin{multicols}{2}
+                \item $a+b=c$
+                \columnbreak
+                \item $b+c=a$
+                
+            \end{multicols}
+
+            \begin{multicols}{2}
+                \item $a+c=b$ 
+                \columnbreak
+                \item $b=c$
+            \end{multicols}
+        \end{enumerate}
+
+    %Question17
+    \item Let $f\brak{\theta} = \sin{\theta}\brak{\sin{\theta} + \sin{3\theta}}$. Then $f\brak{\theta}$ is
+        
+        \hfill{\brak{2000S}}
+        \begin{enumerate}
+            \begin{multicols}{2}
+                \item $\ge0$ only when $\theta\newline\ge0$
+                \columnbreak
+                \item $\le0$ for all real $\theta$
+            \end{multicols}
+
+            \begin{multicols}{2}
+                \item $\ge0$ for all real $\theta$
+                \columnbreak
+                \item $\le0$ only when $\theta\le0$
+            \end{multicols}
+        \end{enumerate}
+
+    %Question18
+    \item The number of distinct real roots of
+    \begin{align*}
+	    \mydet{
+		\sin{x}&\cos{x}&\cos{x}\\
+    		\cos{x}&\sin{x}&\cos{x}\\
+		\cos{x}&\cos{x}&\sin{x}}
+    \end{align*}
+
+        \hfill{\brak{2001S}}
+        \begin{enumerate}
+            \begin{multicols}{4}
+                \item $0$
+                \columnbreak
+                \item $2$
+                \columnbreak
+                \item $1$
+                \columnbreak
+                \item $3$
+            \end{multicols}
+        \end{enumerate}
+
+    %Question19
+    \item The maximum value of $\brak{\cos{\alpha_1}}\brak{\cos{\alpha_2}}\brak{\cos{\alpha_3}}\dots\brak{\cos{\alpha_n}}$ under the restrictions
+   	\begin{align*} 
+		0\le\alpha_1,\alpha_2,\dots\alpha_n\le\frac{\pi}{2}
+	\end {align*} and 
+	\begin{align*}
+		\brak{\cot{\alpha_1}}\brak{\cot{\alpha_2}}\brak{\cot{\alpha_3}}\dots\brak{\cot{\alpha_n}} = 1
+	\end{align*}
+        \hfill{\brak{2001S}}
+        \begin{enumerate}
+            \begin{multicols}{4}
+                \item $\frac{1}{2^{\frac{n}{2}}}$
+                \columnbreak
+                \item $\frac{1}{2^{n}}$
+                \columnbreak
+                \item $\frac{1}{2n}$
+                \columnbreak
+                \item $1$
+            \end{multicols}
+        \end{enumerate}
+\end{enumerate}
+
+\end{document}
+

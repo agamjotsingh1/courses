@@ -1,0 +1,413 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usetikzlibrary{arrows.meta}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{EE 2015 Q27-39}
+\author{EE24BTECH11002 - Agamjot Singh}
+\maketitle
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\begin{enumerate}
+    %Question27
+    \item Base load power plants are
+	\newline
+	P: wind farms
+	\newline
+	Q: run-of-river plants
+	\newline
+	R: nuclear power plants
+	\newline
+	S: diesel power plants
+	\hfill{\brak{\text{2015 - EE}}}
+
+	\begin{enumerate}
+		\item P, Q and S only
+		\item P, R and S only
+		\item P, Q and R only
+		\item Q and R only
+	\end{enumerate}
+
+    %Question28
+    \item The voltages developed across the $3\ohm$ and $2\ohm$ resistors shown in the figure are $6$ V and $2$ V respectively, with the polarity as marked. What is the power $\brak{\text{in Watt}}$ delivered by the $5$ V voltage source?
+	\begin{center}
+		\begin{circuitikz}
+		\tikzstyle{every node}=[font=\large]
+		\draw  (5.5,7.75) circle (1.75cm);
+		\draw  (13.25,7.75) circle (1.75cm);
+		\draw (7.25,7.75) to[short] (8.25,7.75);
+		\draw (10.75,7.75) to[short] (11.5,7.75);
+		\draw (7,6.75) to[short] (8.5,5.25);
+		\draw (11.75,6.75) to[short] (10.25,5.25);
+		\draw (7,8.75) to[short] (8.25,10);
+		\draw (10.5,10) to[short] (11.75,8.75);
+		\draw (8.25,7.75) to[R] (10.75,7.75);
+		\draw (8.25,10) to[R] (10.5,10);
+		\draw (10.25,5.25) to[american voltage source] (8.5,5.25);
+		\node [font=\large] at (9.5,8.25) {2$\Omega$};
+		\node [font=\large] at (9.25,9.5) {3$\Omega$};
+		\node [font=\large] at (8.5,10.5) {-};
+		\node [font=\large] at (10,10.5) {+};
+		\node [font=\large] at (9.25,10.5) {6 V};
+		\node [font=\large] at (9.5,4.5) {5 V};
+		\node [font=\large] at (5.5,7.75) {Network N1};
+		\node [font=\large] at (13.25,7.75) {Network N2};
+		\node [font=\large] at (9.5,7.25) {2 V};
+		\node [font=\large] at (10.25,7.25) {+};
+		\node [font=\large] at (8.75,7.25) {-};
+		\end{circuitikz}
+	\end{center}
+	\hfill{\brak{\text{2015 - EE}}}
+
+	\begin{enumerate}
+		\item $5$
+		\item $7$
+		\item $10$
+		\item $14$
+	\end{enumerate}
+
+    %Question29
+    \item For the given circuit, the Thevenin equivalent is to be determined. The Thevenin voltage, $V_{th}\brak{\text{ in Volt}}$, seen from terminal AB is \rule{1cm}{0.15mm}
+	\begin{center}
+		\begin{circuitikz}
+		\tikzstyle{every node}=[font=\large]
+		\draw (4.75,9) to[short] (6,9);
+		\draw (6,9) to[R] (7,9);
+		\draw (7,9) to[short] (7.5,9);
+		\draw (7.5,9) to[short] (7.5,8.25);
+		\draw (7.5,8.25) to[R] (7.5,7.25);
+		\draw (4.75,9) to[short] (4.75,8.25);
+		\draw (7.5,7.25) to[short] (7.5,6.5);
+		\draw (7.5,6.5) to[short] (4.75,6.5);
+		\draw (4.75,6.5) to[short] (4.75,7.25);
+		\draw (4.75,8.25) to[battery1] (4.75,7.25);
+		\draw (9.75,9) to[american controlled voltage source] (7.5,9);
+		\draw (9.75,9) to[R] (9.75,6.5);
+		\draw (7.5,6.5) to[short] (10.75,6.5);
+		\node [font=\large] at (8.75,9.75) {20i};
+		\node [font=\large] at (6.5,9.5) {1$\Omega$};
+		\node [font=\large] at (7,7.75) {1$\Omega$};
+		\node [font=\large] at (4,7.75) {2 V};
+		\node [font=\large] at (4.5,8) {+};
+		\node [font=\large] at (4.5,7.5) {-};
+		\node [font=\large] at (10.25,7.75) {2$\Omega$};
+		\draw [->, >=Stealth] (7.75,7.25) -- (7.75,6.75);
+		\node [font=\large] at (8,7) {i};
+		\draw (9.75,9) to[short] (10.75,9);
+		\node [font=\large] at (10.75,9.25) {A};
+		\node [font=\large] at (11,6.5) {B};
+		\end{circuitikz}
+	\end{center}
+	\hfill{\brak{\text{2015 - EE}}}
+
+    %Question30
+    \item An inductor is connected in parallel with a capacitor as shown in the figure
+	\begin{center}
+		\begin{circuitikz}
+		\tikzstyle{every node}=[font=\large]
+		\draw (4.75,8.25) to[short] (6.75,8.25);
+		\draw (10,8.25) to[short] (12,8.25);
+		\draw (6.75,9) to[short] (6.75,7.25);
+		\draw (10,9) to[short] (10,7.25);
+		\draw (6.75,9) to[L ] (10,9);
+		\draw (6.75,7.25) to[C] (10,7.25);
+		\draw [dashed] (5.75,9.75) -- (5.75,6.25);
+		\draw [dashed] (5.75,6.25) -- (10.75,6.25);
+		\draw [dashed] (10.75,6.25) -- (10.75,10.25);
+		\draw [dashed] (10.75,10.25) -- (5.75,10.25);
+		\draw [dashed] (5.75,10) -- (5.75,10.25);
+		\draw [->, >=Stealth] (4.75,8.25) -- (5.5,8.25);
+		\node [font=\large] at (5.25,7.75) {i};
+		\node [font=\large] at (7.75,8.5) {L};
+		\node [font=\large] at (8.75,7.75) {C};
+		\node [font=\large] at (11,6.5) {Z};
+		\end{circuitikz}
+	\end{center}
+
+	As the frequency of current $i$ is increased, the impedance $\brak{Z}$ of the network varies as
+	\hfill{\brak{\text{2015 - EE}}}
+
+	\begin{enumerate}
+		\item
+		\begin{circuitikz}
+		\tikzstyle{every node}=[font=\normalsize]
+		\draw (5.25,10) to[short] (5.25,5.5);
+		\draw (5.25,7.75) to[short] (11.5,7.75);
+		\draw [->, >=Stealth] (5,8.25) -- (5,9.5);
+		\draw [->, >=Stealth] (10.25,7.5) -- (11.5,7.5);
+		\node [font=\large] at (4.5,8.25) {Z};
+		\node [font=\large] at (11.25,7) {f};
+		\draw [dashed] (7.75,10) -- (7.75,5.25);
+		\draw [short] (5.5,7.5) .. controls (7,7.5) and (7.5,7.5) .. (7.5,5.5);
+		\draw [short] (8,10) .. controls (8.25,7.75) and (8.25,8.25) .. (10.25,8);
+		\node [font=\normalsize] at (6.5,6) {Capacitive};
+		\node [font=\normalsize] at (9.25,9) {Inductive};
+		\end{circuitikz}
+
+		\item		
+		\begin{circuitikz}
+		\tikzstyle{every node}=[font=\normalsize]
+		\draw (5.25,10) to[short] (5.25,5.5);
+		\draw (5.25,7.75) to[short] (11.5,7.75);
+		\draw [->, >=Stealth] (5,8.25) -- (5,9.5);
+		\draw [->, >=Stealth] (10.25,7.5) -- (11.5,7.5);
+		\node [font=\large] at (4.5,8.25) {Z};
+		\node [font=\large] at (11.25,7) {f};
+		\draw [dashed] (7.75,10) -- (7.75,5.25);
+		\node [font=\normalsize] at (9.25,6.25) {Capacitive};
+		\node [font=\normalsize] at (6.5,9) {Inductive};
+		\draw [short] (5.5,8) .. controls (7.75,8.25) and (7.5,8.5) .. (7.5,10);
+		\draw [short] (8,5.5) .. controls (8,7.5) and (8.25,7.75) .. (10,7.5);
+		\end{circuitikz}
+
+		\item 
+		\begin{circuitikz}
+		\tikzstyle{every node}=[font=\normalsize]
+		\draw (5.25,7.75) to[short] (11.5,7.75);
+		\draw [->, >=Stealth] (5,8.25) -- (5,9.5);
+		\draw [->, >=Stealth] (10.25,7.5) -- (11.5,7.5);
+		\node [font=\large] at (4.5,8.25) {Z};
+		\node [font=\large] at (11.25,7) {f};
+		\node [font=\normalsize] at (10,9.25) {Capacitive};
+		\node [font=\normalsize] at (6.5,9.25) {Inductive};
+		\draw (5.25,10.25) to[short] (5.25,7.25);
+		\draw [short] (8,10) .. controls (8.25,10.25) and (8.5,10) .. (8.5,10);
+		\draw [short] (6,8.25) .. controls (7.75,8.75) and (7.5,9.25) .. (8,10);
+		\draw [short] (8.5,10) .. controls (9,9) and (8.5,8.75) .. (10.5,8.25);
+		\end{circuitikz}
+
+		\item
+		\begin{circuitikz}
+		\tikzstyle{every node}=[font=\normalsize]
+		\draw (5.25,7.75) to[short] (11.5,7.75);
+		\draw [->, >=Stealth] (5,8.25) -- (5,9.5);
+		\draw [->, >=Stealth] (10.25,7.5) -- (11.5,7.5);
+		\node [font=\large] at (4.5,8.25) {Z};
+		\node [font=\large] at (11.25,7) {f};
+		\node [font=\normalsize] at (9.75,7) {Capacitive};
+		\node [font=\normalsize] at (6.5,8.25) {Inductive};
+		\draw (5.25,6) to[short] (5.25,10);
+		\draw [short] (5.75,9) .. controls (7.5,9.25) and (7.5,8.5) .. (8,7.75);
+		\draw [short] (8,7.75) .. controls (9,6.5) and (8.75,6.5) .. (10.5,6.25);
+		\end{circuitikz}
+	\end{enumerate}
+
+    %Question31
+    \item A seperately excited DC generator has an armature resistance of $0.1\ohm$ and negligible armature inductance. At rated field current and rated rotor speed, its open-circuit voltage is $200$ V. When this generator is operated at half the rated speed, with half the rated field current, and uncharged $1000 \mu \text{F}$ capacitor is suddenly connected across the armature terminals. Assume that the speed remains unchanged during the transient. At what time $\brak{\text{in microsecond}}$ after the capcitor is connected will the voltage across it reach $25$ V?
+	\hfill{\brak{\text{2015 - EE}}}
+
+	\begin{enumerate}
+		\item $62.25$
+		\item $69.3$
+		\item $73.25$
+		\item $77.3$
+	\end{enumerate}
+
+    %Question32
+    \item The self inductance of the primary winding of a single phase, $50$ Hz, transformer is $800$ mH, and that of the secondary winding is $600$ mH. The mutual inductance between these two windings is $480$ mH. The secondary winding of this transformer is short circuited and the primary winding is connected to a $50$ Hz, single phase, sinusoidal voltage source. The current flowing in both the windings is less than their respective rated currents. The resistance of both windings can be neglected. In this condition, what is the effective inductance $\brak{\text{in mH}}$ seen by the source
+	\hfill{\brak{\text{2015 - EE}}}
+
+	\begin{enumerate}
+		\item $416$
+		\item $440$
+		\item $200$
+		\item $920$
+	\end{enumerate}
+
+    %Question33
+    \item The primary mmf is least affected by the secondary terminal conditions in a
+	\hfill{\brak{\text{2015 - EE}}}
+
+	\begin{enumerate}
+		\item power transformer
+		\item potential transformer
+		\item current transformer
+		\item distribution transformer
+	\end{enumerate}
+
+    %Question34
+    \item A Bode magnitude plot for the transfer function $G\brak{s}$ of a plant is shown in the figure. Which one of the following transfer functions best describes the plant?
+	\begin{center}
+		\begin{circuitikz}
+		\tikzstyle{every node}=[font=\large]
+		\draw [->, >=Stealth] (4.5,7) -- (4.5,10.5);
+		\draw [->, >=Stealth] (4.5,7) -- (10.5,7);
+		\draw (5,7) to[short] (7,7);
+		\draw [short] (4.5,7.75) -- (4.25,7.75);
+		\draw [short] (4.5,8.5) -- (4.25,8.5);
+		\draw [short] (4.5,9.25) -- (4.25,9.25);
+		\draw [short] (5.25,7) -- (5.25,6.75);
+		\draw [short] (6,7) -- (6,6.75);
+		\draw [short] (6.75,7) -- (6.75,6.75);
+		\draw [short] (7.5,7) -- (7.5,6.75);
+		\draw [short] (8.25,7) -- (8.25,6.75);
+		\draw [short] (9,7) -- (9,6.75);
+		\draw [short] (9.5,7) -- (9.75,7);
+		\draw [short] (9.75,7) -- (9.75,6.75);
+		\node [font=\small] at (4,9.25) {20};
+		\node [font=\small] at (4,8.5) {0};
+		\node [font=\small] at (4,7.75) {-20};
+		\node [font=\small] at (5.25,6.5) {0.1};
+		\node [font=\small] at (6,6.5) {1};
+		\node [font=\small] at (6.75,6.5) {10};
+		\node [font=\small] at (7.5,6.5) {100};
+		\node [font=\small] at (8.25,6.5) {1k};
+		\node [font=\small] at (9,6.5) {10k};
+		\node [font=\small] at (9.75,6.5) {100k};
+		\node [font=\large] at (12,6.5) {$f\brak{\text{Hz}}$};
+		\node [font=\large] at (5.5,10.75) {$20 \log\abs{G\brak{j2 \pi f}}$};
+		\draw [short] (4.5,9.25) -- (6.5,9.25);
+		\draw [short] (6.5,9.25) .. controls (7.75,9) and (7,8) .. (8.25,7.75);
+		\draw [short] (8.25,7.75) -- (10.75,7.75);
+		\end{circuitikz}
+	\end{center}
+	\hfill{\brak{\text{2015 - EE}}}
+
+		\begin{enumerate}
+			\item $\frac{1000\brak{s + 10}}{s + 1000}$
+			\item $\frac{10\brak{s + 10}}{s\brak{s + 1000}}$
+			\item $\frac{s+1000}{10s\brak{s + 10}}$
+			\item $\frac{s + 1000}{10\brak{s + 10}}$
+		\end{enumerate}
+
+	%Question35
+	\item For the signal-flow graph shown in the figure, which one of the following expressions is equal to the transfer function $\left.\frac{Y\brak{s}}{X_2\brak{s}}\right|_{X_1\brak{s} = 0}$?
+
+	\begin{center}
+		\begin{circuitikz}
+		\tikzstyle{every node}=[font=\normalsize]
+		\draw [->, >=Stealth] (4.5,8.5) -- (5.75,8.5);
+		\draw [->, >=Stealth] (5.75,8.5) -- (7,8.5);
+		\draw [->, >=Stealth] (7,8.5) -- (8.25,8.5);
+		\draw [->, >=Stealth] (8.25,8.5) -- (9.5,8.5);
+		\draw [->, >=Stealth] (9.5,8.5) -- (10.75,8.5);
+		\draw [->, >=Stealth] (4.5,10) -- (4.5,8.5);
+		\draw [->, >=Stealth] (7.5,10) -- (7.5,8.5);
+		\draw [->, >=Stealth] (7.5,8.5) .. controls (7.5,7.75) and (7.25,7) .. (5.75,7) ;
+		\draw [ color={rgb,255:red,255; green,255; blue,255}, short] (4.5,8.5) -- (5.5,7);
+		\draw [short] (5.75,7) .. controls (5,7) and (4.5,7.5) .. (4.5,8.5);
+		\draw [short] (6.25,8.5) .. controls (6.25,7.5) and (6.75,7) .. (7.75,7);
+		\draw [->, >=Stealth] (9,8.5) .. controls (9,8) and (9,7) .. (7.75,7) ;
+		\node at (4.5,8.5) [circ] {};
+		\node at (7.5,8.5) [circ] {};
+		\node at (6.25,8.5) [circ] {};
+		\node at (9,8.5) [circ] {};
+		\node [font=\normalsize] at (5.75,6.75) {$-1$};
+		\node [font=\normalsize] at (7.75,6.75) {$-1$};
+		\node [font=\normalsize] at (4.5,10.25) {$X_1\brak{s}$};
+		\node [font=\normalsize] at (7.5,10.25) {$X_2\brak{s}$};
+		\node [font=\normalsize] at (5.75,8.75) {$1$};
+		\node [font=\normalsize] at (7,8.75) {$G_1$};
+		\node [font=\normalsize] at (8.25,8.75) {$G_2$};
+		\node [font=\normalsize] at (10.75,8) {$Y\brak{s}$};
+		\end{circuitikz}
+	\end{center}
+	\hfill{\brak{\text{2015 - EE}}}
+
+	\begin{enumerate}
+		\item $\frac{G_1}{1 + G_2\brak{1 + G_1}}$
+		\item $\frac{G_2}{1 + G_1\brak{1 + G_2}}$
+        \item $\frac{G_1}{1 + G_1G_2}$
+		\item $\frac{G_2}{1 + G_1G_2}$
+	\end{enumerate}
+
+	%Question36
+	\item The maximum value of "$a$" such that the matrix $\myvec{-3 & 0 & -2\\1 & -1 & 0\\0 & a & -2}$ has three linearly independent real eigenvectors is
+
+	\hfill{\brak{\text{2015 - EE}}}
+	\begin{enumerate}
+		\item $\frac{2}{3\sqrt{3}}$
+		\item $\frac{1}{3\sqrt{3}}$
+		\item $\frac{1 + 2\sqrt{3}}{3\sqrt{3}}$
+		\item $\frac{1 + \sqrt{3}}{3\sqrt{3}}$
+	\end{enumerate}
+
+    %Question37
+    \item A solution of the ordinary differential equation $\frac{d^2y}{dt^2} + 5\frac{dy}{dt} + 6y = 0$ is such that $y\brak{0} = 2$ and $y\brak{1} = -\frac{1 - 3e}{e^3}$. The value of $\frac{dy}{dt}\brak{0}$ is \rule{1cm}{0.15mm}
+	\hfill{\brak{\text{2015 - EE}}}
+
+    %Question38
+    \item The signum function is given by
+	\begin{align*}
+		\text{sgn}\brak{x} =
+		\begin{cases}
+			\frac{x}{\abs{x}} & x \neq 0\\
+			0 & x = 0
+		\end{cases}
+	\end{align*}
+
+	The Fourier series expansion of sgn$\brak{\cos{t}}$ has
+	\hfill{\brak{\text{2015 - EE}}}
+
+	\begin{enumerate}
+		\item only sine terms with all harmonics
+		\item only cosine terms with all harmonics
+		\item only sine terms with even numbered harmonics
+		\item only cosine terms with odd numbered harmonics
+	\end{enumerate}
+
+    %Question39
+    \item Two players, $A$ and $B$, alternately keep rolling a fair dice. The person to get a six first wins the game. Given that player $A$ starts the game, the probability that $A$ wins the game is
+	\hfill{\brak{\text{2015 - EE}}}
+
+	\begin{enumerate}
+		\item $\frac{5}{11}$
+		\item $\frac{1}{2}$
+		\item $\frac{7}{13}$
+		\item $\frac{6}{11}$
+	\end{enumerate}
+
+\end{enumerate}
+\end{document}

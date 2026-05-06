@@ -1,0 +1,93 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm,mathtools}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{7.2.30}
+\author{EE24BTECH11002 - Agamjot Singh}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+\textbf{Question:}
+\newline
+The line $x + 3y = 0$ is a diameter of the circle $x^2 + y^2 + 6x + 2y = 0$.
+\newline
+\textbf{Solution:}
+\newline
+
+\begin{table}[h!]
+	\centering
+	\input{tables/table.tex}
+	\caption{Variables Used}
+	\label{tab4-4.3.2}
+\end{table}
+
+The general equation of a circle is given by 
+\begin{align}
+	\norm{\vec{x}}^2 + 2\vec{u}^\top\vec{x} + f = 0
+\end{align}
+
+The given equation can be represented as
+\begin{align}
+	\norm{x}^2 + 2\myvec{3 & 1}\vec{x} = 0
+\end{align}
+
+By comparing equations $\brak{1}$ and $\brak{2}$,
+\begin{align}
+	\vec{u} = \myvec{3\\1} &= -\vec{O}\\
+	f = 0 \implies r = \norm{u} &= \sqrt{10}\\
+	\implies \vec{O} = \myvec{-3\\-1} &= \myvec{x\\y}\\
+	\implies x + 3y \neq 0 
+\end{align}
+The line $x + 3y = 0$ does not go through the center of the circle, hence it is not the diameter of the circle.
+
+\begin{figure}[h!]
+   \centering
+   \includegraphics[width=0.7\linewidth]{figs/graph.png}
+   \caption{Circle with the given line}
+\end{figure}
+
+\end{document}

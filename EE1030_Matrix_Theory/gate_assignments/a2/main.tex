@@ -1,0 +1,236 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{MA 2009 Q37-48}
+\author{EE24BTECH11002 - Agamjot Singh}
+\maketitle
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\begin{enumerate}
+    %Question37
+    \item Let
+	\begin{align*}
+		\tau_1 = \cbrak{G \subseteq \mathbb{R} \colon G \text{ is finite or } \mathbb{R} \backslash G \text{ is finite}}	
+	\end{align*} 
+	and
+	\begin{align*}
+		\tau_2 = \cbrak{G \subseteq \mathbb{R} \colon G \text{ is countable or } \mathbb{R} \backslash G \text{ is countable}}	
+	\end{align*}
+	Then
+	\hfill{\brak{\text{2009-MA}}}
+
+	\begin{enumerate}
+		\item neither $\tau_1$ nor $\tau_2$ is a topology on $\mathbb{R}$
+		\item $\tau_1$ is a topology on $\mathbb{R}$ but $\tau_2$ is not a topology on $\mathbb{R}$
+		\item $\tau_2$ is a topology on $\mathbb{R}$ but $\tau_1$ is not a topology on $\mathbb{R}$
+		\item both $\tau_1$ nor $\tau_2$ are topologies on $\mathbb{R}$
+	\end{enumerate}
+
+    %Question38
+    \item Which one of the following ideals of the ring $\mathbb{Z}\sbrak{i}$ of Gaussian integers is NOT maximal?
+	\hfill{\brak{\text{2009-MA}}}
+
+	\begin{enumerate}
+		\item $\langle 1 + i \rangle$
+		\item $\langle 1 - i \rangle$
+		\item $\langle 2 + i \rangle$
+		\item $\langle 3 + i \rangle$
+	\end{enumerate}
+
+    %Question39
+    \item If $Z\brak{G}$ denotes the centre of a group $G$, then the order of the quotient group $G/Z\brak{G}$ cannot be
+	\hfill{\brak{\text{2009-MA}}}
+
+	\begin{enumerate}
+		\item $4$ 
+		\item $6$
+		\item $15$
+		\item $25$
+	\end{enumerate}
+
+
+    %Question40
+    \item Let $Aut\brak{G}$ denote the group of automorphisms of a group $G$. Whice one of the following is NOT a cyclic group?
+	\hfill{\brak{\text{2009-MA}}}
+
+	\begin{enumerate}
+		\item $Aut\brak{\mathbb{Z}_4}$
+		\item $Aut\brak{\mathbb{Z}_6}$
+		\item $Aut\brak{\mathbb{Z}_8}$
+		\item $Aut\brak{\mathbb{Z}_{10}}$
+	\end{enumerate}
+
+    %Question41
+    \item Let $X$ be a non-negative integer valued random variable with $E\brak{X^2} = 3$ and $E\brak{X} = 1$. Then $\sum_{i = 1}^{\infty} iP\brak{X \geq i} = $
+	\hfill{\brak{\text{2009-MA}}}
+
+	\begin{enumerate}
+		\item $1$
+		\item $2$
+		\item $3$
+		\item $4$
+	\end{enumerate}
+
+    %Question42
+    \item Let $X$ be a random variable with probability density function $f \in \cbrak{f_0, f_1}$, where
+	\begin{align*}
+		f_0\brak{x} = 
+		\begin{cases}
+			2x & \text{if } 0 < x < 1\\
+			0 & \text{otherwise}\\
+		\end{cases}
+	\end{align*}
+	and
+	\begin{align*}
+		f_1\brak{x} = 
+		\begin{cases}
+			3x^2 & \text{if } 0 < x < 1\\
+			0 & \text{otherwise}\\
+		\end{cases}
+	\end{align*}
+
+	For testing the null hypothesis $H_0 \colon f \equiv f_0$ against the alternative hypothesis $H_1\colon f \equiv f_1$ at level of significance $\alpha = 0.19$, the power of the most powerful test is
+
+	\hfill{\brak{\text{2009-MA}}}
+	\begin{enumerate}
+		\item $0.729$ 
+		\item $0.271$ 
+		\item $0.615$ 
+		\item $0.385$ 
+	\end{enumerate}
+
+
+    %Question43
+    \item Let $X$ and $Y$ be independent and identically distributed $U\brak{0,1}$ random variables. Then $P\brak{Y < \brak{X - \frac{1}{2}}^2} = $
+	\hfill{\brak{\text{2009-MA}}}
+
+	\begin{enumerate}
+		\item $\frac{1}{12}$
+		\item $\frac{1}{4}$
+		\item $\frac{1}{3}$
+		\item $\frac{2}{3}$
+	\end{enumerate}
+
+
+    %Question44
+    \item Let $X$ and $Y$ be Banach spaces and let $T\colon X \to Y$ be a linear map. Consider the statements:
+	\begin{align*}
+		P\colon \text{If } x_n &\to x \text{ in } X \text{ then } Tx_n \to Tx \text{ in } Y\\
+		Q\colon \text{If } x_n &\to x \text{ in } X \text{ then } Tx_n \to y \text{ in } Y \text{ then } Tx = y
+	\end{align*}
+
+	\hfill{\brak{\text{2009-MA}}}
+	\begin{enumerate}
+		\item $P$ implies $Q$ and $Q$ implies $P$
+		\item $P$ implies $Q$ but $Q$ does not imply $P$
+		\item $Q$ implies $P$ but $P$ does not imply $Q$
+		\item neither $P$ implies $Q$ nor $Q$ implies $P$
+	\end{enumerate}
+
+
+    %Question45
+    \item If $y\brak{x} = x$ is a solution of the differential equation $y^{\prime\prime} - \brak{\frac{2}{x^2}+\frac{1}{x}}\brak{xy^{\prime} - y} = 0$ , $0<x<\infty$, then its general solution is
+	\hfill{\brak{\text{2009-MA}}}
+
+	\begin{enumerate}
+		\item $\brak{\alpha + \beta e^{-2x}}x$
+		\item $\brak{\alpha + \beta e^{2x}}x$
+		\item $\alpha x + \beta e^{x}$
+		\item $\brak{\alpha e^{x} + \beta}x$
+	\end{enumerate}
+
+
+    %Question46
+    \item Let $P_n\brak{x}$ be the Legendre polynomial of degree $n$ such that $P_n\brak{1} = 1$ , $n = 1, 2, \dots$ If
+	\begin{align*}
+		\int_{-1}^{1} \brak{\sum_{j = 1}^{n} \sqrt{j\brak{2j + 1}} P_j\brak{x}}^2 \, dx = 20
+	\end{align*}
+	then $n = $
+	\hfill{\brak{\text{2009-MA}}}
+
+	\begin{enumerate}
+		\item $2$
+		\item $3$
+		\item $4$
+		\item $5$
+	\end{enumerate}
+
+
+    %Question47
+    \item The integral surface satsifying the equation $y\frac{\partial{z}}{\partial{x}} + x\frac{\partial{z}}{\partial{y}} = x^2 + y^2$ and passing through the curve $x = 1 - t, y = 1 + t, z = 1 + t^2$ is
+	\hfill{\brak{\text{2009-MA}}}
+
+	\begin{enumerate}
+		\item $z = xy + \frac{1}{2}\brak{x^2 - y^2}^2$
+		\item $z = xy + \frac{1}{4}\brak{x^2 - y^2}^2$
+		\item $z = xy + \frac{1}{8}\brak{x^2 - y^2}^2$
+		\item $z = xy + \frac{1}{16}\brak{x^2 - y^2}^2$
+	\end{enumerate}
+
+
+    %Question48
+    \item For the diffusion problem $u_{xx} = u_{i} \brak{0 < x < \pi, t > 0}, u\brak{0, t} = 0, u\brak{\pi, t} = 0$ and $u\brak{x, 0} = 3\sin{2x}$, the solution is given by
+	\hfill{\brak{\text{2009-MA}}}
+
+	\begin{enumerate}
+		\item $3e^{-t}\sin{2x}$
+		\item $3e^{-4t}\sin{2x}$
+		\item $3e^{-9t}\sin{2x}$
+		\item $3e^{-2t}\sin{2x}$
+	\end{enumerate}
+
+\end{enumerate}
+\end{document}

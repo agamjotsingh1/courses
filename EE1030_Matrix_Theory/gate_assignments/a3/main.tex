@@ -1,0 +1,215 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{CE 2011 Q14-26}
+\author{EE24BTECH11002 - Agamjot Singh}
+\maketitle
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\begin{enumerate}
+
+    %Question14
+    \item A soil is composed of solid spherical grains of identical specfic gravity and diameter between $0.075$ mm and $0.0075$ mm. If the terminal velocity of the largest particle falling through water without flocculation is $0.5$ mm/s, that for the smallest particle would ne
+	\hfill{\brak{\text{2011-CE}}}
+
+	\begin{enumerate}
+		\item $0.005$ mm/s
+		\item $0.05$ mm/s
+		\item $5$ mm/s
+		\item $50$ mm/s
+	\end{enumerate}
+
+    %Question15
+    \item A watershed got transformed from rural to urban over a period of time. The effect of urbanization on storm runoff hydrograph from the watershed is to
+	\hfill{\brak{\text{2011-CE}}}
+
+	\begin{enumerate}
+		\item decrease the volume of runoff
+		\item increase the time to peak discharge
+		\item decrease the time base
+		\item decrease the peak discharge
+	\end{enumerate}
+
+    %Question16
+    \item For a given discharge, the critical flow depth in an open channel depends on
+	\hfill{\brak{\text{2011-CE}}}
+
+	\begin{enumerate}
+		\item channel geometry only
+		\item channel geometry and bed slope
+		\item channel geometry, bed slope and roughness
+		\item channel geometry, bed slope, roughness and Reynolds number
+	\end{enumerate}
+
+
+    %Question17
+    \item For a body completely submerged in a fluid, the centre of gravity $\brak{G}$ and centre of Buoyancy $\brak{O}$ are known. The body is considered to be in stable equilibrium if
+	\hfill{\brak{\text{2011-CE}}}
+
+	\begin{enumerate}
+		\item $O$ does not coincide with the centre of mass of the displaced fluid
+		\item $G$ coincides with the centre of mass of the displaced fluid
+		\item $O$ lies below $G$
+		\item $O$ lies above $G$
+	\end{enumerate}
+
+    %Question18
+    \item The flow in a horizontal, frictionless rectangular open channel is supercritical. A smooth hump is built on the channel floor. As the height of hump is increased, choked condition is attained. With further increase in the height of the hump, the water surface will
+	\hfill{\brak{\text{2011-CE}}}
+
+	\begin{enumerate}
+		\item rise at a section upstream of the hump
+		\item drop at a section upstream of the hump
+		\item drop at the hump
+		\item rise at the hump
+	\end{enumerate}
+
+    %Question19
+    \item Consider the fllowing unit processes commonly used in water treatment; rapid mixing $\brak{\text{RM}}$, flocculation $\brak{\text{F}}$, primary sedimentation $\brak{\text{PS}}$, secondary sedimentation $\brak{\text{SS}}$, chlorination $\brak{\text{C}}$ and rapid sand filtration $\brak{\text{RSF}}$. The order of these unit processes $\brak{\text{first to last}}$ in a conventional water treatment plant is
+	\hfill{\brak{\text{2011-CE}}}
+	\begin{enumerate}
+		\item PS $\to$ RSF $\to$ F $\to$ RM $\to$ SS $\to$ C
+		\item PS $\to$ F $\to$ RM $\to$ RSF $\to$ SS $\to$ C
+		\item PS $\to$ F $\to$ SS $\to$ RSF $\to$ RM $\to$ C
+		\item PS $\to$ RM $\to$ F $\to$ SS $\to$ RSF $\to$ C
+	\end{enumerate}
+
+
+    %Question20
+    \item Anaerobically treated effluent has MPN of total coliform as $10^6/100$ mL. After chlorination, the MPN value declines to $10^2/100$ mL. The percent removal $\brak{\%R}$ and log removal $\brak{\log R}$ of total coliform MPN is
+	\hfill{\brak{\text{2011-CE}}}
+
+	\begin{enumerate}
+		\item $\%R = 99.90$ ; $\log R = 4$
+		\item $\%R = 99.90$ ; $\log R = 2$
+		\item $\%R = 99.99$ ; $\log R = 4$
+		\item $\%R = 99.99$ ; $\log R = 2$
+	\end{enumerate}
+
+
+    %Question21
+    \item Consider four common air pollutants found in urban environments, $NO$, $SO_2$, Soot and $O_3$. Among these which one is the secondary air pollutant
+	\hfill{\brak{\text{2011-CE}}}
+	
+	\begin{enumerate}
+		\item $O_3$
+		\item $NO$
+		\item $SO_2$
+		\item Soot
+	\end{enumerate}
+
+
+    %Question22
+    \item The probability that $k$ number of vehicles arrive $\brak{\text{i.e. cross a predefined line}}$ in time $t$ is given as $\frac{\brak{\lambda t}^k e^{-\lambda t}}{k!}$, where $\lambda$ is the average vehicle arrival rate. What is the probablity that the time headway is greater than or equal to time $t_1$?
+	\hfill{\brak{\text{2011-CE}}}
+
+	\begin{enumerate}
+		\item $\lambda e^{\lambda t_1}$
+		\item $\lambda e^{-t_1}$
+		\item $e^{\lambda t_1}$
+		\item $e^{-\lambda t_1}$
+	\end{enumerate}
+
+
+    %Question23
+    \item A vehicle negotiates a transition curve with unform speed $v$. If the radius of the horizonal curve and the allowable jerk are $R$ and $J$, respectively, the minimum length of the transition curve is
+	\hfill{\brak{\text{2011-CE}}}
+
+	\begin{enumerate}
+		\item $\frac{R^3}{vJ}$
+		\item $\frac{J^3}{vR}$
+		\item $\frac{v^2R}{J}$
+		\item $\frac{v^3}{RJ}$
+	\end{enumerate}
+
+
+    %Question24
+    \item In Marshall testing of bituminous mixes, as the bitumen content increases the flow value
+	\hfill{\brak{\text{2011-CE}}}
+
+	\begin{enumerate}
+		\item remains constant
+		\item decreases first and then increases
+		\item increases monotonically
+		\item increases first and then decreases
+	\end{enumerate}
+
+
+    %Question25
+    \item Curvature correction to a staff reading in a differential leveling survey is
+	\hfill{\brak{\text{2011-CE}}}
+
+	\begin{enumerate}
+		\item always subtractive
+		\item always zero 
+		\item always additive
+		\item dependent on latitude
+	\end{enumerate}
+
+    %Question26
+    \item For an analytic function, $f\brak{x + iy} = u\brak{x, y} + iv\brak{x, y}$, $u$ is given by $u = 3x^2 - 3y^2$. The expression for $v$, considering $K$ to be a constant is
+
+	\hfill{\brak{\text{2011-CE}}}
+	\begin{enumerate}
+		\item $3y^2 - 3x^2 + K$
+		\item $6x- 6y + K$
+		\item $6y - 6x + K$
+		\item $6xy + K$
+	\end{enumerate}
+
+
+\end{enumerate}
+\end{document}
