@@ -1,0 +1,302 @@
+LTspice 24.1.7 for Windows
+Circuit: Z:\home\agam\Github\misc\analog\assignment5\q2\q2_nmos.net
+Start Time: Thu Apr  9 22:54:55 2026
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-05
+Gmin = 1.6455e-06
+Gmin = 1.76685e-07
+Gmin = 1.89714e-08
+Gmin = 2.03704e-09
+Gmin = 2.18725e-10
+Gmin = 2.34854e-11
+Gmin = 2.52173e-12
+Gmin = 2.70769e-13
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-05
+Gmin = 1.6455e-06
+Gmin = 1.76685e-07
+Gmin = 1.89714e-08
+vernier = 0.5
+Gmin = 3.18287e-09
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+vernier = 0.00195312
+vernier = 0.000976562
+Gmin = 3.18287e-09
+vernier = 0.000488281
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source Step = 98.4908%
+Source Step = 98.5204%
+Source Step = 98.55%
+Source Step = 98.5795%
+Source Step = 98.6091%
+Source Step = 98.6387%
+Source Step = 98.6683%
+Source Step = 98.6979%
+Source Step = 98.7275%
+Source Step = 98.7571%
+vernier = 0.00146484
+Source Step = 98.8015%
+Source Step = 98.8459%
+Source Step = 98.8903%
+Source Step = 98.9347%
+Source Step = 98.979%
+vernier = 0.00219727
+Source Step = 99.0434%
+Source Step = 99.11%
+Source Step = 99.1766%
+Source Step = 99.2432%
+Source Step = 99.3097%
+vernier = 0.0032959
+Source Step = 99.403%
+Source Step = 99.5028%
+Source Step = 99.6027%
+Source Step = 99.7026%
+Source Step = 99.8025%
+vernier = 0.00494385
+Source Step = 99.9373%
+Source Step = 99.016%
+Source Step = 99.0534%
+Source Step = 99.0909%
+Source Step = 99.1283%
+Source Step = 99.1658%
+Source Step = 99.2032%
+vernier = 0.00185394
+Source Step = 99.2463%
+Source Step = 99.3025%
+Source Step = 99.3587%
+Source Step = 99.4148%
+Source Step = 99.471%
+vernier = 0.00278091
+Source Step = 99.5328%
+Source Step = 99.6171%
+Source Step = 99.7013%
+Source Step = 99.7856%
+Source Step = 99.8699%
+vernier = 0.00417137
+Source Step = 99.9584%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source stepping succeeded in finding the operating point.
+
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-05
+Gmin = 1.6455e-06
+Gmin = 1.76685e-07
+Gmin = 1.89714e-08
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+vernier = 0.03125
+Gmin = 7.77068e-09
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+vernier = 0.00195312
+vernier = 0.000976562
+vernier = 0.000488281
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source Step = 96.9815%
+Source Step = 97.0111%
+Source Step = 97.0407%
+Source Step = 97.0703%
+Source Step = 97.0999%
+Source Step = 97.1295%
+Source Step = 97.1591%
+Source Step = 97.1887%
+Source Step = 97.2183%
+Source Step = 97.2479%
+vernier = 0.00146484
+Source Step = 97.2804%
+Source Step = 97.3248%
+Source Step = 97.3692%
+Source Step = 97.4136%
+Source Step = 97.458%
+vernier = 0.00219727
+Source Step = 97.5046%
+Source Step = 97.5712%
+Source Step = 97.6378%
+Source Step = 97.7043%
+Source Step = 97.7709%
+Source Step = 97.8375%
+vernier = 0.0032959
+Source Step = 97.9374%
+Source Step = 98.0373%
+Source Step = 98.1371%
+Source Step = 98.237%
+Source Step = 98.3369%
+vernier = 0.00494385
+Source Step = 98.4817%
+Source Step = 98.6315%
+Source Step = 98.7813%
+Source Step = 98.9311%
+Source Step = 99.081%
+vernier = 0.00741577
+Source Step = 99.1502%
+Source Step = 99.2064%
+Source Step = 99.2626%
+Source Step = 99.3188%
+Source Step = 99.375%
+Source Step = 99.4311%
+Source Step = 99.4873%
+Source Step = 99.5435%
+Source Step = 99.5997%
+vernier = 0.00278091
+Source Step = 99.6699%
+Source Step = 99.7542%
+Source Step = 99.8385%
+Source Step = 99.9227%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source Step = 100%
+Source stepping succeeded in finding the operating point.
+
+.step rvar=1000000
+.step rvar=1102307.69230769
+.step rvar=1204615.38461538
+.step rvar=1306923.07692308
+.step rvar=1409230.76923077
+.step rvar=1511538.46153846
+.step rvar=1613846.15384615
+.step rvar=1716153.84615385
+.step rvar=1818461.53846154
+.step rvar=1920769.23076923
+.step rvar=2023076.92307692
+.step rvar=2125384.61538462
+.step rvar=2227692.30769231
+.step rvar=2330000
+Total elapsed time: 5.377 seconds.
+
+Files loaded:
+Z:\home\agam\Github\misc\analog\assignment5\q2\q2_nmos.net
+C:\users\agam\AppData\Local\LTspice\lib\cmp\standard.mos
+Z:\home\agam\Github\misc\analog\assignment5\q2\tsmc018.lib
+C:\users\agam\AppData\Local\LTspice\lib\sub\LTC.lib
+

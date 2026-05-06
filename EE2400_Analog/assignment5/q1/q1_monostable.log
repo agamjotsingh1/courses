@@ -1,0 +1,58 @@
+LTspice 24.1.7 for Windows
+Circuit: Z:\home\agam\Github\misc\analog\assignment5\q1\q1_monostable.net
+Start Time: Thu Apr  9 16:45:49 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Z:\home\agam\Github\misc\analog\assignment5\q1\q1_monostable.net(8): WARNING: Specified period is not longer than the sum of Trise, Tfall, and Ton. Increasing period to 0.000100002.
+
+V1 N002 0 PULSE(0 5 0.2ms 1ns 1ns 0.1m 0 1)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Z:\home\agam\Github\misc\analog\assignment5\q1\q1_monostable.net(14): WARNING: Specified period is not longer than the sum of Trise, Tfall, and Ton. Increasing period to 0.000100002.
+
+V§TRIGGER TR 0 PULSE(5 0 100us 1ns 1ns 100us 0 1)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+Gmin = 4.096
+vernier = 0.166667
+Gmin = 2.86349
+vernier = 0.222222
+vernier = 0.296296
+Gmin = 1.6039
+vernier = 0.395061
+vernier = 0.526748
+Gmin = 0.65001
+vernier = 0.702331
+Gmin = 0.155963
+vernier = 0.936441
+vernier = 1
+Gmin = 0.0192272
+Gmin = 0.0020645
+Gmin = 0.000221674
+Gmin = 2.38021e-05
+Gmin = 2.55573e-06
+Gmin = 2.74419e-07
+Gmin = 2.94655e-08
+Gmin = 3.16384e-09
+Gmin = 3.39714e-10
+Gmin = 3.64766e-11
+Gmin = 3.91664e-12
+Gmin = 4.20546e-13
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+Total elapsed time: 0.224 seconds.
+
+Files loaded:
+Z:\home\agam\Github\misc\analog\assignment5\q1\q1_monostable.net
+C:\users\agam\AppData\Local\LTspice\lib\cmp\standard.bjt
+Z:\home\agam\Github\misc\analog\assignment5\q1\tsmc018.lib
+C:\users\agam\AppData\Local\LTspice\lib\sub\LT1360.lib
+

@@ -1,0 +1,15 @@
+LTspice 24.1.7 for Windows
+Circuit: Z:\home\agam\Github\misc\analog\assignment2\q3\q3.net
+Start Time: Thu Mar 19 20:58:01 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 1.665 seconds.
+
+Files loaded:
+Z:\home\agam\Github\misc\analog\assignment2\q3\q3.net
+C:\users\agam\AppData\Local\LTspice\lib\sub\ADI.lib
+

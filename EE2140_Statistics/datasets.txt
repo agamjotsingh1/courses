@@ -1,0 +1,11 @@
+1. frequency table, bar diagram, frequency polygon -> landslide DONE
+2. pie chart -> video_game_sales DONE
+3. histogram -> real_estate DONE
+4. box plot -> gdp DONE
+
+available:
+real_estate.csv (https://www.kaggle.com/datasets/toriqulstu/worlds-real-estate-data147k)
+pollutant.csv (https://www.data.gov.in/resource/real-time-air-quality-index-various-locations)
+video_game_sales.csv (https://www.kaggle.com/datasets/gregorut/videogamesales)
+landslide.csv (https://data.nasa.gov/dataset/global-landslide-catalog-export)
+gdp.csv (https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?end=2024&start=1960&view=chart)

@@ -1,0 +1,103 @@
+LTspice 24.1.7 for Windows
+Circuit: Z:\home\agam\Github\misc\analog\assignment5\q1\q1_astable.net
+Start Time: Thu Apr  9 20:58:29 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+Gmin = 4.096
+vernier = 0.166667
+Gmin = 2.86349
+vernier = 0.222222
+vernier = 0.296296
+Gmin = 1.6039
+vernier = 0.395061
+vernier = 0.526748
+Gmin = 0.65001
+vernier = 0.702331
+Gmin = 0.155963
+vernier = 0.936441
+vernier = 1
+Gmin = 0.0192272
+Gmin = 0.0020645
+Gmin = 0.000221674
+Gmin = 2.38021e-05
+Gmin = 2.55573e-06
+vernier = 0.5
+vernier = 0.25
+Gmin = 1.49648e-06
+vernier = 0.125
+vernier = 0.166667
+Gmin = 1.11292e-06
+vernier = 0.0833333
+vernier = 0.111111
+Gmin = 9.37177e-07
+vernier = 0.0555555
+vernier = 0.074074
+Gmin = 8.35398e-07
+vernier = 0.0987653
+vernier = 0.0493827
+vernier = 0.0658435
+Gmin = 7.4511e-07
+vernier = 0.0329218
+vernier = 0.0438957
+Gmin = 6.95909e-07
+vernier = 0.0585276
+vernier = 0.0292638
+vernier = 0.0390184
+Gmin = 6.50172e-07
+vernier = 0.0520245
+vernier = 0.0260122
+vernier = 0.0130061
+Gmin = 6.1536e-07
+vernier = 0.0173415
+vernier = 0.023122
+Gmin = 5.9037e-07
+vernier = 0.0308293
+Gmin = 5.51996e-07
+vernier = 0.0411057
+vernier = 0.0205529
+vernier = 0.0274038
+Gmin = 5.26674e-07
+vernier = 0.0365384
+vernier = 0.0182692
+Gmin = 5.03229e-07
+vernier = 0.0243589
+vernier = 0.0324786
+vernier = 0.0162393
+vernier = 0.00811964
+Gmin = 4.83021e-07
+vernier = 0.00405982
+vernier = 0.00202991
+vernier = 0.00101495
+vernier = 0.000507477
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+vernier = 0.25
+Source Step = 30.3208%
+Starting source stepping with srcstepmethod=1
+Could not converge to DC with sources off!
+Pseudo Transient failed in finding the operating point at 0 s.
+Trouble finding operating point....skipping operating point for Transient analysis.
+Changing Tseed to 1e-08
+Changing Tseed to 1e-10
+Changing Tseed to 1e-07
+Changing Tseed to 1e-11
+Total elapsed time: 0.537 seconds.
+
+Files loaded:
+Z:\home\agam\Github\misc\analog\assignment5\q1\q1_astable.net
+C:\users\agam\AppData\Local\LTspice\lib\cmp\standard.bjt
+C:\users\agam\AppData\Local\LTspice\lib\sub\LT1360.lib
+

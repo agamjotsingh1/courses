@@ -1,0 +1,100 @@
+LTspice 24.1.7 for Windows
+Circuit: Z:\home\agam\Github\misc\analog\assignment5\q2\q2_pmos.net
+Start Time: Thu Apr  9 23:13:56 2026
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+WARNING: Node n001 is floating.
+
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-05
+Gmin = 1.6455e-06
+Gmin = 1.76685e-07
+Gmin = 1.89714e-08
+Gmin = 2.03704e-09
+Gmin = 2.18725e-10
+Gmin = 2.34854e-11
+Gmin = 2.52173e-12
+Gmin = 2.70769e-13
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-05
+Gmin = 1.6455e-06
+Gmin = 1.76685e-07
+Gmin = 1.89714e-08
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+Gmin = 4.97323e-09
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.0416667
+Gmin = 4.63702e-09
+vernier = 0.0555555
+vernier = 0.074074
+Gmin = 4.0628e-09
+vernier = 0.0987653
+Gmin = 3.28107e-09
+vernier = 0.131687
+vernier = 0.175583
+Gmin = 2.31765e-09
+vernier = 0.23411
+vernier = 0.312147
+Gmin = 1.34347e-09
+vernier = 0.416196
+Gmin = 5.62496e-10
+vernier = 0.554928
+vernier = 0.739903
+Gmin = 1.40435e-10
+vernier = 0.986537
+vernier = 1
+Gmin = 1.79888e-11
+Gmin = 1.93153e-12
+Gmin = 2.07396e-13
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+.step rvar=1000000
+.step rvar=1102307.69230769
+.step rvar=1204615.38461538
+.step rvar=1306923.07692308
+.step rvar=1409230.76923077
+.step rvar=1511538.46153846
+.step rvar=1613846.15384615
+.step rvar=1716153.84615385
+.step rvar=1818461.53846154
+.step rvar=1920769.23076923
+.step rvar=2023076.92307692
+.step rvar=2125384.61538462
+
+Simulation stopped by user.
+Total elapsed time: 46179.405 seconds.
+
+Files loaded:
+Z:\home\agam\Github\misc\analog\assignment5\q2\q2_pmos.net
+C:\users\agam\AppData\Local\LTspice\lib\cmp\standard.mos
+Z:\home\agam\Github\misc\analog\assignment5\q2\tsmc018.lib
+C:\users\agam\AppData\Local\LTspice\lib\sub\LTC.lib
+

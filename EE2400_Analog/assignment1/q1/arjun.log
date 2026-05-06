@@ -1,0 +1,20 @@
+LTspice 24.1.7 for Windows
+Circuit: Z:\home\agam\Github\misc\analog\q1\arjun.net
+Start Time: Thu Feb 12 23:51:19 2026
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 0.254 seconds.
+
+Files loaded:
+Z:\home\agam\Github\misc\analog\q1\arjun.net
+C:\users\agam\AppData\Local\LTspice\lib\cmp\standard.mos
+Z:\home\agam\Github\misc\analog\q1\tsmc018.lib
+
