@@ -1,7 +1,51 @@
 import argparse
-import csv
 
 import numpy as np
+
+# data -> (*xN) matrix contains vectors
+# N -> dimension of feature space
+# K -> number of clusters
+# T -> number of iterations
+# rng -> numpy rng generator (preferably seeded)
+def lloyd(data, N, K, T, rng):
+    rand_idx = rng.choice(data.shape[0], size=K, replace=False)
+    centers = np.empty((T+1, K, N))
+
+    centers[0] = np.copy(data[rand_idx])
+
+    for t in range(T):
+        # add a new axis and then broadcast
+        distances = np.linalg.norm(data[:, np.newaxis] - centers[t], axis=2)
+        labels = np.argmin(distances, axis=1)
+
+        for k in range(K):
+            cluster = data[labels == K]
+
+            if cluster.shape[0] == 0:
+                centers[t+1][k] = centers[t][k]
+            else:
+                centers[t+1][k] = np.mean(cluster, axis=0)/cluster.shape[0]
+
+# old slower implementation
+#         for k in range(K):
+#             cluster_sum = np.zeros((1, 2))
+#             cluster_len = 0
+#
+#             for x in data:
+#                 in_cluster = True
+#
+#                 for j in range(K):
+#                     if np.linalg.norm(x - centers[j]) > np.linalg.norm(x - centers[k]):
+#                         in_cluster = False
+#                         break
+#
+#                 if in_cluster:
+#                     cluster_len += 1
+#                     cluster_sum += x
+#
+#             new_centers[k] = 0 if cluster_len == 0 else cluster_sum/cluster_len
+
+    return centers
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--data")
@@ -29,7 +73,7 @@ with open(args.data, mode='r') as file:
         data = np.append(data, new_row, axis=0)
 
 n = data.shape[0]
-np.random.seed(args.seed)
+rng = np.random.default_rng(seed=args.seed)
 
 eps = args.eps
 T = args.T
@@ -53,3 +97,5 @@ sens2 = 2
 b2 = sens2/(eps_dash/2)
 
 print(f"({eps_dash}, {b1}, {b2})")
+
+print(lloyd(data, 2, K, T, rng))
