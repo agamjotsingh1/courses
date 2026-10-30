@@ -107,6 +107,7 @@ ax.set_aspect("equal")
 ax.legend(bbox_to_anchor=(1.05, 1), loc="upper left")
 plt.title(f"Region and Boundaries defined by $Au \\leq v$ ($\\epsilon={eps}, \\delta={delta}$)")
 plt.tight_layout()
+plt.savefig("feasible_region.png")
 plt.show()
 
 # TODO!
@@ -162,17 +163,57 @@ def beta(t, sens, mode='lap'):
 alpha_vec = np.vectorize(alpha)
 beta_vec = np.vectorize(beta)
 
-plt.figure(figsize=(8, 5))
-plt.plot(t, alpha_vec(t, sens, 'lap'), label=r'$\alpha(t)$ for Lap', linewidth=2)
-plt.plot(t, beta_vec(t, sens, 'lap'), label=r'$\beta(t)$ for Lap', linewidth=2)
-plt.plot(t, alpha_vec(t, sens, 'gauss'), label=r'$\alpha(t)$ for Gauss', linewidth=2)
-plt.plot(t, beta_vec(t, sens, 'gauss'), label=r'$\beta(t)$ for Gauss', linewidth=2)
+# plt.figure(figsize=(8, 5))
+# plt.plot(t, alpha_vec(t, sens, 'lap'), label=r'$\alpha(t)$ for Lap', linewidth=2)
+# plt.plot(t, beta_vec(t, sens, 'lap'), label=r'$\beta(t)$ for Lap', linewidth=2)
+# plt.plot(t, alpha_vec(t, sens, 'gauss'), label=r'$\alpha(t)$ for Gauss', linewidth=2)
+# plt.plot(t, beta_vec(t, sens, 'gauss'), label=r'$\beta(t)$ for Gauss', linewidth=2)
+#
+# plt.title(f'Plot of $\\alpha(t)$ and $\\beta(t)$ (with $\\epsilon = {eps}, \\Delta = {sens}$)')
+# plt.xlabel('t')
+# plt.grid(True, linestyle='--', alpha=0.7)
+# plt.legend()
+# plt.tight_layout()
+# plt.show()
 
-plt.title(f'Plot of $\\alpha(t)$ and $\\beta(t)$ (with $\\epsilon = {eps}, \\Delta = {sens}$)')
-plt.xlabel('t')
-plt.grid(True, linestyle='--', alpha=0.7)
-plt.legend()
+alpha_lap = alpha_vec(t, sens, 'lap')
+beta_lap = beta_vec(t, sens, 'lap')
+
+alpha_gauss = alpha_vec(t, sens, 'gauss')
+beta_gauss = beta_vec(t, sens, 'gauss')
+
+fig, ax = plt.subplots(figsize=(8, 8))
+
+poly = Polygon(
+    ordered_vertices,
+    facecolor="lightblue",
+    edgecolor="none",
+    alpha=0.5,
+    label=r"Feasible Region ($Au \leq v$)",
+)
+ax.add_patch(poly)
+
+# for lap, the curve is only continuous for t in [-eps, eps].
+mask_lap = (t >= -eps) & (t <= eps)
+
+ax.plot(alpha_lap[mask_lap], beta_lap[mask_lap], label='Laplace Mechanism', linewidth=2, color='tab:orange')
+lap_alpha_start, lap_beta_start = alpha_lap[mask_lap][0], beta_lap[mask_lap][0]
+lap_alpha_end, lap_beta_end = alpha_lap[mask_lap][-1], beta_lap[mask_lap][-1]
+ax.plot([0.0, lap_alpha_start], [1.0, lap_beta_start], color='tab:orange', linestyle=':', linewidth=2)
+ax.plot([lap_alpha_end, 1.0], [lap_beta_end, 0.0], color='tab:orange', linestyle=':', linewidth=2)
+ax.plot(alpha_gauss, beta_gauss, label='Gaussian Mechanism', linewidth=2, color='tab:green')
+ax.plot([0, 1], [1, 0], color='black', linestyle=':', label=f'\\alpha + \\beta = 1')
+
+ax.set_title(f'Parametric curve overlaid on Feasible Region\n($\\epsilon = {eps}, \\delta = {delta}, \\Delta = {sens}$)')
+ax.set_xlabel(r'$\alpha(t)$')
+ax.set_ylabel(r'$\beta(t)$')
+ax.set_xlim(-0.02, 1.02)
+ax.set_ylim(-0.02, 1.02)
+ax.set_aspect("equal")
+ax.grid(True, linestyle='--', alpha=0.7)
+ax.legend(loc="upper right")
 plt.tight_layout()
+plt.savefig("alpha_beta_parametric.png")
 plt.show()
 
 # checking for inconsistency at some sens

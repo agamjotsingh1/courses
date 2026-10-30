@@ -1,0 +1,6 @@
+# ground truth -- INSTRUCTOR COPY, do not release with the dataset
+# K=3  noise_level=tight  sigma=0.045  seed=20261018
+# cluster,centre_x,centre_y,n_points
+0,0.283996,-0.245538,317
+1,0.141343,0.484017,338
+2,-0.631060,0.017503,345
