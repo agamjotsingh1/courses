@@ -110,7 +110,15 @@ plt.tight_layout()
 plt.savefig("feasible_region.png")
 plt.show()
 
-# TODO!
+print("""1.2.1 Remarks:
+    for t belongs to [-eps, eps]:
+        alpha(t) = 0.5*exp(0.5*(t-eps))
+        beta(t) = 0.5*exp(0.5*(-t-eps))
+    for t does not belongs to [-eps, eps]:
+        alpha(t) + beta(t) = 1
+    alpha(t) + beta(t) <= 1 for all t,
+    so 2 conditions that upper bound dont matter.
+""")
 
 # -- q2 & 3 --
 t = np.arange(-(2*eps), (2*eps), 1e-4)
@@ -247,3 +255,65 @@ print("""1.2.3 Remarks:
     as sigma is proportional to sens so it cancels out.
     rho is, in reality, independent of sens.
 """)
+
+deltas_to_test = [1e-2, 1e-5, 1e-9]
+colors_delta = ['purple', 'brown', 'magenta']
+
+fig, ax = plt.subplots(figsize=(9, 8))
+
+# 1. Laplace Mechanism (Independent of delta)
+# Reduced line width from 2 to 1.5 for clarity
+ax.plot(alpha_lap[mask_lap], beta_lap[mask_lap], label='Laplace Mechanism (Fixed)', linewidth=1.5, color='orange')
+ax.plot([0.0, lap_alpha_start], [1.0, lap_beta_start], color='orange', linestyle=':', linewidth=1.5, alpha=0.8)
+ax.plot([lap_alpha_end, 1.0], [lap_beta_end, 0.0], color='orange', linestyle=':', linewidth=1.5, alpha=0.8)
+
+for d, c in zip(deltas_to_test, colors_delta):
+    # Calculate feasible region boundary for this delta
+    A2_d = np.array([[-1, -np.exp(eps)], [1, np.exp(eps)], [-np.exp(eps), -1], [np.exp(eps), 1]])
+    v2_d = np.array([[d - 1], [d + np.exp(eps)], [d - 1], [d + np.exp(eps)]])
+
+    A_d = np.vstack((A1, A2_d))
+    v_d = np.vstack((v1, v2_d))
+
+    halfspaces_d = np.column_stack((A_d, -v_d))
+    hs_d = HalfspaceIntersection(halfspaces_d, interior_point)
+    vertices_d = hs_d.intersections
+    hull_d = ConvexHull(vertices_d)
+    ordered_vertices_d = vertices_d[hull_d.vertices]
+
+    # Close the polygon loop for plotting just the edge
+    closed_poly = np.vstack((ordered_vertices_d, ordered_vertices_d[0]))
+    # Reduced line width and added alpha to boundary lines to reduce clutter
+    ax.plot(closed_poly[:, 0], closed_poly[:, 1], color=c, linestyle='--',
+            linewidth=1.0, alpha=0.5, label=f'Feasible Boundary ($\\delta={d}$)')
+
+    # Calculate Gaussian curve for this delta
+    def alpha_g_d(t, d_val):
+        thresh = (sens/2) * (1 - 4*(t/eps)*np.log(2/d_val))
+        sigma = (sens/eps) * np.sqrt(2*np.log(2/d_val))
+        return (1 - norm.cdf(thresh, loc=0.0, scale=sigma))
+
+    def beta_g_d(t, d_val):
+        thresh = (sens/2) * (1 - 4*(t/eps)*np.log(2/d_val))
+        sigma = (sens/eps) * np.sqrt(2*np.log(2/d_val))
+        return norm.cdf(thresh, loc=sens, scale=sigma)
+
+    alpha_gauss_d = np.array([alpha_g_d(t_val, d) for t_val in t])
+    beta_gauss_d = np.array([beta_g_d(t_val, d) for t_val in t])
+
+    # Reduced line width from 2 to 1.5
+    ax.plot(alpha_gauss_d, beta_gauss_d, color=c, linewidth=1.5, label=f'Gaussian Mechanism ($\\delta={d}$)')
+
+ax.set_title(f'Parametric curves and boundaries for varying $\\delta$\n($\\epsilon = {eps}, \\Delta = {sens}$)')
+ax.set_xlabel(r'$\alpha(t)$')
+ax.set_ylabel(r'$\beta(t)$')
+ax.set_xlim(-0.02, 1.02)
+ax.set_ylim(-0.02, 1.02)
+ax.set_aspect("equal")
+ax.grid(True, linestyle=':', alpha=0.6)
+
+# Adjusted legend to sit outside the plot so it doesn't block the curves
+ax.legend(bbox_to_anchor=(1.05, 1), loc="upper left", fontsize='small')
+plt.tight_layout()
+plt.savefig("varying_delta_curves.png", dpi=150)
+plt.show()
