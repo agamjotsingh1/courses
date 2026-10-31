@@ -196,12 +196,12 @@ ax.add_patch(poly)
 # for lap, the curve is only continuous for t in [-eps, eps].
 mask_lap = (t >= -eps) & (t <= eps)
 
-ax.plot(alpha_lap[mask_lap], beta_lap[mask_lap], label='Laplace Mechanism', linewidth=2, color='tab:orange')
+ax.plot(alpha_lap[mask_lap], beta_lap[mask_lap], label='Laplace Mechanism', linewidth=2, color='orange')
 lap_alpha_start, lap_beta_start = alpha_lap[mask_lap][0], beta_lap[mask_lap][0]
 lap_alpha_end, lap_beta_end = alpha_lap[mask_lap][-1], beta_lap[mask_lap][-1]
-ax.plot([0.0, lap_alpha_start], [1.0, lap_beta_start], color='tab:orange', linestyle=':', linewidth=2)
-ax.plot([lap_alpha_end, 1.0], [lap_beta_end, 0.0], color='tab:orange', linestyle=':', linewidth=2)
-ax.plot(alpha_gauss, beta_gauss, label='Gaussian Mechanism', linewidth=2, color='tab:green')
+ax.plot([0.0, lap_alpha_start], [1.0, lap_beta_start], color='orange', linestyle=':', linewidth=2)
+ax.plot([lap_alpha_end, 1.0], [lap_beta_end, 0.0], color='orange', linestyle=':', linewidth=2)
+ax.plot(alpha_gauss, beta_gauss, label='Gaussian Mechanism', linewidth=2, color='green')
 ax.plot([0, 1], [1, 0], color='black', linestyle=':', label=f'\\alpha + \\beta = 1')
 
 ax.set_title(f'Parametric curve overlaid on Feasible Region\n($\\epsilon = {eps}, \\delta = {delta}, \\Delta = {sens}$)')
